@@ -4,10 +4,6 @@
 %
 \documentclass[
 ]{book}
-\title{Introduction to Statistics}
-\author{Aaron McMurray}
-\date{2022-06-08}
-
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{iftex}
@@ -79,6 +75,10 @@
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
+\title{Introduction to Statistics}
+\author{Aaron McMurray}
+\date{2022-06-09}
+
 \begin{document}
 \maketitle
 
@@ -135,7 +135,7 @@ Statistics is all about the collection, organization, analysis, interpretation a
 \hypertarget{descriptive-statistics}{%
 \section{Descriptive Statistics}\label{descriptive-statistics}}
 
-Descriptive statistics describes or summarises data that have been collected. Measures of central tendency and measures of dispersion are the most important tools.
+Descriptive statistics describes or summarises data that have been collected. Measures of central tendency such as (mean, median and the mode) and measures of dispersion (range, interquartile range and standard deviation) are the most important tools.
 
 \hypertarget{inferential-statistics}{%
 \section{Inferential Statistics}\label{inferential-statistics}}
@@ -145,6 +145,9 @@ Inferential statistical is used to make prediction about a population using info
 \hypertarget{data-types-and-levels-of-measurement}{%
 \chapter{Data Types and Levels of Measurement}\label{data-types-and-levels-of-measurement}}
 
+\hypertarget{types-of-data-and-levels-of-measurement}{%
+\section{Types of Data and Levels of Measurement}\label{types-of-data-and-levels-of-measurement}}
+
 Data can be broadly categorised as \textbf{qualitative} (data relating to qualities or characteristics) or quantitative (numerical data relating to sizes or quantities of things).
 
 We can further categorise \textbf{quantitative} data as being continuous or discrete.
@@ -153,11 +156,96 @@ We can further categorise \textbf{quantitative} data as being continuous or disc
 
 \textbf{Continuous} data can be divided and measured to some number of decimal places (height, weight, speed in miles per hour). A person's height can be any number (provided it lies within the range of possible human heights) and can be reported to any number of decimal places (150cm or 150.1cm or 150.12cm) depending on how accurate the measurement tool is.
 
-\begin{figure}
-\centering
 \includegraphics{data.jpg}
-\caption{alt text}
+There are also different \textbf{levels of measurement}.
+
+The levels of measurement describe how precisely variables are recorded. The different levels of measurement limit which statistics can be used to summarise data and which inferential statistics can be performed. These levels are:
+
+\begin{itemize}
+\tightlist
+\item
+  Nominal
+\item
+  Ordinal
+\item
+  Interval
+\item
+  Ratio
+\end{itemize}
+
+\hypertarget{nominal}{%
+\subsection{Nominal}\label{nominal}}
+
+\textbf{Nominal data} is a type of data that is used to label variables. It can be categorised but not ranked (eye colour and gender for instance). The values grouped into these categories have no meaningful order. It is not possible to form a meaningful hierarchy of gender or eye colour.
+
+\begin{figure}
+
+{\centering \includegraphics{Bookdown_files/figure-latex/chunk-label-1} 
+
+}
+
+\caption{Eye colour is an example of nominal data.}\label{fig:chunk-label}
 \end{figure}
+
+The only measure of central tendency used with nominal data is the mode.
+
+\hypertarget{ordinal}{%
+\subsection{Ordinal}\label{ordinal}}
+
+\textbf{Ordinal data} is another type of \textbf{qualitative data} that groups variables into descriptive categories. The categories used for ordinal data are ordered in some kind of hierarchical scale although the distance between those categories may be uneven or even unknown.
+
+\begin{figure}
+
+{\centering \includegraphics{Bookdown_files/figure-latex/unnamed-chunk-1-1} 
+
+}
+
+\caption{The highest level of educational attainment has a heirarchical scale but the distance between categories is unclear.}\label{fig:unnamed-chunk-1}
+\end{figure}
+
+Ordinal variables often include ratings about opinions that can be categorised (strongly agree, agree, don't know, disagree, strongly disagree).
+
+The descriptive statistics which can be used with ordinal data are the mode and the median.
+
+Ordinal data can also be described with a measure of dispersion, namely, range.
+
+\hypertarget{interval}{%
+\subsection{Interval}\label{interval}}
+
+\textbf{Interval data} is a type of quantitative data that groups variables into categories. Values can be ordered and separated using an equal measure of distance.
+
+An example of interval level data is temperature data recorded in Celsius or Fahrenheit. The values on either scale are ordered and separated using an equal measure of distance (the distances between notches on a thermometer are always equally spaced).
+
+\begin{figure}
+
+{\centering \includegraphics{Bookdown_files/figure-latex/unnamed-chunk-2-1} 
+
+}
+
+\caption{Temperature in Celsius is interval data. The values are ordered and separated by an equal interval. The distance between 0°C and 1°C is the same as the distance between 2°C and 3°C.}\label{fig:unnamed-chunk-2}
+\end{figure}
+
+Mathematical operations can be carried out on this type of data, for instance, subtracting one value from another to find the difference. Interval data lacks a \textbf{true zero}.
+
+True zero indicates a lack of whatever is being measured. The Celsius scale doesn't qualify as having a true zero since the zero point in a thermometer is arbitrary. When the Celsius scale was first created by Anders Celsius 0°C was selected to match the boiling point of water and a value of 100 °C was the freezing point of water. The scale was later reversed. Thermometers measure heat and at 0°C there is still heat, maybe not a great deal of it but heat is still measurable meaning 0°C is not a true zero. The thermodynamic Kelvin Scale has a true zero - where particles have no motion and can become no colder (there is a true absence of heat).
+
+A range of descriptive statistics can be used to describe interval data. The measures of central tendency applicable to interval data are the \textbf{mode, median} and the \textbf{mean}. The measures of dispersion applicable to interval data are the \textbf{range, standard deviation} and the \textbf{variance}.
+
+\hypertarget{ratio}{%
+\subsection{Ratio}\label{ratio}}
+
+\textbf{Ratio data} is a form of quantitative data. It measures variables on a continuous scale with an equal distance between adjacent values (weight, height). Ratio data has a true zero. Ratio data is the most complex of the four data types.
+
+\begin{figure}
+
+{\centering \includegraphics{Bookdown_files/figure-latex/unnamed-chunk-3-1} 
+
+}
+
+\caption{The scatterplot above shows metabolic rate plotted against body weight (kg). These are examples of ratio data.}\label{fig:unnamed-chunk-3}
+\end{figure}
+
+Ratio data can be analysed with descriptive statistics including the \textbf{mode, median} and \textbf{mean}. \textbf{Range, standard deviation, variance} and the \textbf{coefficient of variation} can all be used to describe the dispersion of ratio data.
 
 \hypertarget{applications}{%
 \chapter{Applications}\label{applications}}
