@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Describing Data | Introduction to Statistics</title>
+  <meta name="description" content="This book is designed" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Describing Data | Introduction to Statistics" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This book is designed" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Describing Data | Introduction to Statistics" />
+  
+  <meta name="twitter:description" content="This book is designed" />
+  
+
+<meta name="author" content="Aaron McMurray" />
+
+
+<meta name="date" content="2022-06-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="quiz.html"/>
+<link rel="next" href="methods.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Digital Skills</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction to Statistics</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#what-is-statistics"><i class="fa fa-check"></i><b>1.1</b> What is Statistics?</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#descriptive-statistics"><i class="fa fa-check"></i><b>1.2</b> Descriptive Statistics</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#inferential-statistics"><i class="fa fa-check"></i><b>1.3</b> Inferential Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html"><i class="fa fa-check"></i><b>2</b> Data Types and Levels of Measurement</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#types-of-data"><i class="fa fa-check"></i><b>2.1</b> Types of Data</a></li>
+<li class="chapter" data-level="2.2" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#levels-of-measurement"><i class="fa fa-check"></i><b>2.2</b> Levels of Measurement</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#nominal"><i class="fa fa-check"></i><b>2.2.1</b> Nominal</a></li>
+<li class="chapter" data-level="2.2.2" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#ordinal"><i class="fa fa-check"></i><b>2.2.2</b> Ordinal</a></li>
+<li class="chapter" data-level="2.2.3" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#interval"><i class="fa fa-check"></i><b>2.2.3</b> Interval</a></li>
+<li class="chapter" data-level="2.2.4" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#ratio"><i class="fa fa-check"></i><b>2.2.4</b> Ratio</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="quiz.html"><a href="quiz.html"><i class="fa fa-check"></i><b>3</b> Quiz</a></li>
+<li class="chapter" data-level="4" data-path="describing-data.html"><a href="describing-data.html"><i class="fa fa-check"></i><b>4</b> Describing Data</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="describing-data.html"><a href="describing-data.html#frequency"><i class="fa fa-check"></i><b>4.1</b> Frequency</a></li>
+<li class="chapter" data-level="4.2" data-path="describing-data.html"><a href="describing-data.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>4.2</b> Measures of Central Tendency</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="describing-data.html"><a href="describing-data.html#mean"><i class="fa fa-check"></i><b>4.2.1</b> Mean</a></li>
+<li class="chapter" data-level="4.2.2" data-path="describing-data.html"><a href="describing-data.html#median"><i class="fa fa-check"></i><b>4.2.2</b> Median</a></li>
+<li class="chapter" data-level="4.2.3" data-path="describing-data.html"><a href="describing-data.html#mode"><i class="fa fa-check"></i><b>4.2.3</b> Mode</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="describing-data.html"><a href="describing-data.html#using-excel"><i class="fa fa-check"></i><b>4.3</b> Using Excel</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="describing-data.html"><a href="describing-data.html#example-6"><i class="fa fa-check"></i><b>4.3.1</b> Example</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>5</b> Methods</a></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Statistics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="describing-data" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Describing Data<a href="describing-data.html#describing-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="frequency" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Frequency<a href="describing-data.html#frequency" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The <strong>frequency</strong> of an observation is the number of times it occurs or is recorded.A frequency table, like the one shown below detailing exam grades, is a commonly used method of depicting frequency.</p>
+<table>
+<caption>Frequency Table</caption>
+<thead>
+<tr class="header">
+<th align="right">Grade</th>
+<th align="right">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">A</td>
+<td align="right">15</td>
+</tr>
+<tr class="even">
+<td align="right">B</td>
+<td align="right">20</td>
+</tr>
+<tr class="odd">
+<td align="right">C</td>
+<td align="right">25</td>
+</tr>
+<tr class="even">
+<td align="right">D</td>
+<td align="right">21</td>
+</tr>
+<tr class="odd">
+<td align="right">E</td>
+<td align="right">14</td>
+</tr>
+</tbody>
+</table>
+<p>The total of all frequencies so far in a frequency distribution is the <strong>cumulative frequency</strong>. It is the ‘running total’ of frequencies.</p>
+<table>
+<caption>Cumulative Frequency Table</caption>
+<thead>
+<tr class="header">
+<th align="right">Grade</th>
+<th align="right">Frequency</th>
+<th align="right">Cumulative Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">A</td>
+<td align="right">15</td>
+<td align="right">15</td>
+</tr>
+<tr class="even">
+<td align="right">B</td>
+<td align="right">20</td>
+<td align="right">35</td>
+</tr>
+<tr class="odd">
+<td align="right">C</td>
+<td align="right">25</td>
+<td align="right">60</td>
+</tr>
+<tr class="even">
+<td align="right">D</td>
+<td align="right">21</td>
+<td align="right">81</td>
+</tr>
+<tr class="odd">
+<td align="right">E</td>
+<td align="right">14</td>
+<td align="right">95</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>relative frequency</strong> is the ratio of the category frequency to the total number of outcomes. For grade A, the relative frequency is:</p>
+<p><span class="math display">\[ \frac{15}{15+20+25+21+14}=0.16. \]</span></p>
+<p>The table can be extended to include the relative frequency.</p>
+<table>
+<caption>Relative Frequency Table</caption>
+<thead>
+<tr class="header">
+<th align="right">Grade</th>
+<th align="right">Frequency</th>
+<th align="right">Relative Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">A</td>
+<td align="right">15</td>
+<td align="right">0.16</td>
+</tr>
+<tr class="even">
+<td align="right">B</td>
+<td align="right">20</td>
+<td align="right">0.21</td>
+</tr>
+<tr class="odd">
+<td align="right">C</td>
+<td align="right">25</td>
+<td align="right">0.26</td>
+</tr>
+<tr class="even">
+<td align="right">D</td>
+<td align="right">21</td>
+<td align="right">0.22</td>
+</tr>
+<tr class="odd">
+<td align="right">E</td>
+<td align="right">14</td>
+<td align="right">0.15</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>relative frequency</strong> can be reported as a percentage by multiplying the values by 100%. For grade A, the relative frequency reported as a percentage is: 100% x 0.16 = 16%.</p>
+</div>
+<div id="measures-of-central-tendency" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Measures of Central Tendency<a href="describing-data.html#measures-of-central-tendency" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Measures of central tendency help find the middle, or the average, of a data set.The measures of central tendency are the mean, median and mode.</p>
+<div id="mean" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Mean<a href="describing-data.html#mean" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The mean is the sum of the recorded values divided by the number of values recorded.</p>
+<div id="example" class="section level4 hasAnchor" number="4.2.1.1">
+<h4><span class="header-section-number">4.2.1.1</span> Example<a href="describing-data.html#example" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Find the mean of this list of numbers:</p>
+<p><span class="math display">\[ 2, 3, 3, 4, 20.\]</span>
+<span class="math display">\[ \textrm{Mean} = \frac{\textrm{Sum of recorded values}}{\textrm{Number of values recorded}},\]</span>
+<span class="math display">\[ \textrm{Mean} = \frac{\textrm{2 + 3 + 3 + 4 + 20}}{\textrm{5}},\]</span>
+<span class="math display">\[ \textrm{Mean} = \frac{\textrm{32}}{\textrm{5}},\]</span></p>
+<p><span class="math display">\[ \textrm{Mean} = 6.4.\]</span></p>
+</div>
+</div>
+<div id="median" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Median<a href="describing-data.html#median" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The <strong>median</strong> is the middle number in a sorted, ascending or descending, list of values.</p>
+<p>If there are an odd number of values the median is simply the middle value.</p>
+<p>For an even number of values there will be two values in the center. Those values are summed and divided by two.</p>
+<p>The median is sometimes used as opposed to the mean when there are outliers that might skew the average of the values.</p>
+<div id="example-1" class="section level4 hasAnchor" number="4.2.2.1">
+<h4><span class="header-section-number">4.2.2.1</span> Example<a href="describing-data.html#example-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Find the median of this list of numbers:</p>
+<p><span class="math display">\[ 2, 3, 3, 4, 20.\]</span></p>
+<p>There are 5 values listed in ascending order and the middle value is the third value in the list so the median is 3.</p>
+<p>Note: In the previous example the mean was 6.4. It was skewed by the outlier (20). The median remains closer to what might be considered to be the middle of the data set.</p>
+</div>
+<div id="example-2" class="section level4 hasAnchor" number="4.2.2.2">
+<h4><span class="header-section-number">4.2.2.2</span> Example<a href="describing-data.html#example-2" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Find the median of this list of numbers:</p>
+<p><span class="math display">\[ 3, 5, 4, 4, 2, 8, 7, 1.\]</span></p>
+<p>The list should be sorted:</p>
+<p><span class="math display">\[ 1, 2, 3, 4, 4, 5, 7, 8. \]</span></p>
+<p>There are an even number of values so there will be two middle values. The middle values are 4 and 4. Sum them and divide by two to get the median: 4.</p>
+</div>
+</div>
+<div id="mode" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Mode<a href="describing-data.html#mode" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The mode of a set of data values is the value that appears most often. It is the value that is most likely to be sampled. There can be multiple modes or no modes.</p>
+<div id="example-3" class="section level4 hasAnchor" number="4.2.3.1">
+<h4><span class="header-section-number">4.2.3.1</span> Example<a href="describing-data.html#example-3" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Find the mode of this list of numbers:</p>
+<p><span class="math display">\[ 1, 2, 2, 2, 3, 3, 4.\]</span></p>
+<p>A simple way to find the mode is to make a frequency table with the unique values on the left hand side and their frequency on the right hand side. We can tally up how many times each number occurs. Whichever has the greatest frequency is our mode.</p>
+<table>
+<caption>Frequency Table</caption>
+<thead>
+<tr class="header">
+<th align="right">Value</th>
+<th align="right">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<p>The mode is 2.</p>
+</div>
+<div id="example-4" class="section level4 hasAnchor" number="4.2.3.2">
+<h4><span class="header-section-number">4.2.3.2</span> Example<a href="describing-data.html#example-4" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Find the mode of this list of numbers:</p>
+<p><span class="math display">\[ 7, 3, 5, 3, 4, 3, 5, 6, 8, 5.\]</span></p>
+<table>
+<caption>Frequency Table</caption>
+<thead>
+<tr class="header">
+<th align="right">Value</th>
+<th align="right">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<p>This is <strong>bimodal</strong>, it has two modes, 3 and 5.</p>
+</div>
+<div id="example-5" class="section level4 hasAnchor" number="4.2.3.3">
+<h4><span class="header-section-number">4.2.3.3</span> Example<a href="describing-data.html#example-5" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Find the mode of this list of numbers:</p>
+<p><span class="math display">\[ 1, 2, 3, 4, 5, 6.\]</span></p>
+<table>
+<caption>Frequency Table</caption>
+<thead>
+<tr class="header">
+<th align="right">Value</th>
+<th align="right">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<p>Every value is unique and occurs only once so this data has no mode.</p>
+</div>
+</div>
+</div>
+<div id="using-excel" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Using Excel<a href="describing-data.html#using-excel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>It is useful to calculate descriptive statistics by hand for understanding but for larger data sets it is not always possible to arrange data and perform calculations by hand.</p>
+<p>Excel has a number of functions designed to perform descriptive statistics.</p>
+<p><strong>Frequency</strong></p>
+<p>=FREQUENCY(start:end,bins_array)</p>
+<p>The frequency() function will return a frequency table describing your data. It takes two arguments, the first being the array of values and the second being an array describing the upper boundary of the bins used.</p>
+<p><strong>Average</strong></p>
+<p>=AVERAGE(start:end)</p>
+<p>The mean is calculated using the average() function. There are several other functions relating to means: geomean(), harmean() and trimmean(). Take care not to use these as they are quite different from calculating the mean that has been described here.</p>
+<p><strong>Median</strong></p>
+<p>=MEDIAN(start:end)</p>
+<p>The median is calculated using the median() function.</p>
+<p><strong>Mode</strong></p>
+<p>=MODE.SNGL(start:end)</p>
+<p>=MODE.MULT(start:end)</p>
+<p>There are several functions for calculating the mode: mode(), mode.sngl() and mode.mult().
+mode() was used in Excel 2007 and may still appear as an option in some versions of Excel.
+mode.sngl() will return one mode and mode.mult() will return multiple modes (if there are multiple modes).</p>
+<p>Neither mode() nor mode.sngl() will warn you if there are multiple modes so mode.mult() is usually the safest option.</p>
+<div id="example-6" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Example<a href="describing-data.html#example-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In the example below, the variable name is in cell A1 and the values are in cells A2 to A18. To calculate the average, type “=AVERAGE(A2:A18)” in another cell. It doesn’t matter which cell but in this example A19 has been used. Press enter to return the value.</p>
+<div class="figure">
+<img src="Excelimage.png" alt="" />
+<p class="caption">Screen shot showing excel spreadsheet with a list of values and the average being calculated using the average() function.</p>
+</div>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="quiz.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Bookdown.pdf", "Bookdown.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -88,16 +88,25 @@
 <li class="chapter" data-level="2.2.2" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#ordinal"><i class="fa fa-check"></i><b>2.2.2</b> Ordinal</a></li>
 <li class="chapter" data-level="2.2.3" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#interval"><i class="fa fa-check"></i><b>2.2.3</b> Interval</a></li>
 <li class="chapter" data-level="2.2.4" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#ratio"><i class="fa fa-check"></i><b>2.2.4</b> Ratio</a></li>
-<li class="chapter" data-level="2.2.5" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#quiz"><i class="fa fa-check"></i><b>2.2.5</b> Quiz</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>3</b> Applications</a>
+<li class="chapter" data-level="3" data-path="quiz.html"><a href="quiz.html"><i class="fa fa-check"></i><b>3</b> Quiz</a></li>
+<li class="chapter" data-level="4" data-path="describing-data.html"><a href="describing-data.html"><i class="fa fa-check"></i><b>4</b> Describing Data</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>3.1</b> Example one</a></li>
-<li class="chapter" data-level="3.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>3.2</b> Example two</a></li>
+<li class="chapter" data-level="4.1" data-path="describing-data.html"><a href="describing-data.html#frequency"><i class="fa fa-check"></i><b>4.1</b> Frequency</a></li>
+<li class="chapter" data-level="4.2" data-path="describing-data.html"><a href="describing-data.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>4.2</b> Measures of Central Tendency</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="describing-data.html"><a href="describing-data.html#mean"><i class="fa fa-check"></i><b>4.2.1</b> Mean</a></li>
+<li class="chapter" data-level="4.2.2" data-path="describing-data.html"><a href="describing-data.html#median"><i class="fa fa-check"></i><b>4.2.2</b> Median</a></li>
+<li class="chapter" data-level="4.2.3" data-path="describing-data.html"><a href="describing-data.html#mode"><i class="fa fa-check"></i><b>4.2.3</b> Mode</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
-<li class="chapter" data-level="5" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>5</b> Final Words</a></li>
+<li class="chapter" data-level="4.3" data-path="describing-data.html"><a href="describing-data.html#using-excel"><i class="fa fa-check"></i><b>4.3</b> Using Excel</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="describing-data.html"><a href="describing-data.html#example-6"><i class="fa fa-check"></i><b>4.3.1</b> Example</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>5</b> Methods</a></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -195,6 +204,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
