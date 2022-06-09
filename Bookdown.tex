@@ -250,10 +250,10 @@ A range of descriptive statistics can be used to describe interval data. The mea
 
 Ratio data can be analysed with descriptive statistics including the \textbf{mode, median} and \textbf{mean}. \textbf{Range, standard deviation, variance} and the \textbf{coefficient of variation} can all be used to describe the dispersion of ratio data.
 
-\hypertarget{quiz}{%
-\chapter{Quiz}\label{quiz}}
+\hypertarget{levels-of-measurement-quiz}{%
+\chapter{Levels of Measurement Quiz}\label{levels-of-measurement-quiz}}
 
-Take the \href{https://view.genial.ly/62867083cd8fd700184ca06f/presentation-quiz}{Levels of Measurement Quiz} below to test how well you understand the levels of measurement.
+If you would like to try and test your knowledge of the various levels of measurement outlined in this chapter you can take the \href{https://view.genial.ly/62867083cd8fd700184ca06f/presentation-quiz}{Levels of Measurement Quiz} below. This quiz isn't scored or recorded anywhere.
 
 \begin{center}\includegraphics[width=1\linewidth]{quizpic} \end{center}
 
@@ -401,7 +401,7 @@ Find the mode of this list of numbers:
 A simple way to find the mode is to make a frequency table with the unique values on the left hand side and their frequency on the right hand side. We can tally up how many times each number occurs. Whichever has the greatest frequency is our mode.
 
 \begin{longtable}[]{@{}rr@{}}
-\caption{\label{tab:table5}Frequency Table}\tabularnewline
+\caption{\label{tab:table5}}\tabularnewline
 \toprule
 Value & Frequency \\
 \midrule
@@ -427,7 +427,7 @@ Find the mode of this list of numbers:
 \[ 7, 3, 5, 3, 4, 3, 5, 6, 8, 5.\]
 
 \begin{longtable}[]{@{}rr@{}}
-\caption{\label{tab:table6}Frequency Table}\tabularnewline
+\caption{\label{tab:table6}}\tabularnewline
 \toprule
 Value & Frequency \\
 \midrule
@@ -455,7 +455,7 @@ Find the mode of this list of numbers:
 \[ 1, 2, 3, 4, 5, 6.\]
 
 \begin{longtable}[]{@{}rr@{}}
-\caption{\label{tab:table7}Frequency Table}\tabularnewline
+\caption{\label{tab:table7}}\tabularnewline
 \toprule
 Value & Frequency \\
 \midrule
@@ -476,7 +476,7 @@ Value & Frequency \\
 Every value is unique and occurs only once so this data has no mode.
 
 \hypertarget{using-excel}{%
-\section{Using Excel}\label{using-excel}}
+\subsection{Using Excel}\label{using-excel}}
 
 It is useful to calculate descriptive statistics by hand for understanding but for larger data sets it is not always possible to arrange data and perform calculations by hand.
 
@@ -513,7 +513,7 @@ mode.sngl() will return one mode and mode.mult() will return multiple modes (if 
 Neither mode() nor mode.sngl() will warn you if there are multiple modes so mode.mult() is usually the safest option.
 
 \hypertarget{example-6}{%
-\subsection{Example}\label{example-6}}
+\subsubsection{Example}\label{example-6}}
 
 In the example below, the variable name is in cell A1 and the values are in cells A2 to A18. To calculate the average, type ``=AVERAGE(A2:A18)'' in another cell. It doesn't matter which cell but in this example A19 has been used. Press enter to return the value.
 
@@ -593,9 +593,59 @@ The algorithm for the \textbf{inclusive method} is detailed below:
   Calculate the difference.
 \end{enumerate}
 
-Click on the slides below to see some examples.
+\hypertarget{example-8}{%
+\subsubsection{Example}\label{example-8}}
 
-\begin{center}\includegraphics[width=1\linewidth]{quizpic} \end{center}
+\textbf{Even}
+
+Find the interquartile range for the list of numbers below:
+
+\[6, 7, 8, 8, 7, 6, 9, 5, 10, 4. \]
+There are an even number of values. Arrange them in numeric order:
+
+\[ 4, 5, 6, 6, 7, 7, 8, 8, 9, 10.\]
+Split the values about their center into two sub sets of data.
+
+\[ (4, 5, 6, 6, 7), (7, 8, 8, 9, 10). \]
+Find the medians of each of these sub sets. The first subset has a median of 6 while the second has a median of 8.
+
+The interquartile range is:
+
+\[ \textrm{IQR} = 8 - 6 = 2.\]
+Note: To calculate the interquartile range the smaller median value is always subtracted from the larger.
+
+\textbf{Odd (Exclusive Method)}
+
+Find the interquartile range for the list of numbers below:
+
+\[2, 3, 2, 4, 3, 5, 4, 4, 2.\]
+Arrange the values in numeric order:
+
+\[2, 2, 2, 3, 3, 4, 4, 4, 5. \]
+Remove the median (3) and split the data as before:
+
+\[ (2, 2, 2, 3), (4, 4, 4, 5).\]
+The interquartile range is:
+
+\[ \textrm{IQR}=\textrm{Median of sub set 2}- \textrm{Median of sub set 1},\]
+\[ \textrm{IQR}=\frac{4+4}{2} - \frac{2+2}{2}=\frac{8}{2} - \frac{4}{2} = 4 - 2= 2.\]
+\textbf{Odd (Inclusive Method)}
+
+Find the interquartile range of the list of numbers below:
+
+\[ 2, 3, 2, 4, 3, 5, 4, 4, 2.\]
+Sort in numeric order as before:
+
+\[2, 2, 2, 3, 3, 4, 4, 4, 5.\]
+
+Split the data as before but append each subset of data with the median (at the end and start of each subset respectively):
+
+\[(2, 2, 2, 3, 3),(3, 4, 4, 4, 5).\]
+Find the medians of each of the subsets and calculate the interquartile range. The median of the first subset is 2 and the median of the second subset is 4.
+
+\[ \textrm{IQR} = 4 - 2 = 2 \]
+
+The interquartile range is a useful measure of variability for skewed distributions. It can show where most values lie and how clustered they are. It is useful for datasets with outliers as it is based on the middle half of the distribution and less influenced by extreme values. Exclusive calculations result in a wider interquartile range than inclusive calculations.
 
 \hypertarget{variance-and-standard-deviation}{%
 \subsection{Variance and Standard Deviation}\label{variance-and-standard-deviation}}
@@ -617,12 +667,114 @@ Taking square root of the variance corrects for the fact that all the difference
 
 The plot below shows three distributions of values, each with a mean of 30 but with different standard deviations. In statistics there is a rule called the empirical rule that states that 68\%, 95\%, and 99.7\% of the values lie within one, two, and three standard deviations of the mean, respectively.
 
-\begin{center}\includegraphics[width=1\linewidth]{quizpic} \end{center}
+To make sense of this through an example, the plot below shows some simulated data for test scores. Three groups given the same test could achieve the same average score but with greater or lesser spreads of scores.
 
-\hypertarget{methods}{%
-\chapter{Methods}\label{methods}}
+\begin{figure}
 
-We describe our methods in this chapter.
+{\centering \includegraphics{Bookdown_files/figure-latex/unnamed-chunk-5-1} 
+
+}
+
+\caption{Plot showing several distributions of simulated test score data the same means but differing standard deviations.}\label{fig:unnamed-chunk-5}
+\end{figure}
+
+For a mean of 30 and standard deviation of 5: 68\% of the values will lie within the range 25-35.
+
+For a mean of 30 and standard deviation of 10: 68\% of the values will lie within the range 20-40.
+
+For a mean of 30 and standard deviation of 15: 68\% of the values will lie within the range 15-45.
+
+This is particularly clear with a mean of 30 and a standard deviation of 5 as most of the values are tightly packed within the range 25-35.
+
+\hypertarget{example-9}{%
+\subsubsection{Example}\label{example-9}}
+
+Calculate the sample estimate of variance and sample estimate of standard deviation for the following list of values:
+
+\[ 2, 4, 4, 5, 6.\]
+
+Start by finding the mean of the values in the dataset:
+
+\[ \textrm{Mean}= \frac{2 + 4 + 4 + 5 + 6}{5}=4.2.\]
+Find the difference between each recorded value and the mean.
+
+\begin{longtable}[]{@{}rr@{}}
+\caption{\label{tab:table8}}\tabularnewline
+\toprule
+Value & Difference \\
+\midrule
+\endfirsthead
+\toprule
+Value & Difference \\
+\midrule
+\endhead
+2 & 2 - 4.2 = -2.2 \\
+4 & 4 - 4.2 = -0.2 \\
+4 & 4 - 4.2 = -0.2 \\
+5 & 5 - 4.2 = 0.8 \\
+6 & 6 - 4.2 = 1.8 \\
+\bottomrule
+\end{longtable}
+
+Square the differences.
+
+\begin{longtable}[]{@{}rrr@{}}
+\caption{\label{tab:table9}}\tabularnewline
+\toprule
+Value & Difference & Squared Difference \\
+\midrule
+\endfirsthead
+\toprule
+Value & Difference & Squared Difference \\
+\midrule
+\endhead
+2 & -2.2 & 4.84 \\
+4 & -0.2 & 0.04 \\
+4 & -0.2 & 0.04 \\
+5 & 0.8 & 0.64 \\
+6 & 1.8 & 3.24 \\
+\bottomrule
+\end{longtable}
+
+Sum the squared differences.
+
+\[\textrm{Sum} = 4.84 + 0.04 + 0.04 + 0.64 + 3.24 = 8.8. \]
+
+Divide the sum by the number of values recorded minus one to get the sample estimate of variance.
+
+\[ \textrm{Variance}_{S} = \frac{8.8}{5-1} = 2.2.\]
+
+To get the sample estimate of the standard deviation take the square root of this value:
+
+\[ \textrm{Standard Deviation}_S = \sqrt{ \textrm{Variance}_{S}} = \sqrt{2.2} = 1.48.\]
+
+\hypertarget{using-excel-1}{%
+\subsection{Using Excel}\label{using-excel-1}}
+
+Calculating the variance and standard deviation by hand is a long process and due to the number of steps involved it is prone to error. Excel, SPSS, Python and R all have functions which allow users to calculate these descriptive statives and their use is highly recommended over calculating the statistics by hand.
+
+\textbf{Range}
+
+=MAX(start:end)-MIN(start:end)
+
+\textbf{Standard Deviation}
+
+=STDEV.S(start:end)
+=STDEV.P(stard:end)
+
+stdev.s() estimates standard deviation based on a sample. stdev.p() calculates standard deviation based on the entire population given as arguments.
+
+\textbf{Variance}
+
+=VAR.S(start:end)
+=VAR.P(start:end)
+
+var.s() estimates variance based on a sample. var.p() calculates variance based on the entire population given as arguments.
+
+\hypertarget{descriptive-statistics-quiz}{%
+\chapter{Descriptive Statistics Quiz}\label{descriptive-statistics-quiz}}
+
+If you would like to try and test your knowledge of the various levels of measurement outlined in this chapter you can take the \href{https://view.genial.ly/628a683cb8b7d200114d12a0/presentation-quiz-on-measures}{Measures of Central Tendency and Measures of Dispersion Quiz} below. This quiz isn't scored or recorded anywhere.
 
 \hypertarget{final-words}{%
 \chapter{Final Words}\label{final-words}}

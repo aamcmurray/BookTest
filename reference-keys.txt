@@ -2,6 +2,7 @@ fig:chunk-label
 fig:unnamed-chunk-1
 fig:unnamed-chunk-2
 fig:unnamed-chunk-3
+fig:unnamed-chunk-5
 intro
 what-is-statistics
 descriptive-statistics
@@ -13,7 +14,7 @@ nominal
 ordinal
 interval
 ratio
-quiz
+levels-of-measurement-quiz
 describing-data
 frequency
 measures-of-central-tendency
@@ -32,6 +33,9 @@ measures-of-dispersion
 range
 example-7
 interquartile-range
+example-8
 variance-and-standard-deviation
-methods
+example-9
+using-excel-1
+descriptive-statistics-quiz
 final-words
