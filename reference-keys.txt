@@ -7,7 +7,8 @@ what-is-statistics
 descriptive-statistics
 inferential-statistics
 data-types-and-levels-of-measurement
-types-of-data-and-levels-of-measurement
+types-of-data
+levels-of-measurement
 nominal
 ordinal
 interval
