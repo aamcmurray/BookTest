@@ -28,5 +28,10 @@ example-4
 example-5
 using-excel
 example-6
+measures-of-dispersion
+range
+example-7
+interquartile-range
+variance-and-standard-deviation
 methods
 final-words

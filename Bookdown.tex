@@ -523,6 +523,102 @@ In the example below, the variable name is in cell A1 and the values are in cell
 \caption{Screen shot showing excel spreadsheet with a list of values and the average being calculated using the average() function.}
 \end{figure}
 
+\hypertarget{measures-of-dispersion}{%
+\section{Measures of Dispersion}\label{measures-of-dispersion}}
+
+\textbf{Dispersion} (or variability) describes how far apart data points lie from each other and the center of a distribution. The \textbf{range, interquartile range, variance} and \textbf{standard deviation} are all measures of dispersion and they describe how far apart data points lie from one another and the center of a distribution.
+
+\hypertarget{range}{%
+\subsection{Range}\label{range}}
+
+The range is the difference between the highest and lowest values and is calculated by subtracting the minimum value from the maximum value.
+
+\hypertarget{example-7}{%
+\subsubsection{Example}\label{example-7}}
+
+Calculate the range for the following set of numbers:
+
+\[ 23, 42, 75, 19, 74. \]
+First, arrange the values in ascending order:
+
+\[ 19, 23, 42, 74, 75. \]
+The maximum value is 75 and the minimum is 19.
+
+\[ \textrm{Range}= 75 - 19, \]
+\[ \textrm{Range} = 56.\]
+
+\hypertarget{interquartile-range}{%
+\subsection{Interquartile Range}\label{interquartile-range}}
+
+The \textbf{interquartile range} (IQR) describes the spread of the middle half of a distribution. How the interquartile range is calculated depends on whether there are an even or an odd number of values in a dataset.
+
+For an even number of values the dataset in split half. The medians for the two new subsets of data are calculated. The positive difference of those medians is the interquartile range.
+For an odd number of values either the inclusive or the exclusive method of finding the interquartile range must be used.
+
+\begin{figure}
+\centering
+\includegraphics{iqrtree.jpg}
+\caption{Tree diagram showing process of deciding how to calculate the IQR}
+\end{figure}
+
+The algorithm for the \textbf{exclusive method} is detailed below:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Arrange the data in numeric order.
+\item
+  Remove the median and split the data about its center.
+\item
+  Find the medians of the two newly appended subsets of data.
+\item
+  Calculate the difference.
+\end{enumerate}
+
+The algorithm for the \textbf{inclusive method} is detailed below:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Arrange the data in numeric order.
+\item
+  Remove the median and split the data about its center.
+\item
+  Append the two new subsets of data with the median.
+\item
+  Find the medians of the two newly appended subsets of data.
+\item
+  Calculate the difference.
+\end{enumerate}
+
+Click on the slides below to see some examples.
+
+\begin{center}\includegraphics[width=1\linewidth]{quizpic} \end{center}
+
+\hypertarget{variance-and-standard-deviation}{%
+\subsection{Variance and Standard Deviation}\label{variance-and-standard-deviation}}
+
+The standard deviation describes to what extent a set of numbers lie apart (their spread). It is the square root of variance which is also an indicator of the spread of values.
+
+\textbf{Variance}
+
+To calculate the variance:
+1. Start by finding the mean of the values in the dataset.
+2. Find the difference between each recorded value and the mean.
+3. Square those differences.
+4. Sum the squared differences.
+5. Divide the sum by the number of values recorded for population variance or the sum of the number of values minus 1 for sample variance.
+
+\textbf{Standard Deviation}
+
+Taking square root of the variance corrects for the fact that all the differences were squared, resulting in the standard deviation.
+
+The plot below shows three distributions of values, each with a mean of 30 but with different standard deviations. In statistics there is a rule called the empirical rule that states that 68\%, 95\%, and 99.7\% of the values lie within one, two, and three standard deviations of the mean, respectively.
+
+\begin{center}\includegraphics[width=1\linewidth]{quizpic} \end{center}
+
 \hypertarget{methods}{%
 \chapter{Methods}\label{methods}}
 

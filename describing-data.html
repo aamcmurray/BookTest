@@ -104,6 +104,12 @@
 <ul>
 <li class="chapter" data-level="4.3.1" data-path="describing-data.html"><a href="describing-data.html#example-6"><i class="fa fa-check"></i><b>4.3.1</b> Example</a></li>
 </ul></li>
+<li class="chapter" data-level="4.4" data-path="describing-data.html"><a href="describing-data.html#measures-of-dispersion"><i class="fa fa-check"></i><b>4.4</b> Measures of Dispersion</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="describing-data.html"><a href="describing-data.html#range"><i class="fa fa-check"></i><b>4.4.1</b> Range</a></li>
+<li class="chapter" data-level="4.4.2" data-path="describing-data.html"><a href="describing-data.html#interquartile-range"><i class="fa fa-check"></i><b>4.4.2</b> Interquartile Range</a></li>
+<li class="chapter" data-level="4.4.3" data-path="describing-data.html"><a href="describing-data.html#variance-and-standard-deviation"><i class="fa fa-check"></i><b>4.4.3</b> Variance and Standard Deviation</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>5</b> Methods</a></li>
 <li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
@@ -430,6 +436,68 @@ mode.sngl() will return one mode and mode.mult() will return multiple modes (if 
 <img src="Excelimage.png" alt="" />
 <p class="caption">Screen shot showing excel spreadsheet with a list of values and the average being calculated using the average() function.</p>
 </div>
+</div>
+</div>
+<div id="measures-of-dispersion" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Measures of Dispersion<a href="describing-data.html#measures-of-dispersion" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Dispersion</strong> (or variability) describes how far apart data points lie from each other and the center of a distribution. The <strong>range, interquartile range, variance</strong> and <strong>standard deviation</strong> are all measures of dispersion and they describe how far apart data points lie from one another and the center of a distribution.</p>
+<div id="range" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> Range<a href="describing-data.html#range" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The range is the difference between the highest and lowest values and is calculated by subtracting the minimum value from the maximum value.</p>
+<div id="example-7" class="section level4 hasAnchor" number="4.4.1.1">
+<h4><span class="header-section-number">4.4.1.1</span> Example<a href="describing-data.html#example-7" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Calculate the range for the following set of numbers:</p>
+<p><span class="math display">\[ 23, 42, 75, 19, 74. \]</span>
+First, arrange the values in ascending order:</p>
+<p><span class="math display">\[ 19, 23, 42, 74, 75. \]</span>
+The maximum value is 75 and the minimum is 19.</p>
+<p><span class="math display">\[ \textrm{Range}= 75 - 19, \]</span>
+<span class="math display">\[ \textrm{Range} = 56.\]</span></p>
+</div>
+</div>
+<div id="interquartile-range" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Interquartile Range<a href="describing-data.html#interquartile-range" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The <strong>interquartile range</strong> (IQR) describes the spread of the middle half of a distribution. How the interquartile range is calculated depends on whether there are an even or an odd number of values in a dataset.</p>
+<p>For an even number of values the dataset in split half. The medians for the two new subsets of data are calculated. The positive difference of those medians is the interquartile range.
+For an odd number of values either the inclusive or the exclusive method of finding the interquartile range must be used.</p>
+<div class="figure">
+<img src="iqrtree.jpg" alt="" />
+<p class="caption">Tree diagram showing process of deciding how to calculate the IQR</p>
+</div>
+<p>The algorithm for the <strong>exclusive method</strong> is detailed below:</p>
+<ol style="list-style-type: decimal">
+<li>Arrange the data in numeric order.</li>
+<li>Remove the median and split the data about its center.</li>
+<li>Find the medians of the two newly appended subsets of data.</li>
+<li>Calculate the difference.</li>
+</ol>
+<p>The algorithm for the <strong>inclusive method</strong> is detailed below:</p>
+<ol style="list-style-type: decimal">
+<li>Arrange the data in numeric order.</li>
+<li>Remove the median and split the data about its center.</li>
+<li>Append the two new subsets of data with the median.</li>
+<li>Find the medians of the two newly appended subsets of data.</li>
+<li>Calculate the difference.</li>
+</ol>
+<p>Click on the slides below to see some examples.</p>
+<iframe src="https://view.genial.ly/62878f72be9a5800115c1a31/presentation-interquartile-range" width="100%" height="400px" data-external="1">
+</iframe>
+</div>
+<div id="variance-and-standard-deviation" class="section level3 hasAnchor" number="4.4.3">
+<h3><span class="header-section-number">4.4.3</span> Variance and Standard Deviation<a href="describing-data.html#variance-and-standard-deviation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The standard deviation describes to what extent a set of numbers lie apart (their spread). It is the square root of variance which is also an indicator of the spread of values.</p>
+<p><strong>Variance</strong></p>
+<p>To calculate the variance:
+1. Start by finding the mean of the values in the dataset.
+2. Find the difference between each recorded value and the mean.
+3. Square those differences.
+4. Sum the squared differences.
+5. Divide the sum by the number of values recorded for population variance or the sum of the number of values minus 1 for sample variance.</p>
+<p><strong>Standard Deviation</strong></p>
+<p>Taking square root of the variance corrects for the fact that all the differences were squared, resulting in the standard deviation.</p>
+<p>The plot below shows three distributions of values, each with a mean of 30 but with different standard deviations. In statistics there is a rule called the empirical rule that states that 68%, 95%, and 99.7% of the values lie within one, two, and three standard deviations of the mean, respectively.</p>
+<iframe src="https://public.flourish.studio/visualisation/10066098/" width="100%" height="400px" data-external="1">
+</iframe>
 
 </div>
 </div>
