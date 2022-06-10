@@ -77,7 +77,7 @@
 
 \title{Introduction to Statistics}
 \author{Aaron McMurray}
-\date{2022-06-09}
+\date{2022-06-10}
 
 \begin{document}
 \maketitle
@@ -89,6 +89,8 @@
 \hypertarget{Introduction-to-Statistics}{%
 \chapter*{Introduction to Statistics}\label{Introduction-to-Statistics}}
 \addcontentsline{toc}{chapter}{Introduction to Statistics}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 This resource has been produced to complement the course delivered on statistics. It has been written using a combination of \textbf{R}, \textbf{LaTeX} and \textbf{R Studio} and published through \textbf{GitHub} by converting the content to \textbf{HTML}. Publishing this way supports the embedding of images, video content, html content (iframes), live code and mathematical formula. As the resource is hosted on GitHub it is available anywhere, any time and on any device facilitating mobile working. In addition, users with a GitHub account can `fork' the repository to look at the code used to generate this resource and build and improve on it in their own way facilitating greater collaboration and transparency. Alternatively they can suggest changes to the code which can then be approved facilitating greater collaboration on projects like this.
 
@@ -131,6 +133,8 @@ This resource is intended to provide an introduction to the basics of statistics
 \hypertarget{intro}{%
 \chapter{Introduction}\label{intro}}
 
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 \hypertarget{what-is-statistics}{%
 \section{What is Statistics?}\label{what-is-statistics}}
 
@@ -148,6 +152,8 @@ Inferential statistical is used to make prediction about a population using info
 
 \hypertarget{data-types-and-levels-of-measurement}{%
 \chapter{Data Types and Levels of Measurement}\label{data-types-and-levels-of-measurement}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \hypertarget{types-of-data}{%
 \section{Types of Data}\label{types-of-data}}
@@ -249,7 +255,7 @@ A range of descriptive statistics can be used to describe interval data. The mea
 
 }
 
-\caption{The scatterplot above shows metabolic rate plotted against body weight (kg). These are examples of ratio data.}\label{fig:unnamed-chunk-3}
+\caption{The scatterplot above shows metabolic rate plotted against body weight (kg). These are examples of ratio data. This data comes from the Introduction to Statistics with R (ISwR) library for R.}\label{fig:unnamed-chunk-3}
 \end{figure}
 
 Ratio data can be analysed with descriptive statistics including the \textbf{mode, median} and \textbf{mean}. \textbf{Range, standard deviation, variance} and the \textbf{coefficient of variation} can all be used to describe the dispersion of ratio data.
@@ -257,10 +263,14 @@ Ratio data can be analysed with descriptive statistics including the \textbf{mod
 \hypertarget{levels-of-measurement-quiz}{%
 \chapter{Levels of Measurement Quiz}\label{levels-of-measurement-quiz}}
 
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 If you would like to try and test your knowledge of the various levels of measurement outlined in this chapter you can take the \href{https://view.genial.ly/62867083cd8fd700184ca06f/presentation-quiz}{Levels of Measurement Quiz} below. This quiz isn't scored or recorded anywhere.
 
 \hypertarget{describing-data}{%
 \chapter{Describing Data}\label{describing-data}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \hypertarget{frequency}{%
 \section{Frequency}\label{frequency}}
@@ -776,12 +786,265 @@ var.s() estimates variance based on a sample. var.p() calculates variance based 
 \hypertarget{descriptive-statistics-quiz}{%
 \chapter{Descriptive Statistics Quiz}\label{descriptive-statistics-quiz}}
 
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
 If you would like to try and test your knowledge of the various levels of measurement outlined in this chapter you can take the \href{https://view.genial.ly/628a683cb8b7d200114d12a0/presentation-quiz-on-measures}{Measures of Central Tendency and Measures of Dispersion Quiz} below. This quiz isn't scored or recorded anywhere.
 
-\hypertarget{final-words}{%
-\chapter{Final Words}\label{final-words}}
+\hypertarget{comparing-data}{%
+\chapter{Comparing Data}\label{comparing-data}}
 
-We have finished a nice book.
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{percentage-change}{%
+\section{Percentage Change}\label{percentage-change}}
+
+Percentage change is about comparing old to new values. The formula for calculating a percentage change is given below:
+
+\[ \textrm{Percentage Change} = 100\% \frac{\textrm{New Value} - \textrm{Old Value}}{\textrm{Old Value}}\]
+\#\#\# Example
+
+What is the percentage change in the claimant count in these three wards between 2018 and 2019?
+
+\begin{longtable}[]{@{}rrrr@{}}
+\caption{\label{tab:table10}}\tabularnewline
+\toprule
+Ward & 2018 & 2019 & Percentage Change (\%) \\
+\midrule
+\endfirsthead
+\toprule
+Ward & 2018 & 2019 & Percentage Change (\%) \\
+\midrule
+\endhead
+Upper Braniel & 50 & 36 & -28 \\
+Donaghmore & 50 & 50 & 0 \\
+Tobermore & 50 & 58 & 16 \\
+\bottomrule
+\end{longtable}
+
+Use the formula above to calculate the percentage change for Upper Braniel:
+
+\[ \textrm{Percentage Change} = 100\% \frac{\textrm{New Value} - \textrm{Old Value}}{\textrm{Old Value}}\]
+
+\[ \textrm{Percentage Change} = 100\% \frac{36 - 50}{50} = 100\% \frac{-14}{50} = -28\%\]
+A negative percentage change indicates a percentage decrease while a positive percentage change indicates a percentage increase.
+
+\hypertarget{percentage-point-change}{%
+\section{Percentage Point Change}\label{percentage-point-change}}
+
+Note that subtracting one percentage from another gives the percentage point change rather than the percentage change.
+
+\hypertarget{example-10}{%
+\subsection{Example}\label{example-10}}
+
+What is the percentage point change in the claimant count in these wards between 2018 and 2019?
+
+\begin{longtable}[]{@{}rrrr@{}}
+\caption{\label{tab:table11}}\tabularnewline
+\toprule
+Ward & 2018 & 2019 & Percentage Change (\%) \\
+\midrule
+\endfirsthead
+\toprule
+Ward & 2018 & 2019 & Percentage Change (\%) \\
+\midrule
+\endhead
+Upper Braniel & 3.5 & 2.5 & -1 \\
+Donaghmore & 3.4 & 3.3 & -0.1 \\
+Tobermore & 3.3 & 3.8 & 0.5 \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{rates}{%
+\section{Rates}\label{rates}}
+
+Rates are common in demography, e.g., births per 1,000 persons, deaths by cause per 100,000 persons.
+
+They allow for comparisons between areas with different population sizes.
+
+\hypertarget{example-11}{%
+\subsection{Example}\label{example-11}}
+
+In 2012 there were 212 domestic burglaries in Antrim. In the same year, there were 362 Craigavon. At a glance it might appear that burglary is more common in Antrim however the burglary rates per 10,000 persons are very similar (39 and 38 respectively).
+
+\hypertarget{data-visualisation}{%
+\chapter{Data Visualisation}\label{data-visualisation}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{data-visualisation-1}{%
+\section{Data Visualisation}\label{data-visualisation-1}}
+
+Data visualisation is formally defined as the encoding of data using visual cues such as variations in the size, shape and colour of geometric objects (points, lines, bars). The encoding is generally informed by the relationships within the data.
+
+In the bar chart example below the frequencies of different eye colours have been mapped to the heights of the bars.
+
+\begin{figure}
+
+{\centering \includegraphics{Bookdown_files/figure-latex/unnamed-chunk-5-1} 
+
+}
+
+\caption{The frequency of each observation has been mapped to the height of the bars in the visual.}\label{fig:unnamed-chunk-5}
+\end{figure}
+
+\hypertarget{visual-cues}{%
+\section{Visual Cues}\label{visual-cues}}
+
+Whether data is visualised using points, lines, bars or something else entirely is largely determined by the relationships within the data. Some of the visual cues and relationships used to inform data visualisation are shown below.
+
+The illustration above shows some of the visual cues used to encode data. Magnitudes are typically mapped to sizes of objects. Colour is often used to represent quantities or highlight data. Shapes can be used to represent qualitative data.
+
+\hypertarget{relationships-in-data}{%
+\section{Relationships in Data}\label{relationships-in-data}}
+
+The \href{https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/\#section-9}{Government Statistical Service} has produced guidance on the relationships in data and how they inform chart choices. The guidance can be useful and some of the key points are summarised below.
+
+\hypertarget{frequency-distributions}{%
+\subsection{Frequency Distributions}\label{frequency-distributions}}
+
+A histogram or bar chart may be used to show category frequencies. Population by age band for instance could be visualised using a histogram or bar chart in most cases. A boxplot can also be useful in visualising additional statistics such as the mean, median, quartiles, outliers and range.
+
+\begin{figure}
+
+{\centering \includegraphics{Bookdown_files/figure-latex/unnamed-chunk-6-1} 
+
+}
+
+\caption{Simulated weight data illustrating the use of a histogram.}\label{fig:unnamed-chunk-6}
+\end{figure}
+
+\hypertarget{time-series}{%
+\subsection{Time Series}\label{time-series}}
+
+A line chart is often used to demonstrate the trend of a single variable over some time period. Inflation over a ten year time frame for instance can be visualised with a line chart.
+
+\begin{figure}
+
+{\centering \includegraphics{Bookdown_files/figure-latex/unnamed-chunk-7-1} 
+
+}
+
+\caption{Simulated temperature data.}\label{fig:unnamed-chunk-7}
+\end{figure}
+
+\hypertarget{rankings}{%
+\subsection{Rankings}\label{rankings}}
+
+Data that is ranked usually consists of categories presented in ascending or descending order. A bar chart may be used to show the comparisons. Sometimes, change in ranking over time is shown through slope charts but usually only when comparing a start date and an end date without consideration for the time period in between.
+
+\hypertarget{deviation}{%
+\subsection{Deviation}\label{deviation}}
+
+Deviation from a reference value can be shown through bar charts.
+
+\hypertarget{correlation}{%
+\subsection{Correlation}\label{correlation}}
+
+Correlation is usually visualised using scatterplots. Scatterplots are a good way to show comparisons between observations of two variables to determine if there is some correlation.
+
+\begin{figure}
+
+{\centering \includegraphics{Bookdown_files/figure-latex/unnamed-chunk-8-1} 
+
+}
+
+\caption{The scatterplot above shows metabolic rate plotted against body weight (kg). This is an example of correlation. This data comes from the Introduction to Statistics with R (ISwR) library for R.}\label{fig:unnamed-chunk-8}
+\end{figure}
+
+\hypertarget{magnitude}{%
+\subsection{Magnitude}\label{magnitude}}
+
+Comparing differences in the magnitudes of values often relies on bar charts. Comparing the total number of sales by branch for instance.
+
+\hypertarget{spatial}{%
+\subsection{Spatial}\label{spatial}}
+
+Cartograms and heat mapping are common ways to show differences between geographical regions.
+
+\hypertarget{why-visualise-data}{%
+\section{Why Visualise Data?}\label{why-visualise-data}}
+
+In general, people are better at recognising differences in shapes, colours and sizes than they are at identifying the number of times a value occurs or the differences between values in a large excel spread sheet. For this reason data visualisation can be used to find errors in data quickly. It's much easier to recognise an anomalous value on a bar chart than in an Excel spread sheet. Data visualisation can also be used to see patterns that are difficult to determine by looking at raw data.
+Data visualisation can also be used to:
+
+\begin{itemize}
+\tightlist
+\item
+  Answer research questions.
+\item
+  Discover new research questions.
+\item
+  Explain complex relationships in data visually.
+\item
+  Aid in decision making.
+\item
+  Engage and inform.
+\end{itemize}
+
+\hypertarget{data-visualisation-tools}{%
+\section{Data Visualisation Tools}\label{data-visualisation-tools}}
+
+New programming languages and software products have made data analysis and visualisation vastly more accessible. In addition, many of these facilitate dynamic or interactable visualisations. There is an ever expanding ecosystem of data visualisation tools (many of which have been used in this document) including:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Excel} and \textbf{SPSS} produce high quality visualisations and while dynamic visuals are not their focus they are often the simplest and most time efficient option for visualising data.
+\item
+  \textbf{Genially} is an online tool for creating interactive and animated content that is particularly effective for presentations.
+\item
+  \textbf{Tableau} and Power BI are visual analytics platforms which are well suited to the development of dashboards to visualise complex interconnected data sets.
+\item
+  \textbf{Flourish} can be used to produce interactive visuals although its functionality is more limited than Power BI or Tableau.
+\item
+  \textbf{Javascript} facilitates data visualisation through its D3 library. D3 has a steep learning curve as it requires JavaScript skills to use it effectively however it offers a greater degree of customisation and a broader spectrum of visualisation options as a result.
+\item
+  \textbf{Python} libraries such as Matplotlib, Seaborn and Plotly can also be used to visualise data. The learning curve is steep as it requires programming skills to use Python effectively however Python offers customisation options that are not available in Excel or Power BI.
+\item
+  \textbf{R} is another useful tool with libraries such as ggplot2 which can be used to visualise data. This is the programming language used to develop this resource and many of the visualisations throughout.
+\end{itemize}
+
+\hypertarget{dynamic-visualisations-dashboards}{%
+\section{Dynamic Visualisations (Dashboards)}\label{dynamic-visualisations-dashboards}}
+
+There are a number of considerations when developing dynamic data visualisations for a parliamentary audience as not all data visualisations need to be dynamic.
+Considering the audience, objectives and what visuals will be most appropriate to communicate data can help in determining whether a dynamic or interactive visualisation is needed.
+
+Dashboard style visualisations are best suited to data reporting where there is a need to repeatedly produce the same visuals or reports either daily, monthly, quarterly or annually.
+
+Power BI is well designed for these types of visualisation requirements as it offers automation options enabling data sets to be refreshed at regular time intervals.
+Automation can be as simple as setting a refresh time in the Power BI dashboard and manually updating the excel file it stores in memory or it can be more complex and involve using programming languages to make API calls and perform automated calculations.
+
+Producing dynamic visualisations is often considerably more time expensive than producing static visuals and time constraints should be considered before developing a dashboard visualisation.
+
+\hypertarget{best-practice}{%
+\subsection{Best Practice}\label{best-practice}}
+
+GSS have produced \href{https://gss.civilservice.gov.uk/policy-store/top-tips-for-designing-dashboards/}{guidance on designing dashboards} that covers most aspects of dashboard design. The content below summarises some of the key points in this guidance.
+
+\textbf{Consider Audience and User Needs}
+
+Consider the user needs and whether a dashboard is really needed. Often the simplest solution (bar charts drawn in Excel or SPSS) is the best. Consider the visuals used and whether they're the best way to communicate the data. Sometimes tables, text or annotations are better.
+
+\textbf{Guidance}
+
+Providing guidance is important as many users will not be familiar with interactive dashboards. Guidance can be provided in documentation, blog text or it can be provided through tool tips and information pages in the dashboard itself.
+
+\textbf{Streamline Content}
+
+When adding any new data or visuals it is important to ask whether it adds value. Try to group related content and streamlining the content to guide the users through the data.
+
+\textbf{Automate }
+
+Automation can be simple or complex, it can be achieved by setting a refresh date in a Power BI dashboard. It can also involve the use of programming languages to make API calls, web scrape data and perform calculations. Automation typically results in less manual updating and a reduced chance of error and can make the management of the product less resource intensive.
+
+\textbf{Consider Design Principles}
+
+Give your dashboard a header and dedicated areas for visuals. Consider other dashboards you have seen in the past and draw inspiration from web design. Most websites have a navigation bar at the top, lists with filters along the left or right hand side and content in the center of the page. Think about things like symmetry, flow and a consistent style or layout. Use white space where possible and try to avoid cluttered visualisations.
+
+\textbf{Ensure Accessibility}
+
+Ensure your product is accessible by checking the colour contrast ratios of text and including alt text in your visualisations where possible. Ensure the fonts are large enough to read and avoid using multiple fonts.
 
   \bibliography{book.bib,packages.bib}
 
