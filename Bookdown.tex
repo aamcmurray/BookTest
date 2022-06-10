@@ -77,7 +77,7 @@
 
 \title{Digital Skills Primer}
 \author{Aaron McMurray}
-\date{2022-06-10}
+\date{2022-06-11}
 
 \begin{document}
 \maketitle
@@ -108,7 +108,7 @@ The aim would not be to produce a prescriptive document detailing how users must
 
 As the resource is hosted on GitHub it is available anywhere, any time and on any device (try opening it in a browser on your phone) facilitating \textbf{mobile working}. In addition, users with a GitHub account can `fork' the repository to look at the code used to generate this resource and build and improve on it in their own way or suggest changes facilitating greater \textbf{collaboration} and \textbf{transparency}.
 
-GitHub does not need to be used to produce documentation, it can also host stand alone scripts written in any programming language which other users can fork or suggest changes to. The UK Government has several GitHub accounts, the most prominent being the \href{https://github.com/alphagov}{Government Digital Service GitHub} which is used to store and collaborate on code used to build platforms, products and services.
+GitHub does not need to be used to produce documentation, it can also host stand alone scripts written in any programming language which other users can fork or suggest changes to. The UK Government has several GitHub accounts, the most prominent being the \href{https://github.com/alphagov}{Government Digital Service GitHub} which is used to store and collaborate on code used to build platforms, products and services. Repositories hold all sorts of useful scripts. For instance, this introduction to \href{https://github.com/alphagov/govuk-data-science-workshop/blob/main/notebooks/2021_09_explore_govuk_structural_network.ipynb}{visualising GOV.UK as a network} or this repository built to produce \href{https://github.com/ukgovdatascience/eesectors}{reproducible economics reporting}. As a final example from my personal GitHub: a \href{https://github.com/aamcmurray/python-projects/blob/master/Examples/Curve\%20Fitting.ipynb}{curve fitting script}.
 
 The Repository hosting this resource can be found at \href{https://github.com/aamcmurray/BookTest}{github.com/aamcmurray/BookTest}. Other users with a GitHub account can suggest changes which can be approved or denied by the repository owner.
 
@@ -699,11 +699,21 @@ The standard deviation describes to what extent a set of numbers lie apart (thei
 \textbf{Variance}
 
 To calculate the variance:
-1. Start by finding the mean of the values in the dataset.
-2. Find the difference between each recorded value and the mean.
-3. Square those differences.
-4. Sum the squared differences.
-5. Divide the sum by the number of values recorded for population variance or the sum of the number of values minus 1 for sample variance.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Start by finding the mean of the values in the dataset.
+\item
+  Find the difference between each recorded value and the mean.
+\item
+  Square those differences.
+\item
+  Sum the squared differences.
+\item
+  Divide the sum by the number of values recorded for population variance or the sum of the number of values minus 1 for sample variance.
+\end{enumerate}
 
 \textbf{Standard Deviation}
 
