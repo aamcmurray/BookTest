@@ -18,7 +18,6 @@ nominal
 ordinal
 interval
 ratio
-levels-of-measurement-quiz
 describing-data
 frequency
 measures-of-central-tendency
@@ -41,13 +40,8 @@ example-8
 variance-and-standard-deviation
 example-9
 using-excel-1
+levels-of-measurement-quiz
 descriptive-statistics-quiz
-comparing-data
-percentage-change
-percentage-point-change
-example-10
-rates
-example-11
 data-visualisation
 data-visualisation-1
 visual-cues
@@ -63,3 +57,9 @@ why-visualise-data
 data-visualisation-tools
 dynamic-visualisations-dashboards
 best-practice
+comparing-data
+percentage-change
+percentage-point-change
+example-10
+rates
+example-11

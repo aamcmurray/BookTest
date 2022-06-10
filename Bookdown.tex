@@ -86,15 +86,39 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\hypertarget{A-Note-About-the-Format-of-this-Resource}{%
+\chapter*{A Note About the Format of this Resource}\label{A-Note-About-the-Format-of-this-Resource}}
+\addcontentsline{toc}{chapter}{A Note About the Format of this Resource}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{What is this?}
+
+This resource has been produced using a combination of \textbf{R}, \textbf{LaTeX} and \textbf{R Studio} and published through \textbf{GitHub} by converting the content to \textbf{HTML}. Publishing this way supports the embedding of images, video content, html content (iframes), live code and mathematical formula and makes sharing the content much easier.
+
+Currently, this resource details statistics to serve as an example of the type of dynamic content that can be created by hosting and publishing through GitHub, however this resource could be developed into a \textbf{Digital Skills Primer} resource covering \textbf{Microsoft Power BI, Python, R, Flourish, Genially}. This Primer would serve as a singular point of reference for digital tools currently being used for research and data visualisation. This could be useful for current staff working with these tools and new staff, temporary staff and students who may not have received training on these tools. There is a wealth of documentation being developed for accessibility and style but no singular point of reference for the tools which are to be made accessible and stylised!
+
+The aim would not be to produce a prescriptive document detailing how users must use these products but instead provide a resource with information, tutorials, summaries and answers to frequently asked questions that would take users from zero knowledge to proficiency with the digital tools being used in research. Now is also an ideal time to develop something like this and from various conversations there is significant interest in something like this being developed.
+
+\textbf{Why host on GitHub?}
+
+As the resource is hosted on GitHub it is available anywhere, any time and on any device facilitating mobile working. In addition, users with a GitHub account can `fork' the repository to look at the code used to generate this resource and build and improve on it in their own way facilitating greater collaboration and transparency. Alternatively they can suggest changes to the code, which can then be reviewed and approved, facilitating greater collaboration on projects like this.
+
+GitHub does not need to be used to produce documentation, it can also host stand alone scripts written in any programming language which other users can fork or suggest changes to. The UK Government has several GitHub accounts, the most prominent being the \href{https://github.com/alphagov}{Government Digital Service GitHub} which is used to store and collaborate on code used to build platforms, products and services that help deliver ``a simple, joined-up and personalised experience of government to everyone''.
+
+The Repository hosting this resource can be found at \href{https://github.com/aamcmurray/BookTest}{github.com/aamcmurray/BookTest}. Other users with a GitHub account can suggest changes which can be approved or denied by the repository owner.
+
+A repository for our department could be used to store code developed by staff (for instance, scripts I developed to make API calls, automate data cleaning and calculation of moving averages and perform web scraping). This means that the code would be accessible to everyone.
+
+\textbf{\emph{Sounds Complicated\ldots{}}}
+
+To develop this further all that is needed is to sign an e-mail up for a free GitHub account. There is no need for complicated software installations or purchasing new software.
+
 \hypertarget{Introduction-to-Statistics}{%
 \chapter*{Introduction to Statistics}\label{Introduction-to-Statistics}}
 \addcontentsline{toc}{chapter}{Introduction to Statistics}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-This resource has been produced to complement the course delivered on statistics. It has been written using a combination of \textbf{R}, \textbf{LaTeX} and \textbf{R Studio} and published through \textbf{GitHub} by converting the content to \textbf{HTML}. Publishing this way supports the embedding of images, video content, html content (iframes), live code and mathematical formula. As the resource is hosted on GitHub it is available anywhere, any time and on any device facilitating mobile working. In addition, users with a GitHub account can `fork' the repository to look at the code used to generate this resource and build and improve on it in their own way facilitating greater collaboration and transparency. Alternatively they can suggest changes to the code which can then be approved facilitating greater collaboration on projects like this.
-
-GitHub does not need to be used to produce documentation, it can also host code which other users can fork or suggest changes to. The UK Government has several GitHub accounts, the most prominent being the \href{https://github.com/alphagov}{Government Digital Service GitHub} which is used to store and collaborate on code used to build platforms, products and services that help deliver ``a simple, joined-up and personalised experience of government to everyone''.
 
 \textbf{Overview}
 
@@ -259,13 +283,6 @@ A range of descriptive statistics can be used to describe interval data. The mea
 \end{figure}
 
 Ratio data can be analysed with descriptive statistics including the \textbf{mode, median} and \textbf{mean}. \textbf{Range, standard deviation, variance} and the \textbf{coefficient of variation} can all be used to describe the dispersion of ratio data.
-
-\hypertarget{levels-of-measurement-quiz}{%
-\chapter{Levels of Measurement Quiz}\label{levels-of-measurement-quiz}}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-If you would like to try and test your knowledge of the various levels of measurement outlined in this chapter you can take the \href{https://view.genial.ly/62867083cd8fd700184ca06f/presentation-quiz}{Levels of Measurement Quiz} below. This quiz isn't scored or recorded anywhere.
 
 \hypertarget{describing-data}{%
 \chapter{Describing Data}\label{describing-data}}
@@ -783,88 +800,19 @@ stdev.s() estimates standard deviation based on a sample. stdev.p() calculates s
 
 var.s() estimates variance based on a sample. var.p() calculates variance based on the entire population given as arguments.
 
+\hypertarget{levels-of-measurement-quiz}{%
+\chapter{Levels of Measurement Quiz}\label{levels-of-measurement-quiz}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+If you would like to try and test your knowledge of the various levels of measurement outlined in this chapter you can take the \href{https://view.genial.ly/62867083cd8fd700184ca06f/presentation-quiz}{Levels of Measurement Quiz} below. This quiz isn't scored or recorded anywhere.
+
 \hypertarget{descriptive-statistics-quiz}{%
 \chapter{Descriptive Statistics Quiz}\label{descriptive-statistics-quiz}}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 If you would like to try and test your knowledge of the various levels of measurement outlined in this chapter you can take the \href{https://view.genial.ly/628a683cb8b7d200114d12a0/presentation-quiz-on-measures}{Measures of Central Tendency and Measures of Dispersion Quiz} below. This quiz isn't scored or recorded anywhere.
-
-\hypertarget{comparing-data}{%
-\chapter{Comparing Data}\label{comparing-data}}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{percentage-change}{%
-\section{Percentage Change}\label{percentage-change}}
-
-Percentage change is about comparing old to new values. The formula for calculating a percentage change is given below:
-
-\[ \textrm{Percentage Change} = 100\% \frac{\textrm{New Value} - \textrm{Old Value}}{\textrm{Old Value}}\]
-\#\#\# Example
-
-What is the percentage change in the claimant count in these three wards between 2018 and 2019?
-
-\begin{longtable}[]{@{}rrrr@{}}
-\caption{\label{tab:table10}}\tabularnewline
-\toprule
-Ward & 2018 & 2019 & Percentage Change (\%) \\
-\midrule
-\endfirsthead
-\toprule
-Ward & 2018 & 2019 & Percentage Change (\%) \\
-\midrule
-\endhead
-Upper Braniel & 50 & 36 & -28 \\
-Donaghmore & 50 & 50 & 0 \\
-Tobermore & 50 & 58 & 16 \\
-\bottomrule
-\end{longtable}
-
-Use the formula above to calculate the percentage change for Upper Braniel:
-
-\[ \textrm{Percentage Change} = 100\% \frac{\textrm{New Value} - \textrm{Old Value}}{\textrm{Old Value}}\]
-
-\[ \textrm{Percentage Change} = 100\% \frac{36 - 50}{50} = 100\% \frac{-14}{50} = -28\%\]
-A negative percentage change indicates a percentage decrease while a positive percentage change indicates a percentage increase.
-
-\hypertarget{percentage-point-change}{%
-\section{Percentage Point Change}\label{percentage-point-change}}
-
-Note that subtracting one percentage from another gives the percentage point change rather than the percentage change.
-
-\hypertarget{example-10}{%
-\subsection{Example}\label{example-10}}
-
-What is the percentage point change in the claimant count in these wards between 2018 and 2019?
-
-\begin{longtable}[]{@{}rrrr@{}}
-\caption{\label{tab:table11}}\tabularnewline
-\toprule
-Ward & 2018 & 2019 & Percentage Change (\%) \\
-\midrule
-\endfirsthead
-\toprule
-Ward & 2018 & 2019 & Percentage Change (\%) \\
-\midrule
-\endhead
-Upper Braniel & 3.5 & 2.5 & -1 \\
-Donaghmore & 3.4 & 3.3 & -0.1 \\
-Tobermore & 3.3 & 3.8 & 0.5 \\
-\bottomrule
-\end{longtable}
-
-\hypertarget{rates}{%
-\section{Rates}\label{rates}}
-
-Rates are common in demography, e.g., births per 1,000 persons, deaths by cause per 100,000 persons.
-
-They allow for comparisons between areas with different population sizes.
-
-\hypertarget{example-11}{%
-\subsection{Example}\label{example-11}}
-
-In 2012 there were 212 domestic burglaries in Antrim. In the same year, there were 362 Craigavon. At a glance it might appear that burglary is more common in Antrim however the burglary rates per 10,000 persons are very similar (39 and 38 respectively).
 
 \hypertarget{data-visualisation}{%
 \chapter{Data Visualisation}\label{data-visualisation}}
@@ -1045,6 +993,82 @@ Give your dashboard a header and dedicated areas for visuals. Consider other das
 \textbf{Ensure Accessibility}
 
 Ensure your product is accessible by checking the colour contrast ratios of text and including alt text in your visualisations where possible. Ensure the fonts are large enough to read and avoid using multiple fonts.
+
+\hypertarget{comparing-data}{%
+\chapter{Comparing Data}\label{comparing-data}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{percentage-change}{%
+\section{Percentage Change}\label{percentage-change}}
+
+Percentage change is about comparing old to new values. The formula for calculating a percentage change is given below:
+
+\[ \textrm{Percentage Change} = 100\% \frac{\textrm{New Value} - \textrm{Old Value}}{\textrm{Old Value}}\]
+\#\#\# Example
+
+What is the percentage change in the claimant count in these three wards between 2018 and 2019?
+
+\begin{longtable}[]{@{}rrrr@{}}
+\caption{\label{tab:table10}}\tabularnewline
+\toprule
+Ward & 2018 & 2019 & Percentage Change (\%) \\
+\midrule
+\endfirsthead
+\toprule
+Ward & 2018 & 2019 & Percentage Change (\%) \\
+\midrule
+\endhead
+Upper Braniel & 50 & 36 & -28 \\
+Donaghmore & 50 & 50 & 0 \\
+Tobermore & 50 & 58 & 16 \\
+\bottomrule
+\end{longtable}
+
+Use the formula above to calculate the percentage change for Upper Braniel:
+
+\[ \textrm{Percentage Change} = 100\% \frac{\textrm{New Value} - \textrm{Old Value}}{\textrm{Old Value}}\]
+
+\[ \textrm{Percentage Change} = 100\% \frac{36 - 50}{50} = 100\% \frac{-14}{50} = -28\%\]
+A negative percentage change indicates a percentage decrease while a positive percentage change indicates a percentage increase.
+
+\hypertarget{percentage-point-change}{%
+\section{Percentage Point Change}\label{percentage-point-change}}
+
+Note that subtracting one percentage from another gives the percentage point change rather than the percentage change.
+
+\hypertarget{example-10}{%
+\subsection{Example}\label{example-10}}
+
+What is the percentage point change in the claimant count in these wards between 2018 and 2019?
+
+\begin{longtable}[]{@{}rrrr@{}}
+\caption{\label{tab:table11}}\tabularnewline
+\toprule
+Ward & 2018 & 2019 & Percentage Change (\%) \\
+\midrule
+\endfirsthead
+\toprule
+Ward & 2018 & 2019 & Percentage Change (\%) \\
+\midrule
+\endhead
+Upper Braniel & 3.5 & 2.5 & -1 \\
+Donaghmore & 3.4 & 3.3 & -0.1 \\
+Tobermore & 3.3 & 3.8 & 0.5 \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{rates}{%
+\section{Rates}\label{rates}}
+
+Rates are common in demography, e.g., births per 1,000 persons, deaths by cause per 100,000 persons.
+
+They allow for comparisons between areas with different population sizes.
+
+\hypertarget{example-11}{%
+\subsection{Example}\label{example-11}}
+
+In 2012 there were 212 domestic burglaries in Antrim. In the same year, there were 362 Craigavon. At a glance it might appear that burglary is more common in Antrim however the burglary rates per 10,000 persons are very similar (39 and 38 respectively).
 
   \bibliography{book.bib,packages.bib}
 
