@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 8 Power BI | Digital Skills Primer</title>
+  <meta name="description" content="This book is designed to provide readers with a brief introduction to digital tools used in research." />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 8 Power BI | Digital Skills Primer" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This book is designed to provide readers with a brief introduction to digital tools used in research." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 8 Power BI | Digital Skills Primer" />
+  
+  <meta name="twitter:description" content="This book is designed to provide readers with a brief introduction to digital tools used in research." />
+  
+
+
+
+<meta name="date" content="2022-06-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="data-visualisation.html"/>
+<link rel="next" href="python.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Digital Skills Primer</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>A Note About this Resource</a></li>
+<li class="chapter" data-level="" data-path="Digital-Skills-Primer.html"><a href="Digital-Skills-Primer.html"><i class="fa fa-check"></i>Digital Skills Primer</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#what-is-statistics"><i class="fa fa-check"></i><b>1.1</b> What is Statistics?</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#descriptive-statistics"><i class="fa fa-check"></i><b>1.2</b> Descriptive Statistics</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#inferential-statistics"><i class="fa fa-check"></i><b>1.3</b> Inferential Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html"><i class="fa fa-check"></i><b>2</b> Data Types and Levels of Measurement</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#types-of-data"><i class="fa fa-check"></i><b>2.1</b> Types of Data</a></li>
+<li class="chapter" data-level="2.2" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#levels-of-measurement"><i class="fa fa-check"></i><b>2.2</b> Levels of Measurement</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#nominal"><i class="fa fa-check"></i><b>2.2.1</b> Nominal</a></li>
+<li class="chapter" data-level="2.2.2" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#ordinal"><i class="fa fa-check"></i><b>2.2.2</b> Ordinal</a></li>
+<li class="chapter" data-level="2.2.3" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#interval"><i class="fa fa-check"></i><b>2.2.3</b> Interval</a></li>
+<li class="chapter" data-level="2.2.4" data-path="data-types-and-levels-of-measurement.html"><a href="data-types-and-levels-of-measurement.html#ratio"><i class="fa fa-check"></i><b>2.2.4</b> Ratio</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="levels-of-measurement-quiz.html"><a href="levels-of-measurement-quiz.html"><i class="fa fa-check"></i><b>3</b> Levels of Measurement Quiz</a></li>
+<li class="chapter" data-level="4" data-path="describing-data.html"><a href="describing-data.html"><i class="fa fa-check"></i><b>4</b> Describing Data</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="describing-data.html"><a href="describing-data.html#frequency"><i class="fa fa-check"></i><b>4.1</b> Frequency</a></li>
+<li class="chapter" data-level="4.2" data-path="describing-data.html"><a href="describing-data.html#measures-of-central-tendency"><i class="fa fa-check"></i><b>4.2</b> Measures of Central Tendency</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="describing-data.html"><a href="describing-data.html#mean"><i class="fa fa-check"></i><b>4.2.1</b> Mean</a></li>
+<li class="chapter" data-level="4.2.2" data-path="describing-data.html"><a href="describing-data.html#median"><i class="fa fa-check"></i><b>4.2.2</b> Median</a></li>
+<li class="chapter" data-level="4.2.3" data-path="describing-data.html"><a href="describing-data.html#mode"><i class="fa fa-check"></i><b>4.2.3</b> Mode</a></li>
+<li class="chapter" data-level="4.2.4" data-path="describing-data.html"><a href="describing-data.html#using-excel"><i class="fa fa-check"></i><b>4.2.4</b> Using Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="describing-data.html"><a href="describing-data.html#measures-of-dispersion"><i class="fa fa-check"></i><b>4.3</b> Measures of Dispersion</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="describing-data.html"><a href="describing-data.html#range"><i class="fa fa-check"></i><b>4.3.1</b> Range</a></li>
+<li class="chapter" data-level="4.3.2" data-path="describing-data.html"><a href="describing-data.html#interquartile-range"><i class="fa fa-check"></i><b>4.3.2</b> Interquartile Range</a></li>
+<li class="chapter" data-level="4.3.3" data-path="describing-data.html"><a href="describing-data.html#variance-and-standard-deviation"><i class="fa fa-check"></i><b>4.3.3</b> Variance and Standard Deviation</a></li>
+<li class="chapter" data-level="4.3.4" data-path="describing-data.html"><a href="describing-data.html#using-excel-1"><i class="fa fa-check"></i><b>4.3.4</b> Using Excel</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="descriptive-statistics-quiz.html"><a href="descriptive-statistics-quiz.html"><i class="fa fa-check"></i><b>5</b> Descriptive Statistics Quiz</a></li>
+<li class="chapter" data-level="6" data-path="comparing-data.html"><a href="comparing-data.html"><i class="fa fa-check"></i><b>6</b> Comparing Data</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="comparing-data.html"><a href="comparing-data.html#percentage-change"><i class="fa fa-check"></i><b>6.1</b> Percentage Change</a></li>
+<li class="chapter" data-level="6.2" data-path="comparing-data.html"><a href="comparing-data.html#percentage-point-change"><i class="fa fa-check"></i><b>6.2</b> Percentage Point Change</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="comparing-data.html"><a href="comparing-data.html#example-10"><i class="fa fa-check"></i><b>6.2.1</b> Example</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="comparing-data.html"><a href="comparing-data.html#rates"><i class="fa fa-check"></i><b>6.3</b> Rates</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="comparing-data.html"><a href="comparing-data.html#example-11"><i class="fa fa-check"></i><b>6.3.1</b> Example</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="data-visualisation.html"><a href="data-visualisation.html"><i class="fa fa-check"></i><b>7</b> Data Visualisation</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="data-visualisation.html"><a href="data-visualisation.html#data-visualisation-1"><i class="fa fa-check"></i><b>7.1</b> Data Visualisation</a></li>
+<li class="chapter" data-level="7.2" data-path="data-visualisation.html"><a href="data-visualisation.html#visual-cues"><i class="fa fa-check"></i><b>7.2</b> Visual Cues</a></li>
+<li class="chapter" data-level="7.3" data-path="data-visualisation.html"><a href="data-visualisation.html#relationships-in-data"><i class="fa fa-check"></i><b>7.3</b> Relationships in Data</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="data-visualisation.html"><a href="data-visualisation.html#frequency-distributions"><i class="fa fa-check"></i><b>7.3.1</b> Frequency Distributions</a></li>
+<li class="chapter" data-level="7.3.2" data-path="data-visualisation.html"><a href="data-visualisation.html#time-series"><i class="fa fa-check"></i><b>7.3.2</b> Time Series</a></li>
+<li class="chapter" data-level="7.3.3" data-path="data-visualisation.html"><a href="data-visualisation.html#rankings"><i class="fa fa-check"></i><b>7.3.3</b> Rankings</a></li>
+<li class="chapter" data-level="7.3.4" data-path="data-visualisation.html"><a href="data-visualisation.html#deviation"><i class="fa fa-check"></i><b>7.3.4</b> Deviation</a></li>
+<li class="chapter" data-level="7.3.5" data-path="data-visualisation.html"><a href="data-visualisation.html#correlation"><i class="fa fa-check"></i><b>7.3.5</b> Correlation</a></li>
+<li class="chapter" data-level="7.3.6" data-path="data-visualisation.html"><a href="data-visualisation.html#magnitude"><i class="fa fa-check"></i><b>7.3.6</b> Magnitude</a></li>
+<li class="chapter" data-level="7.3.7" data-path="data-visualisation.html"><a href="data-visualisation.html#spatial"><i class="fa fa-check"></i><b>7.3.7</b> Spatial</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="data-visualisation.html"><a href="data-visualisation.html#why-visualise-data"><i class="fa fa-check"></i><b>7.4</b> Why Visualise Data?</a></li>
+<li class="chapter" data-level="7.5" data-path="data-visualisation.html"><a href="data-visualisation.html#data-visualisation-tools"><i class="fa fa-check"></i><b>7.5</b> Data Visualisation Tools</a></li>
+<li class="chapter" data-level="7.6" data-path="data-visualisation.html"><a href="data-visualisation.html#dynamic-visualisations-dashboards"><i class="fa fa-check"></i><b>7.6</b> Dynamic Visualisations (Dashboards)</a>
+<ul>
+<li class="chapter" data-level="7.6.1" data-path="data-visualisation.html"><a href="data-visualisation.html#best-practice"><i class="fa fa-check"></i><b>7.6.1</b> Best Practice</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="power-bi.html"><a href="power-bi.html"><i class="fa fa-check"></i><b>8</b> Power BI</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="power-bi.html"><a href="power-bi.html#introduction"><i class="fa fa-check"></i><b>8.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="power-bi.html"><a href="power-bi.html#getting-started"><i class="fa fa-check"></i><b>8.1.1</b> Getting Started</a></li>
+<li class="chapter" data-level="8.1.2" data-path="power-bi.html"><a href="power-bi.html#excel-as-a-data-source"><i class="fa fa-check"></i><b>8.1.2</b> Excel as a Data Source</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="power-bi.html"><a href="power-bi.html#data-transformation-basics"><i class="fa fa-check"></i><b>8.2</b> Data Transformation Basics</a></li>
+<li class="chapter" data-level="8.3" data-path="power-bi.html"><a href="power-bi.html#visualising-data"><i class="fa fa-check"></i><b>8.3</b> Visualising Data</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="power-bi.html"><a href="power-bi.html#creating-a-line-chart"><i class="fa fa-check"></i><b>8.3.1</b> Creating a Line-Chart</a></li>
+<li class="chapter" data-level="8.3.2" data-path="power-bi.html"><a href="power-bi.html#the-slicer-visual"><i class="fa fa-check"></i><b>8.3.2</b> The Slicer Visual</a></li>
+<li class="chapter" data-level="8.3.3" data-path="power-bi.html"><a href="power-bi.html#the-format-area"><i class="fa fa-check"></i><b>8.3.3</b> The Format Area</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="power-bi.html"><a href="power-bi.html#adding-a-new-page"><i class="fa fa-check"></i><b>8.4</b> Adding a New Page</a></li>
+<li class="chapter" data-level="8.5" data-path="power-bi.html"><a href="power-bi.html#navigation"><i class="fa fa-check"></i><b>8.5</b> Navigation</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="power-bi.html"><a href="power-bi.html#arrows"><i class="fa fa-check"></i><b>8.5.1</b> Arrows</a></li>
+<li class="chapter" data-level="8.5.2" data-path="power-bi.html"><a href="power-bi.html#buttons"><i class="fa fa-check"></i><b>8.5.2</b> Buttons</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="power-bi.html"><a href="power-bi.html#population-data"><i class="fa fa-check"></i><b>8.6</b> Population Data</a></li>
+<li class="chapter" data-level="8.7" data-path="power-bi.html"><a href="power-bi.html#additional-resources"><i class="fa fa-check"></i><b>8.7</b> Additional Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="python.html"><a href="python.html"><i class="fa fa-check"></i><b>9</b> Python</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="python.html"><a href="python.html#introduction-1"><i class="fa fa-check"></i><b>9.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="python.html"><a href="python.html#variables"><i class="fa fa-check"></i><b>9.1.1</b> Variables</a></li>
+<li class="chapter" data-level="9.1.2" data-path="python.html"><a href="python.html#functions"><i class="fa fa-check"></i><b>9.1.2</b> Functions</a></li>
+<li class="chapter" data-level="9.1.3" data-path="python.html"><a href="python.html#data-structures"><i class="fa fa-check"></i><b>9.1.3</b> Data Structures</a></li>
+<li class="chapter" data-level="9.1.4" data-path="python.html"><a href="python.html#exceptions-try-and-except"><i class="fa fa-check"></i><b>9.1.4</b> Exceptions, Try and Except</a></li>
+<li class="chapter" data-level="9.1.5" data-path="python.html"><a href="python.html#loops-and-iterating"><i class="fa fa-check"></i><b>9.1.5</b> Loops and Iterating</a></li>
+<li class="chapter" data-level="9.1.6" data-path="python.html"><a href="python.html#built-in-functions"><i class="fa fa-check"></i><b>9.1.6</b> Built in Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="python.html"><a href="python.html#managing-data"><i class="fa fa-check"></i><b>9.2</b> Managing Data</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="python.html"><a href="python.html#dataframes"><i class="fa fa-check"></i><b>9.2.1</b> Dataframes</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="python.html"><a href="python.html#visualisations"><i class="fa fa-check"></i><b>9.3</b> Visualisations</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="python.html"><a href="python.html#matplotlib"><i class="fa fa-check"></i><b>9.3.1</b> Matplotlib</a></li>
+<li class="chapter" data-level="9.3.2" data-path="python.html"><a href="python.html#seaborn"><i class="fa fa-check"></i><b>9.3.2</b> Seaborn</a></li>
+<li class="chapter" data-level="9.3.3" data-path="python.html"><a href="python.html#bokeh"><i class="fa fa-check"></i><b>9.3.3</b> Bokeh</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="python.html"><a href="python.html#using-python"><i class="fa fa-check"></i><b>9.4</b> Using Python</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="python.html"><a href="python.html#apis"><i class="fa fa-check"></i><b>9.4.1</b> APIs</a></li>
+<li class="chapter" data-level="9.4.2" data-path="python.html"><a href="python.html#web-scraping"><i class="fa fa-check"></i><b>9.4.2</b> Web Scraping</a></li>
+<li class="chapter" data-level="9.4.3" data-path="python.html"><a href="python.html#automation"><i class="fa fa-check"></i><b>9.4.3</b> Automation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="r.html"><a href="r.html"><i class="fa fa-check"></i><b>10</b> R</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Digital Skills Primer</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="power-bi" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Chapter 8</span> Power BI<a href="power-bi.html#power-bi" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introduction" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Introduction<a href="power-bi.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Power BI is part of the Microsoft Power Platform which includes other packages such as Power Automate. Power BI is split into several components: Power BI Desktop, Service, Gateway, Report Server, Premium, Visuals Marketplace and Mobile Apps. The primary focus of Power BI is business intelligence but Power BI can be used for more than standard reporting of data with line charts and bar charts. It can also be used in conjunction with Python and R to create complex custom visuals or it can be used to create and train <a href="https://docs.microsoft.com/en-us/power-bi/connect-data/service-tutorial-build-machine-learning-model">machine learning models</a>. Power BI can even be used to <a href="https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example">web scrape data</a>.</p>
+<p>With Power BI Desktop, you can connect to different data sources, shape that data through queries, build data models and create visualizations and reports for different audiences. Power BI Service, often referred to as PowerBI.com is a software as service online platform. Reports can be published to the Power BI Service where you can share your reports with other users or a wider audience.</p>
+<p>This document is intended to provide a broad overview of the features of Power BI Desktop reports to provide the reader with the necessary tools to start learning and exploring Power BI for themselves. It covers the basics such as importing data, transforming data, visualizing data, using slicer visuals, navigation and basic UI design.</p>
+<div id="getting-started" class="section level3 hasAnchor" number="8.1.1">
+<h3><span class="header-section-number">8.1.1</span> Getting Started<a href="power-bi.html#getting-started" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To download Power BI Desktop, go to the Power BI Desktop download page and select Download Free. You can also download Power BI Desktop from the Power BI service. Select the Download icon in the top menu bar, and then select Power BI Desktop.</p>
+<p>Once you launch Power BI Desktop you will be welcomed by the Start screen. Here, you can get data sources for your reports, watch video tutorials, check updates and visit the Power BI forums. For now, select the close icon to close the Welcome screen to see the main interface (Figure 1 below).</p>
+<div class="figure">
+<img src="bi1.jpg" alt="" />
+<p class="caption">Screenshot of the Power BI User Interface.</p>
+</div>
+<p>The image above shows some of the most important features in Power BI Desktop.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Get data</strong>: This is used for selecting, connecting to and configuring data sources that will be used. A single data source can be used or multiple.</p></li>
+<li><p><strong>Transform data</strong>: This is used to launch the Power Query Editor. The Power Query Editor is where data can be transformed. Transformation usually refers to dealing with missing values or cleaning the data before analysis. The Power Query Editor is a useful tool when working with data sets which need to be cleaned. Working with Power Query Editor is similar to working with Excel and often it is useful to switch between the two as some transformations will be easier in one than the other.</p></li>
+<li><p><strong>Report View</strong>: The report view icon opens the report view canvas which is used for selecting and designing data visualizations. This is the default view open when Power BI is launched.</p></li>
+<li><p><strong>Data View</strong>: The data view provides a view of the data in your model. This view looks similar to an Excel spreadsheet but it is read only.</p></li>
+<li><p><strong>Relationship View</strong>: This is used when your data model has multiple tables and relationships between them. We rarely work with a singular data source in one sheet of a .csv file. More often than not we will have multiple tables from multiple sources. In the relationship view we can build “relationships” between those tables.</p></li>
+</ol>
+</div>
+<div id="excel-as-a-data-source" class="section level3 hasAnchor" number="8.1.2">
+<h3><span class="header-section-number">8.1.2</span> Excel as a Data Source<a href="power-bi.html#excel-as-a-data-source" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We’re going to use a dummy dataset Health_Datasets.xlsx included in the repository used to host this guide. Download and save the dataset in a folder you can easily locate.</p>
+<p>To use Excel data sets as a source, open the Power BI Desktop. Under the Home ribbon find Get Data. Selecting the down arrow next to the Get Data button will show the most common connectors used but clicking the button itself will provide a full list of all available connectors. The list is extensive and Power BI can connect to a wide array of data sources including .csv files, .xlsx and .txt files. Power BI also supports SQL database connections. Whether you click the Get Data button or the arrow you will see Excel at the top of the resulting list. Click Excel Workbook and then click Connect. Navigate to your data source.</p>
+<p>Once selected you will see two separate spreadsheets you can choose from.</p>
+<p><img src="bi2.jpg" alt="Selecting spreadsheets from an Excel file." />
+Clicking once on the spreadsheet name will let you preview the data while clicking on the checkbox next to the name will include it as part of the data import. Here we have two sheets, Health Data 1 which contains data relating to drug related deaths and deaths due to drug misuse and Health Data 2 which contains population data. This data needs to be cleaned before we can use it so tick both the boxes and then press the Transform Data button on the bottom of the panel. This launches the Power Query Editor. You can also clean your data in Excel then simply press the Load button but some data sets would be too difficult to transform in Excel.</p>
+<p>When the Power Query Editor loads you will notice it has its own environment for you to work in.</p>
+<p><img src="bi3.jpg" alt="Power Query Editor User Interface." />
+There are a number of features in the Power Query Editor to take note of:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>New Source</strong>: This launches the same interface as the Get Data button.</p></li>
+<li><p><strong>Queries Pane</strong>: The queries pane is a list of all the queries that you have connected to.</p></li>
+<li><p><strong>Query Settings</strong>: Within this pane you can see the complete history of transformations that have been applied to your query. You can also rename the query. This history is useful for several reasons. From here you can rename a query, or click the ‘x’ beside a query to remove a query, and reorder queries by clicking and dragging them into different positions.</p></li>
+<li><p><strong>Advanced Editor</strong>: Power Query Editor uses a programming language informally known as M in the background and when you click any button in the Power Query GUI some M code is generated in the background corresponding to what has been done. By launching the Advanced Editory you can see the M query that is automatically written for you by the Power Query Editor.</p></li>
+<li><p><strong>Close and Apply</strong>: Choosing this option will save your transformations, close the Power Query Editor and load the transformed data into the data model.</p></li>
+</ol>
+<p>The Power Query Editor allows you to shape data with step-by-step instructions for adjusting the data. Shaping the data this way does not affect the original data source, only this particular view of the data. Shaping can mean transforming the data, such as renaming columns or tables, removing rows, replacing missing data entries or changing data types. Power Query Editor captures these steps sequentially under Applied Steps in the Query Settings pane. If you make a mistake or transform the data in a way you aren’t happy with you can simply cancel the transformation by clicking the X that appears beside it in Applied Steps.</p>
+</div>
+</div>
+<div id="data-transformation-basics" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> Data Transformation Basics<a href="power-bi.html#data-transformation-basics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In its current format the data contained in Health Data 1 will be hard to visualize in Power BI. We essentially have two data sets in one and quantitative data is tied up with qualitative data (Drug related deaths 2008). Ideally, we would like the data to look like this:</p>
+<table>
+<caption></caption>
+<colgroup>
+<col width="32%" />
+<col width="25%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Location</th>
+<th align="right">Dataset</th>
+<th align="right">Year</th>
+<th align="right">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">Northern Ireland</td>
+<td align="right">Drug related deaths</td>
+<td align="right">2008</td>
+<td align="right">89</td>
+</tr>
+<tr class="even">
+<td align="right">Northern Ireland</td>
+<td align="right">Deaths due to drug misuse</td>
+<td align="right">2008</td>
+<td align="right">53</td>
+</tr>
+<tr class="odd">
+<td align="right">…</td>
+<td align="right">…</td>
+<td align="right">…</td>
+<td align="right">…</td>
+</tr>
+</tbody>
+</table>
+<p>Note how the ‘year’ data and ‘total’ data now have their own columns.</p>
+<p>Power Query Editor can help us get there. If we were to <a href="https://support.microsoft.com/en-us/office/unpivot-columns-power-query-0f7bad4b-9ea1-49c1-9d95-f588221c7098">unpivot</a> the columns and separate the year into its own column we would arrive at a data set that looks like the table above.</p>
+<p>The first step then is to click on the column titled “Drug related deaths 2008” then scroll to the right and shift click on the final column. This will select all but the first column. Right click on any of the selected columns and select Unpivot Columns from the menu. This separates the columns into attribute-value pairs. Next we need to separate out the year data. Right click on the newly generated Attribute column and select Split Column then select By Delimiter.</p>
+<div class="figure">
+<img src="bi4.jpg" alt="" />
+<p class="caption">Splitting by Delimiters.</p>
+</div>
+<p>We want to split this column into two new columns using a delimiter. The best one to choose here is the Space delimiter. We want to split at the right-most delimiter as there is a space right before each year but none after the year. Select these settings and click OK. Change the titles of the columns by double clicking the column header. Finalize your changes by clicking on the Home ribbon and Close &amp; Apply. As soon as you click Close &amp; Apply in the Power Query Editor you will find yourself back in the Power BI Desktop Report View.</p>
+<p>These are two of the most common data transformations that data sets will need to have applied to them.</p>
+</div>
+<div id="visualising-data" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> Visualising Data<a href="power-bi.html#visualising-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Up until now you have spent some time importing data and shaping it. Now we can begin to visualize the data. Power BI is commonly associated with the ability to create impactful, interactive data visualizations. Before we start making visuals it’s worth detailing some of the panes and views available to us:</p>
+<div class="figure">
+<img src="bi5.jpg" alt="" />
+<p class="caption">Navigating the user interface.</p>
+</div>
+<ol style="list-style-type: decimal">
+<li><p><strong>The Report View</strong>: This is the button that will place us in the Report canvas and allow us to create visuals.</p></li>
+<li><p><strong>Visuals Area</strong>: This is where we can choose which visual we would like to use. Each of the icons represents a type of visualization. Clicking these icons will generate a visual that we can start to work with. Once custom visuals are added they will appear here as well.</p></li>
+<li><p><strong>Field Area</strong>: This area will change depending on the visual but it is where we place the fields (Total, Year… etc.) that we will use within the selected visual.</p></li>
+<li><p><strong>Field Pane</strong>: This pane contains the fields we have to choose from to add to our visual.</p></li>
+<li><p><strong>Format Area</strong>: This is where we can decide on the formatting of our visuals, we can change font sizes, text styles, titles, colors…etc.</p></li>
+<li><p><strong>Filters Area</strong>: This is where we can apply filters of various scopes. We can apply page-level filters which will affect all the visuals on the selected page. We can apply Report-level filters which will affect every visual in the entire Power BI Report and we can apply Visual-level filters which will be applied only to specific visualizations.</p></li>
+</ol>
+<div id="creating-a-line-chart" class="section level3 hasAnchor" number="8.3.1">
+<h3><span class="header-section-number">8.3.1</span> Creating a Line-Chart<a href="power-bi.html#creating-a-line-chart" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We’re going to create a line-chart visual that shows both drug related deaths and deaths due to drug misuse. We want to show the totals for each over time and we want to be able to filter by local government district.</p>
+<p>The first step in creating any visual is to go to the Visualizations pane on the right-hand side of the UI. Here you can see a range of different visualization icons representing their respective chart. Along the top row are bar charts, in the second row are line charts, area charts and a ribbon chart, below these are pie charts, maps, cards, and even tools to create custom Python and R visuals (Plotly, Matplotlib and Seaborn are three commonly used Python plotting libraries). Find the Icon for the Line Chart and click it. A new visual object will appear on the canvas with a prompt to select or drag fields to populate this visual.</p>
+<p>Drag the “Year” field from the fields pane into the Axis box in the field area. Drag the “Total” field into the Values box.</p>
+<p>You should get a line-chart that looks like this:</p>
+<div class="figure">
+<img src="bi6.jpg" alt="" />
+<p class="caption">The first line chart.</p>
+</div>
+<p>There’s something not quite right about this visual. We plotted Total by Year but what is it a total of? Our data contained totals for each Local Government District and for two different data sets. Currently, the data for each year is being summed. We’re looking at a line chart showing the sum of all Local Government District drug related deaths and deaths due to drug misuse. We can tell this is the case at a glance by looking to the Fields Pane where the Total has a summation sign (<span class="math inline">\(\sum\)</span>) to the left of it.</p>
+<p>Drag the Dataset field into the Legend box to separate out the data sets. You should see a line-chart like this:</p>
+<div class="figure">
+<img src="bi7.jpg" alt="" />
+<p class="caption">Line chart.</p>
+</div>
+<p>This is closer to what we had hoped to show but it’s still summing over the local government districts. This is where the Slicer visualization becomes useful. Although, we don’t need to use slicers, we could also use the filters pane to simply remove the districts we don’t want to be summed. This can be useful when datasets contain rows of data that we aren’t interested in.</p>
+</div>
+<div id="the-slicer-visual" class="section level3 hasAnchor" number="8.3.2">
+<h3><span class="header-section-number">8.3.2</span> The Slicer Visual<a href="power-bi.html#the-slicer-visual" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The Slicer visual is used when we want our users to be able to filter by something that isn’t used inside our visuals. The slicer visual only allows one field to be assigned to it but depending on what data type that field is we will have different presentation options. If we pass text data into the field we get a list of check boxes which can be ticked or unticked. If we pass numeric data into the field we will get a slider which can be moved from one numeric value to the next (useful for dates).</p>
+<p>Before we create a new Slicer visual it is important to make sure we have deselected the line-chart visual otherwise clicking on a new visual icon will convert this visual into the selected visual type. We don’t want to convert our visual, we want an entirely new visual. Click on the canvas behind the line-chart visual then in the visualizations pane locate the Slicer visual and click on it. A new visual object will appear. Drag LGD2014 from the Fields Pane into the Field box in the Field Area. A checkbox list of local government districts should populate in the visual object on the canvas. It should look something like this:</p>
+<div class="figure">
+<img src="bi8.jpg" alt="" />
+<p class="caption">Filtering data by local government district (LGD).</p>
+</div>
+</div>
+<div id="the-format-area" class="section level3 hasAnchor" number="8.3.3">
+<h3><span class="header-section-number">8.3.3</span> The Format Area<a href="power-bi.html#the-format-area" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We now have a line-chart that shows both deaths due to drug misuse and drug related deaths but if we control click multiple local government districts it sums them together. We can change this behaviour by formatting the slicer visual.</p>
+<p>Click the slicer visual then click on the Format area selector (the icon that looks like a paint roller). We will be presented with a list of different attributes that we can change. We can change the title, the background, the border and we can add shadows. The important attribute we want to change however is Selection controls. Click the drop-down arrow beside Selection controls and toggle single select on. The result should be something that looks like this:</p>
+<div class="figure">
+<img src="bi9.jpg" alt="" />
+<p class="caption">Filtering data by local government district (LGD) and selecting different regions.</p>
+</div>
+<p>This presentation style has positives and negatives. It’s useful if we know we have lots of visitors who only want to know about their local government district but it’s not very good for comparing different districts. We’re going to use what we have done so far to build a new visual that allows users to directly compare their local government district to another.</p>
+<p>Our line-chart visual will use LGD2014 as its legend. Our slicer will have to enable multiple selection. We may also want to include additional slicers to filter the visual by year and by the data set we would like to compare. We will also convert the visual type to a stacked bar chart. The final result should look like this:</p>
+<div class="figure">
+<img src="bi10.jpg" alt="" />
+<p class="caption">The Finished Product.</p>
+</div>
+<p>The new visual should allow us to check multiple boxes and add to the stacked bar chart. We should also be able to filter by year using the slider at the top and we should be able to select the data set we’re interested in using the buttons above the visual.</p>
+</div>
+</div>
+<div id="adding-a-new-page" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Adding a New Page<a href="power-bi.html#adding-a-new-page" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We can add a new page to our report by clicking the plus sign (+) next to the Page 1 tab at the bottom of the canvas. It makes sense however to duplicate our existing page since we can re-use some of our existing work. Right click on the Page 1 tab and select Duplicate Page.</p>
+<p>Select the line-chart visual and change the legend in the Fields Area from Dataset to LGD2014 by clicking on the X to the right of Dataset and dragging in LGD2014 from our Fields Pane. Now click on the stacked column chart icon in the Visualizations Pane to convert the visual. Some conversions work better than others, it’s always worth checking that the visual is showing the same data before and after conversion. A conversion from a stacked bar chart to a card visual or KPI visual may not be the best choice for instance.</p>
+<p>We will need to edit our location filter (the slicer) to allow for multiple selections. Click on the slicer visual and go to the Format Area. Under Selection Controls toggle Single Select to Off and ensure that Multi-select with CTRL is toggled to the on position and Show “Select All” Option is toggled to the Off position. We can now select multiple local government districts and they should stack on top of one another in the stacked bar chart visual. We will need two new slicer visuals.</p>
+<p>Click on the canvas to ensure no visuals are selected. Select the Slicer Visual in the visualizations pane. Drag the Year field into the Field box. The slicer should automatically detect numeric data and generate a slider that takes values in the range 2008 to 2019.</p>
+<p>We need one more slicer. Again ensure no visuals are currently selected and select the Slicer Visual. Drag the Dataset field into the slicer’s field. A checkbox will be generated. We would prefer buttons this time so go to the Format Area and select the General option. Scroll down until you see Orientation. Click on the drop down menu and select Horizontal. Under Selection Controls you might want to toggle Single select to on.</p>
+<p>Finally, we can add some data labels to our visual. Select the line-chart visual by clicking on it. In the Format Area scroll down until you see Data Labels and toggle them on.</p>
+</div>
+<div id="navigation" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> Navigation<a href="power-bi.html#navigation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="arrows" class="section level3 hasAnchor" number="8.5.1">
+<h3><span class="header-section-number">8.5.1</span> Arrows<a href="power-bi.html#arrows" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Up to this point we have mostly made use of the Home ribbon but there are other important ribbons when designing reports. The Insert ribbon for instance allows us to insert elements into our report that aren’t necessarily data visualizations. We can insert text boxes, buttons, shapes and images. These are all useful for providing additional information on visualizations, explaining data or navigation. We’re going to create navigation buttons.</p>
+<p>Add two new pages to your report using the plus icon next to the page tabs at the bottom of the canvas. Click onto the first of those pages. Then navigate to the Insert ribbon and click on Buttons then on the right arrow.</p>
+<div class="figure">
+<img src="bi11.jpg" alt="" />
+<p class="caption">Inserting arrows.</p>
+</div>
+<p>Repeat this process on the second page but this time select the Left arrow. If the Left arrow is selected you will see the visualisations pane disappear and the entire pane will be taken up by the format pane. Scroll down until you find Action. Toggle Action on and select Page navigation in the Type menu and Page 1 (or whatever page you want this arrow to direct to) in the Destination menu.</p>
+<div class="figure">
+<img src="bi12.jpg" alt="" />
+<p class="caption">Left Arrow Navigation.</p>
+</div>
+<p>If you CTRL+Click on the Left arrow it should now take you to Page 1. When your Power BI Report is published users won’t need to CTRL+Click it will just happen with a click. We can repeat these steps for the Right Arrow on Page 1 to cycle between the pages.</p>
+</div>
+<div id="buttons" class="section level3 hasAnchor" number="8.5.2">
+<h3><span class="header-section-number">8.5.2</span> Buttons<a href="power-bi.html#buttons" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Another useful element that we can insert is the Button. The Button can serve just about any purpose. It can be filled with color and used as a banner or a footer; it can be used as a navigation tool thanks to the actions we just used; and it can be used as a display behind a visual.</p>
+<p>Create a new page. Find Buttons on the Insert ribbon. Click it and select Blank. An outlined box should appear. You can click the edges of this to resize it. Try to take up the whole width available and just less than 20% of the height. It doesn’t need to be exact, just resize to whatever looks natural as a header for a title. Click on the resized button when you’re finished. In the Format Button pane toggle Outline off and Icon off. Toggle Fill on and expand the fill menu and select a new color for your header. Change the transparency settings if you like. Next, find the Text toggle and toggle it on if it isn’t already. Open the Text menu by clicking the drop-down arrow. In the text box type a title for your new page. You can change the font color and text size and the font below the text entry box.</p>
+<p>Add another button but this time resize it to whatever size you think appropriate for a navigation button. Repeat the steps above to add colour and text to the button. Then you can use the action menu, like we did when we created the left and right arrows, to give the button navigation properties.</p>
+<p>With any luck you should be able to replicate the kind of user interface you see in a single page web app or a mobile app.</p>
+<div class="figure">
+<img src="bi13.jpg" alt="" />
+<p class="caption">Buttons used to create links between pages.</p>
+</div>
+</div>
+</div>
+<div id="population-data" class="section level2 hasAnchor" number="8.6">
+<h2><span class="header-section-number">8.6</span> Population Data<a href="power-bi.html#population-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The second sheet “Health Data 2” is very similar in format to the first but with population data for each Local Government District. Try and create some more visuals for this data by applying the techniques demonstrated.</p>
+</div>
+<div id="additional-resources" class="section level2 hasAnchor" number="8.7">
+<h2><span class="header-section-number">8.7</span> Additional Resources<a href="power-bi.html#additional-resources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This session was designed as a tour of the main features of Power BI reports. It has skipped a lot of detail to try and give a broad overview of what is possible with Power BI and provide the basic skills needed to start experimenting with the software package. The <a href="https://docs.microsoft.com/en-us/power-bi/fundamentals/">Power BI Documentation</a> should provide a more in depth look at the fundamentals. Microsoft Learn has a number of <a href="https://docs.microsoft.com/en-us/learn/modules/get-started-with-power-bi/">modules</a> dedicated to Power BI which are mostly related to Data Analysis learning pathways. Completing these modules will be useful for consolidating the fundamentals and learning more about Power BI in greater detail. If you’re really interested then it might be worth reading into <a href="https://docs.microsoft.com/en-us/dax/">Data Analysis Expressions (DAX)</a> which is a library of functions that can be used to build formulas and expressions in Power BI, Analysis Services, and Power Pivot in Excel data models. This is especially useful in Power Query Editor.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-visualisation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="python.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Bookdown.pdf", "Bookdown.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

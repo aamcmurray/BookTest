@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Data Types and Levels of Measurement | Digital Skills Primer</title>
+  <title>Chapter 9 Python | Digital Skills Primer</title>
   <meta name="description" content="This book is designed to provide readers with a brief introduction to digital tools used in research." />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Data Types and Levels of Measurement | Digital Skills Primer" />
+  <meta property="og:title" content="Chapter 9 Python | Digital Skills Primer" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This book is designed to provide readers with a brief introduction to digital tools used in research." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Data Types and Levels of Measurement | Digital Skills Primer" />
+  <meta name="twitter:title" content="Chapter 9 Python | Digital Skills Primer" />
   
   <meta name="twitter:description" content="This book is designed to provide readers with a brief introduction to digital tools used in research." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="intro.html"/>
-<link rel="next" href="levels-of-measurement-quiz.html"/>
+<link rel="prev" href="power-bi.html"/>
+<link rel="next" href="r.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -280,75 +280,88 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="data-types-and-levels-of-measurement" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Data Types and Levels of Measurement<a href="data-types-and-levels-of-measurement.html#data-types-and-levels-of-measurement" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<hr />
-<div id="types-of-data" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Types of Data<a href="data-types-and-levels-of-measurement.html#types-of-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Data can be broadly categorised as <strong>qualitative</strong> (data relating to qualities or characteristics) or quantitative (numerical data relating to sizes or quantities of things).</p>
-<p>We can further categorise <strong>quantitative</strong> data as being continuous or discrete.</p>
-<p><strong>Discrete</strong> data involves whole numbers that can’t be divided because of what they represent (number of people in a class, number of cars owned). The number of people in a class cannot be 10.5 or 3.14. It must be a whole number because people are not divisible.</p>
-<p><strong>Continuous</strong> data can be divided and measured to some number of decimal places (height, weight, speed in miles per hour). A person’s height can be any number (provided it lies within the range of possible human heights) and can be reported to any number of decimal places (150cm or 150.1cm or 150.12cm) depending on how accurate the measurement tool is.</p>
-<p><img src="data.jpg" alt="Tree diagram showing the different types of data." />
-There are also different <strong>levels of measurement</strong>.</p>
-</div>
-<div id="levels-of-measurement" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Levels of Measurement<a href="data-types-and-levels-of-measurement.html#levels-of-measurement" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The levels of measurement describe how precisely variables are recorded. The different levels of measurement limit which statistics can be used to summarise data and which inferential statistics can be performed. These levels are:</p>
+<div id="python" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Python<a href="python.html#python" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introduction-1" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Introduction<a href="python.html#introduction-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="variables" class="section level3 hasAnchor" number="9.1.1">
+<h3><span class="header-section-number">9.1.1</span> Variables<a href="python.html#variables" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In programs, information can be stored in variables. Variables are labels to help with storing and retrieving information from memory. There are different types of variables, which include:</p>
 <ul>
-<li>Nominal</li>
-<li>Ordinal</li>
-<li>Interval</li>
-<li>Ratio</li>
+<li><p><strong>Integers</strong> - positive and negative integers up to a high limit, for instance, <span class="math inline">\(-2, -1, 0, 1, 2\)</span>. A variable can be declared as an integer using the int() function.</p></li>
+<li><p><strong>Floating point numbers</strong> - Positive and negative whole numbers with a decimal point. For instance <span class="math inline">\(0.1, 2.5, 50.294, -75.943\)</span>. A variable can be declared as a floating point number using the float() function.</p></li>
+<li><p><strong>Strings</strong> - strings are arrays of bytes representing unicode characters. A variable can be declared as a string using quotation marks or the str() function.</p></li>
+<li><p><strong>Boolean</strong> - booleans represent one of two values, either True or False. In programming you frequently need to know if an expression is true or false and booleans are typically useful for this. A variable can be declared boolean using the bool() function</p></li>
+<li><p><strong>Complex numbers</strong> - Numbers that satisfy <span class="math inline">\(i^2=-1\)</span>, written as <span class="math inline">\(a+bi\)</span> where <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are real numbers. These are rarely, if ever, encountered in research however they can be useful when optimising advanced scripts.</p></li>
 </ul>
-<div id="nominal" class="section level3 hasAnchor" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Nominal<a href="data-types-and-levels-of-measurement.html#nominal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>Nominal data</strong> is a type of data that is used to label variables. It can be categorised but not ranked (eye colour and gender for instance). The values grouped into these categories have no meaningful order. It is not possible to form a meaningful hierarchy of gender or eye colour.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:chunk-label"></span>
-<img src="Bookdown_files/figure-html/chunk-label-1.png" alt="Eye colour is an example of nominal data." width="672" />
-<p class="caption">
-Figure 2.1: Eye colour is an example of nominal data.
-</p>
+<p>We declare variables by giving them a name and setting them equal to some value. Variables can be printed to screen using the print() function and the type() function can be used to probe a variable and discover what type of variable it is.</p>
+<div id="example-12" class="section level4 hasAnchor" number="9.1.1.1">
+<h4><span class="header-section-number">9.1.1.1</span> Example<a href="python.html#example-12" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="python.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reticulate)</span></code></pre></div>
+<p>Variables are declared by writing a variable name and using the equals sign to indicate the value to be associated with that name. Alternatively, functions like int() or float() can be used although they are not typically needed as Python is able to interpret the type without being explicitly told using these functions.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="python.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Below are some examples of variable declaration.</span></span>
+<span id="cb2-2"><a href="python.html#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="python.html#cb2-3" aria-hidden="true" tabindex="-1"></a>intVar<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb2-4"><a href="python.html#cb2-4" aria-hidden="true" tabindex="-1"></a>floatVar<span class="op">=</span><span class="bu">float</span>(<span class="fl">2.13</span>)</span>
+<span id="cb2-5"><a href="python.html#cb2-5" aria-hidden="true" tabindex="-1"></a>stringVar<span class="op">=</span><span class="st">&quot;This is a string&quot;</span></span>
+<span id="cb2-6"><a href="python.html#cb2-6" aria-hidden="true" tabindex="-1"></a>boolVar<span class="op">=</span><span class="va">True</span></span>
+<span id="cb2-7"><a href="python.html#cb2-7" aria-hidden="true" tabindex="-1"></a>compVar<span class="op">=</span><span class="bu">complex</span>(<span class="dv">3</span>,<span class="dv">2</span>)</span>
+<span id="cb2-8"><a href="python.html#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="python.html#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#Variables can be printed to the screen using the print() function. </span></span>
+<span id="cb2-10"><a href="python.html#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="python.html#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(intVar, floatVar, stringVar, boolVar, compVar)</span></code></pre></div>
+<pre><code>## 1 2.13 This is a string True (3+2j)</code></pre>
+<p>Using the type() function with the variable name as an argument will return the type of the variable. In this example the type() function is applied to the intVar variable. and the print() function is used to print the result to the screen. These functions could be applied one at a time but it’s also possible to place a function within a function. The innermost function is performed first.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="python.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Functions can be called inside other functions.</span></span>
+<span id="cb4-2"><a href="python.html#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="python.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(intVar))</span></code></pre></div>
+<pre><code>## &lt;class &#39;int&#39;&gt;</code></pre>
 </div>
-<p>The only measure of central tendency used with nominal data is the mode.</p>
 </div>
-<div id="ordinal" class="section level3 hasAnchor" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> Ordinal<a href="data-types-and-levels-of-measurement.html#ordinal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>Ordinal data</strong> is another type of <strong>qualitative data</strong> that groups variables into descriptive categories. The categories used for ordinal data are ordered in some kind of hierarchical scale although the distance between those categories may be uneven or even unknown.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
-<img src="Bookdown_files/figure-html/unnamed-chunk-1-1.png" alt="The highest level of educational attainment has a heirarchical scale but the distance between categories is unclear." width="672" />
-<p class="caption">
-Figure 2.2: The highest level of educational attainment has a heirarchical scale but the distance between categories is unclear.
-</p>
+<div id="functions" class="section level3 hasAnchor" number="9.1.2">
+<h3><span class="header-section-number">9.1.2</span> Functions<a href="python.html#functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<p>Ordinal variables often include ratings about opinions that can be categorised (strongly agree, agree, don’t know, disagree, strongly disagree).</p>
-<p>The descriptive statistics which can be used with ordinal data are the mode and the median.</p>
-<p>Ordinal data can also be described with a measure of dispersion, namely, range.</p>
+<div id="data-structures" class="section level3 hasAnchor" number="9.1.3">
+<h3><span class="header-section-number">9.1.3</span> Data Structures<a href="python.html#data-structures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="interval" class="section level3 hasAnchor" number="2.2.3">
-<h3><span class="header-section-number">2.2.3</span> Interval<a href="data-types-and-levels-of-measurement.html#interval" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>Interval data</strong> is a type of quantitative data that groups variables into categories. Values can be ordered and separated using an equal measure of distance.</p>
-<p>An example of interval level data is temperature data recorded in Celsius or Fahrenheit. The values on either scale are ordered and separated using an equal measure of distance (the distances between notches on a thermometer are always equally spaced).</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
-<img src="Bookdown_files/figure-html/unnamed-chunk-2-1.png" alt="Temperature in Celsius is interval data. The values are ordered and separated by an equal interval. The distance between 0°C and 1°C is the same as the distance between 2°C and 3°C." width="672" />
-<p class="caption">
-Figure 2.3: Temperature in Celsius is interval data. The values are ordered and separated by an equal interval. The distance between 0°C and 1°C is the same as the distance between 2°C and 3°C.
-</p>
+<div id="exceptions-try-and-except" class="section level3 hasAnchor" number="9.1.4">
+<h3><span class="header-section-number">9.1.4</span> Exceptions, Try and Except<a href="python.html#exceptions-try-and-except" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<p>Mathematical operations can be carried out on this type of data, for instance, subtracting one value from another to find the difference. Interval data lacks a <strong>true zero</strong>.</p>
-<p>True zero indicates a lack of whatever is being measured. The Celsius scale doesn’t qualify as having a true zero since the zero point in a thermometer is arbitrary. When the Celsius scale was first created by Anders Celsius 0°C was selected to match the boiling point of water and a value of 100 °C was the freezing point of water. The scale was later reversed. Thermometers measure heat and at 0°C there is still heat, maybe not a great deal of it but heat is still measurable meaning 0°C is not a true zero. The thermodynamic Kelvin Scale has a true zero - where particles have no motion and can become no colder (there is a true absence of heat).</p>
-<p>A range of descriptive statistics can be used to describe interval data. The measures of central tendency applicable to interval data are the <strong>mode, median</strong> and the <strong>mean</strong>. The measures of dispersion applicable to interval data are the <strong>range, standard deviation</strong> and the <strong>variance</strong>.</p>
+<div id="loops-and-iterating" class="section level3 hasAnchor" number="9.1.5">
+<h3><span class="header-section-number">9.1.5</span> Loops and Iterating<a href="python.html#loops-and-iterating" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="ratio" class="section level3 hasAnchor" number="2.2.4">
-<h3><span class="header-section-number">2.2.4</span> Ratio<a href="data-types-and-levels-of-measurement.html#ratio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>Ratio data</strong> is a form of quantitative data. It measures variables on a continuous scale with an equal distance between adjacent values (weight, height). Ratio data has a true zero. Ratio data is the most complex of the four data types.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-3"></span>
-<img src="Bookdown_files/figure-html/unnamed-chunk-3-1.png" alt="The scatterplot above shows metabolic rate plotted against body weight (kg). These are examples of ratio data. This data comes from the Introduction to Statistics with R (ISwR) library for R." width="672" />
-<p class="caption">
-Figure 2.4: The scatterplot above shows metabolic rate plotted against body weight (kg). These are examples of ratio data. This data comes from the Introduction to Statistics with R (ISwR) library for R.
-</p>
+<div id="built-in-functions" class="section level3 hasAnchor" number="9.1.6">
+<h3><span class="header-section-number">9.1.6</span> Built in Functions<a href="python.html#built-in-functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<p>Ratio data can be analysed with descriptive statistics including the <strong>mode, median</strong> and <strong>mean</strong>. <strong>Range, standard deviation, variance</strong> and the <strong>coefficient of variation</strong> can all be used to describe the dispersion of ratio data.</p>
+</div>
+<div id="managing-data" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Managing Data<a href="python.html#managing-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="dataframes" class="section level3 hasAnchor" number="9.2.1">
+<h3><span class="header-section-number">9.2.1</span> Dataframes<a href="python.html#dataframes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+</div>
+<div id="visualisations" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Visualisations<a href="python.html#visualisations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="matplotlib" class="section level3 hasAnchor" number="9.3.1">
+<h3><span class="header-section-number">9.3.1</span> Matplotlib<a href="python.html#matplotlib" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="seaborn" class="section level3 hasAnchor" number="9.3.2">
+<h3><span class="header-section-number">9.3.2</span> Seaborn<a href="python.html#seaborn" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="bokeh" class="section level3 hasAnchor" number="9.3.3">
+<h3><span class="header-section-number">9.3.3</span> Bokeh<a href="python.html#bokeh" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+</div>
+<div id="using-python" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">9.4</span> Using Python<a href="python.html#using-python" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="apis" class="section level3 hasAnchor" number="9.4.1">
+<h3><span class="header-section-number">9.4.1</span> APIs<a href="python.html#apis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="web-scraping" class="section level3 hasAnchor" number="9.4.2">
+<h3><span class="header-section-number">9.4.2</span> Web Scraping<a href="python.html#web-scraping" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="automation" class="section level3 hasAnchor" number="9.4.3">
+<h3><span class="header-section-number">9.4.3</span> Automation<a href="python.html#automation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 
 </div>
 </div>
@@ -358,8 +371,8 @@ Figure 2.4: The scatterplot above shows metabolic rate plotted against body weig
           </div>
         </div>
       </div>
-<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="levels-of-measurement-quiz.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="power-bi.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
