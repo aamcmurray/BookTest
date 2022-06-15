@@ -45,10 +45,10 @@ using-excel-1
 descriptive-statistics-quiz
 comparing-data
 percentage-change
-percentage-point-change
 example-10
-rates
+percentage-point-change
 example-11
+rates
 data-visualisation
 data-visualisation-1
 visual-cues
@@ -77,12 +77,11 @@ adding-a-new-page
 navigation
 arrows
 buttons
-population-data
 additional-resources
 python
 introduction-1
 variables
-example-12
+examples
 functions
 data-structures
 exceptions-try-and-except
