@@ -136,7 +136,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>A Note About this Resource</a></li>
-<li class="chapter" data-level="" data-path="Digital-Skills-Primer.html"><a href="Digital-Skills-Primer.html"><i class="fa fa-check"></i>Digital Skills Primer</a></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#what-is-statistics"><i class="fa fa-check"></i><b>1.1</b> What is Statistics?</a></li>
@@ -184,7 +183,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="6.2.1" data-path="comparing-data.html"><a href="comparing-data.html#example-11"><i class="fa fa-check"></i><b>6.2.1</b> Example</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="comparing-data.html"><a href="comparing-data.html#rates"><i class="fa fa-check"></i><b>6.3</b> Rates</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="data-visualisation.html"><a href="data-visualisation.html"><i class="fa fa-check"></i><b>7</b> Data Visualisation</a>
 <ul>
@@ -304,7 +302,7 @@ Figure 7.1: The frequency of each observation has been mapped to the height of t
 <p>The <a href="https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/#section-9">Government Statistical Service</a> has produced guidance on the relationships in data and how they inform chart choices. The guidance can be useful and some of the key points are summarised below.</p>
 <div id="frequency-distributions" class="section level3 hasAnchor" number="7.3.1">
 <h3><span class="header-section-number">7.3.1</span> Frequency Distributions<a href="data-visualisation.html#frequency-distributions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A histogram or bar chart may be used to show category frequencies. Population by age band for instance could be visualised using a histogram or bar chart in most cases. A boxplot can also be useful in visualising additional statistics such as the mean, median, quartiles, outliers and range.</p>
+<p>Histograms and bar charts are useful for showing category frequencies. Population by age band for instance could be visualised using a histogram or bar chart. A boxplot can also be useful in visualising additional descriptive statistics such as the mean, median, quartiles, outliers and the range.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
 <img src="Bookdown_files/figure-html/unnamed-chunk-6-1.png" alt="Simulated weight data illustrating the use of a histogram." width="672" />
 <p class="caption">
@@ -314,7 +312,7 @@ Figure 7.2: Simulated weight data illustrating the use of a histogram.
 </div>
 <div id="time-series" class="section level3 hasAnchor" number="7.3.2">
 <h3><span class="header-section-number">7.3.2</span> Time Series<a href="data-visualisation.html#time-series" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A line chart is often used to demonstrate the trend of a single variable over some time period. Inflation over a ten year time frame for instance can be visualised with a line chart.</p>
+<p>A line chart is often used to demonstrate the trend of a variable over some time period. For instance, temperature over time can be visualised with a line chart.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-7"></span>
 <img src="Bookdown_files/figure-html/unnamed-chunk-7-1.png" alt="Simulated temperature data." width="672" />
 <p class="caption">
@@ -324,7 +322,7 @@ Figure 7.3: Simulated temperature data.
 </div>
 <div id="rankings" class="section level3 hasAnchor" number="7.3.3">
 <h3><span class="header-section-number">7.3.3</span> Rankings<a href="data-visualisation.html#rankings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Data that is ranked usually consists of categories presented in ascending or descending order. A bar chart may be used to show the comparisons. Sometimes, change in ranking over time is shown through slope charts but usually only when comparing a start date and an end date without consideration for the time period in between.</p>
+<p>Data that is ranked usually consists of categories presented in ascending or descending order. A bar chart may be used to show the comparisons between the different categories. Sometimes, change in ranking over time is shown through slope charts but usually only when comparing a start date and an end date without consideration for the time period in between.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-8"></span>
 <img src="Bookdown_files/figure-html/unnamed-chunk-8-1.png" alt="Slope chart showing changes in GDP between 1970 and 1979." width="672" />
 <p class="caption">
@@ -338,7 +336,7 @@ Figure 7.4: Slope chart showing changes in GDP between 1970 and 1979.
 </div>
 <div id="correlation" class="section level3 hasAnchor" number="7.3.5">
 <h3><span class="header-section-number">7.3.5</span> Correlation<a href="data-visualisation.html#correlation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Correlation is usually visualised using scatterplots. Scatterplots are a good way to show comparisons between observations of two variables to determine if there is some correlation.</p>
+<p>Correlation is usually visualised using scatterplots. Scatterplots are a good way to show comparisons between observations of two variables to determine if there is some correlation because it quickly becomes apparent if there is correlation between the variables or not.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-9"></span>
 <img src="Bookdown_files/figure-html/unnamed-chunk-9-1.png" alt="The scatterplot above shows metabolic rate plotted against body weight (kg). This is an example of correlation. This data comes from the Introduction to Statistics with R (ISwR) library for R." width="672" />
 <p class="caption">
@@ -348,7 +346,7 @@ Figure 7.5: The scatterplot above shows metabolic rate plotted against body weig
 </div>
 <div id="magnitude" class="section level3 hasAnchor" number="7.3.6">
 <h3><span class="header-section-number">7.3.6</span> Magnitude<a href="data-visualisation.html#magnitude" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Comparing differences in the magnitudes of values often relies on bar charts. Comparing the total number of sales by branch for instance.</p>
+<p>Comparing differences in the magnitudes of values often relies on bar charts. Comparing the total number of research papers by journal for insance.</p>
 </div>
 <div id="spatial" class="section level3 hasAnchor" number="7.3.7">
 <h3><span class="header-section-number">7.3.7</span> Spatial<a href="data-visualisation.html#spatial" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -382,8 +380,8 @@ Data visualisation can also be used to:</p>
 </div>
 <div id="dynamic-visualisations-dashboards" class="section level2 hasAnchor" number="7.6">
 <h2><span class="header-section-number">7.6</span> Dynamic Visualisations (Dashboards)<a href="data-visualisation.html#dynamic-visualisations-dashboards" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>There are a number of considerations when developing dynamic data visualisations for a parliamentary audience as not all data visualisations need to be dynamic.
-Considering the audience, objectives and what visuals will be most appropriate to communicate data can help in determining whether a dynamic or interactive visualisation is needed.</p>
+<p>There are a number of considerations when developing dynamic data visualisations (sometimes called dashboards) as not all data visualisations need to be dynamic.</p>
+<p>Considering the audience, objectives and what visuals will be most appropriate to communicate data can help in determining whether a dynamic or interactive visualisation is needed.</p>
 <p>Dashboard style visualisations are best suited to data reporting where there is a need to repeatedly produce the same visuals or reports either daily, monthly, quarterly or annually.</p>
 <p>Power BI is well designed for these types of visualisation requirements as it offers automation options enabling data sets to be refreshed at regular time intervals.
 Automation can be as simple as setting a refresh time in the Power BI dashboard and manually updating the excel file it stores in memory or it can be more complex and involve using programming languages to make API calls and perform automated calculations.</p>
@@ -392,13 +390,13 @@ Automation can be as simple as setting a refresh time in the Power BI dashboard 
 <h3><span class="header-section-number">7.6.1</span> Best Practice<a href="data-visualisation.html#best-practice" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>GSS have produced <a href="https://gss.civilservice.gov.uk/policy-store/top-tips-for-designing-dashboards/">guidance on designing dashboards</a> that covers most aspects of dashboard design. The content below summarises some of the key points in this guidance.</p>
 <p><strong>Consider Audience and User Needs</strong></p>
-<p>Consider the user needs and whether a dashboard is really needed. Often the simplest solution (bar charts drawn in Excel or SPSS) is the best. Consider the visuals used and whether they’re the best way to communicate the data. Sometimes tables, text or annotations are better.</p>
+<p>Consider the user needs and whether a dashboard is really needed. Often the simplest solution (bar charts drawn in Excel or SPSS) is the best. Consider the visuals used and whether they’re the best way to communicate the data. Sometimes tables or even text can communicate data better than a visual.</p>
 <p><strong>Guidance</strong></p>
-<p>Providing guidance is important as many users will not be familiar with interactive dashboards. Guidance can be provided in documentation, blog text or it can be provided through tool tips and information pages in the dashboard itself.</p>
+<p>Providing guidance on how to use a dynamic visual or dashboard is important as many users will not be familiar with interactive dashboards. Guidance can be provided through supplementary documentation, blog text if the visual is being embedded, or it can be provided through tool tips and information pages in the dashboard itself.</p>
 <p><strong>Streamline Content</strong></p>
 <p>When adding any new data or visuals it is important to ask whether it adds value. Try to group related content and streamlining the content to guide the users through the data.</p>
 <p><strong>Automate </strong></p>
-<p>Automation can be simple or complex, it can be achieved by setting a refresh date in a Power BI dashboard. It can also involve the use of programming languages to make API calls, web scrape data and perform calculations. Automation typically results in less manual updating and a reduced chance of error and can make the management of the product less resource intensive.</p>
+<p>Automation can be simple or complex, it can be achieved by setting a refresh date in a Power BI dashboard. It can also involve the use of programming languages to make API calls, web scrape data and perform calculations. Automation typically results in less manual updating and a reduced chance of error and can make the management of the product less resource intensive. It’s important to note that automation does not necessarily mean less work, the scripts used to automate processes will need to be updated as languages are developed and updated over time.</p>
 <p><strong>Consider Design Principles</strong></p>
 <p>Give your dashboard a header and dedicated areas for visuals. Consider other dashboards you have seen in the past and draw inspiration from web design. Most websites have a navigation bar at the top, lists with filters along the left or right hand side and content in the center of the page. Think about things like symmetry, flow and a consistent style or layout. Use white space where possible and try to avoid cluttered visualisations.</p>
 <p><strong>Ensure Accessibility</strong></p>

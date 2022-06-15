@@ -133,27 +133,11 @@
 
 \textbf{What is this?}
 
-This resource has been written using \textbf{R}, \textbf{LaTeX} and \textbf{R Studio} and published through \textbf{GitHub}. This resource supports the embedding of images, video content, html content (iframes), live code and mathematical formula and makes sharing the content much easier. In addition, this resource is capable of embedding Power BI dashboards, Python and R coded visuals.
-
-\textbf{Why host on GitHub?}
-
-As the resource is hosted on GitHub it is available anywhere, any time and on any device facilitating \textbf{mobile working}.
-
-GitHub does not need to be used to produce documentation, it can also host stand alone scripts written in any programming language which other users can fork or suggest changes to. The UK Government has several GitHub accounts, the most prominent being the \href{https://github.com/alphagov}{Government Digital Service GitHub} which is used to store and collaborate on code used to build platforms, products and services. Repositories hold all sorts of useful scripts.
-
-A repository for our department could be used to store not only a Digital Skills Primer resource like this one but also code (for instance, scripts developed to make API calls, automate data cleaning and the calculation of moving averages and perform web scraping). This means that the code would be accessible to everyone to learn from and use and adapt for their own purposes. It could also make collaboration with those outside our organisation more effective.
-
-In essence, GitHub hosting means anybody can contribute to code in the repository or to the proposed Digital Skills Primer making this document one that can evolve and change over time and one that is owned by everybody decentralising knowledge and ownership.
-
-\hypertarget{Digital-Skills-Primer}{%
-\chapter*{Digital Skills Primer}\label{Digital-Skills-Primer}}
-\addcontentsline{toc}{chapter}{Digital Skills Primer}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+This resource has been written using \textbf{R}, \textbf{LaTeX} and \textbf{R Studio} and published through \textbf{GitHub}. As the resource is hosted on GitHub it is available anywhere, any time and on any device. This resource supports the embedding of images, video content, html content (iframes), live code and mathematical formula and makes sharing the content much easier. In addition, this resource is capable of embedding Power BI dashboards, Python and R coded visuals.
 
 \textbf{Overview}
 
-This resource is intended to act as a centralised resource for Digital Skills and new technologies being used in research.
+This resource is intended to act as a centralised resource for Digital Skills.
 
 It assumes zero prior knowledge of Statistics, Power BI, Python or R but attempts to provide readers with sufficient grounding in each of these to start collecting, cleaning, analysing, visualising and reporting data using each of these digital tool sets should they want to.
 
@@ -901,7 +885,7 @@ If you would like to try and test your knowledge of the various levels of measur
 
 Percentage change is about comparing old to new values. The formula for calculating a percentage change is given below:
 
-\[ \textrm{Percentage Change} = 100\% \frac{\textrm{New Value} - \textrm{Old Value}}{\textrm{Old Value}}\]
+\[ \textrm{Percentage Change} = 100\% \frac{\textrm{New Value} - \textrm{Old Value}}{\textrm{Old Value}}.\]
 
 \hypertarget{example-10}{%
 \subsection{Example}\label{example-10}}
@@ -926,9 +910,9 @@ Elsewhere & 50 & 58 & 16 \\
 
 Use the formula above to calculate the percentage change for Upper Braniel:
 
-\[ \textrm{Percentage Change} = 100\% \frac{\textrm{New Value} - \textrm{Old Value}}{\textrm{Old Value}}\]
+\[ \textrm{Percentage Change} = 100\% \frac{\textrm{New Value} - \textrm{Old Value}}{\textrm{Old Value}},\]
 
-\[ \textrm{Percentage Change} = 100\% \frac{36 - 50}{50} = 100\% \frac{-14}{50} = -28\%\]
+\[ \textrm{Percentage Change} = 100\% \frac{36 - 50}{50} = 100\% \frac{-14}{50} = -28\%.\]
 A negative percentage change indicates a percentage decrease while a positive percentage change indicates a percentage increase.
 
 \hypertarget{percentage-point-change}{%
@@ -956,13 +940,6 @@ Anywhere & 3.4 & 3.3 & -0.1 \\
 Elsewhere & 3.3 & 3.8 & 0.5 \\
 \bottomrule
 \end{longtable}
-
-\hypertarget{rates}{%
-\section{Rates}\label{rates}}
-
-Rates are common in demography, e.g., births per 1,000 persons, deaths by cause per 100,000 persons.
-
-They allow for comparisons between areas with different population sizes.
 
 \hypertarget{data-visualisation}{%
 \chapter{Data Visualisation}\label{data-visualisation}}
@@ -1000,7 +977,7 @@ The \href{https://analysisfunction.civilservice.gov.uk/policy-store/data-visuali
 \hypertarget{frequency-distributions}{%
 \subsection{Frequency Distributions}\label{frequency-distributions}}
 
-A histogram or bar chart may be used to show category frequencies. Population by age band for instance could be visualised using a histogram or bar chart in most cases. A boxplot can also be useful in visualising additional statistics such as the mean, median, quartiles, outliers and range.
+Histograms and bar charts are useful for showing category frequencies. Population by age band for instance could be visualised using a histogram or bar chart. A boxplot can also be useful in visualising additional descriptive statistics such as the mean, median, quartiles, outliers and the range.
 
 \begin{figure}
 
@@ -1014,7 +991,7 @@ A histogram or bar chart may be used to show category frequencies. Population by
 \hypertarget{time-series}{%
 \subsection{Time Series}\label{time-series}}
 
-A line chart is often used to demonstrate the trend of a single variable over some time period. Inflation over a ten year time frame for instance can be visualised with a line chart.
+A line chart is often used to demonstrate the trend of a variable over some time period. For instance, temperature over time can be visualised with a line chart.
 
 \begin{figure}
 
@@ -1028,7 +1005,7 @@ A line chart is often used to demonstrate the trend of a single variable over so
 \hypertarget{rankings}{%
 \subsection{Rankings}\label{rankings}}
 
-Data that is ranked usually consists of categories presented in ascending or descending order. A bar chart may be used to show the comparisons. Sometimes, change in ranking over time is shown through slope charts but usually only when comparing a start date and an end date without consideration for the time period in between.
+Data that is ranked usually consists of categories presented in ascending or descending order. A bar chart may be used to show the comparisons between the different categories. Sometimes, change in ranking over time is shown through slope charts but usually only when comparing a start date and an end date without consideration for the time period in between.
 
 \begin{figure}
 
@@ -1047,7 +1024,7 @@ Deviation from a reference value can be shown through bar charts.
 \hypertarget{correlation}{%
 \subsection{Correlation}\label{correlation}}
 
-Correlation is usually visualised using scatterplots. Scatterplots are a good way to show comparisons between observations of two variables to determine if there is some correlation.
+Correlation is usually visualised using scatterplots. Scatterplots are a good way to show comparisons between observations of two variables to determine if there is some correlation because it quickly becomes apparent if there is correlation between the variables or not.
 
 \begin{figure}
 
@@ -1061,7 +1038,7 @@ Correlation is usually visualised using scatterplots. Scatterplots are a good wa
 \hypertarget{magnitude}{%
 \subsection{Magnitude}\label{magnitude}}
 
-Comparing differences in the magnitudes of values often relies on bar charts. Comparing the total number of sales by branch for instance.
+Comparing differences in the magnitudes of values often relies on bar charts. Comparing the total number of research papers by journal for insance.
 
 \hypertarget{spatial}{%
 \subsection{Spatial}\label{spatial}}
@@ -1114,7 +1091,8 @@ New programming languages and software products have made data analysis and visu
 \hypertarget{dynamic-visualisations-dashboards}{%
 \section{Dynamic Visualisations (Dashboards)}\label{dynamic-visualisations-dashboards}}
 
-There are a number of considerations when developing dynamic data visualisations for a parliamentary audience as not all data visualisations need to be dynamic.
+There are a number of considerations when developing dynamic data visualisations (sometimes called dashboards) as not all data visualisations need to be dynamic.
+
 Considering the audience, objectives and what visuals will be most appropriate to communicate data can help in determining whether a dynamic or interactive visualisation is needed.
 
 Dashboard style visualisations are best suited to data reporting where there is a need to repeatedly produce the same visuals or reports either daily, monthly, quarterly or annually.
@@ -1131,11 +1109,11 @@ GSS have produced \href{https://gss.civilservice.gov.uk/policy-store/top-tips-fo
 
 \textbf{Consider Audience and User Needs}
 
-Consider the user needs and whether a dashboard is really needed. Often the simplest solution (bar charts drawn in Excel or SPSS) is the best. Consider the visuals used and whether they're the best way to communicate the data. Sometimes tables, text or annotations are better.
+Consider the user needs and whether a dashboard is really needed. Often the simplest solution (bar charts drawn in Excel or SPSS) is the best. Consider the visuals used and whether they're the best way to communicate the data. Sometimes tables or even text can communicate data better than a visual.
 
 \textbf{Guidance}
 
-Providing guidance is important as many users will not be familiar with interactive dashboards. Guidance can be provided in documentation, blog text or it can be provided through tool tips and information pages in the dashboard itself.
+Providing guidance on how to use a dynamic visual or dashboard is important as many users will not be familiar with interactive dashboards. Guidance can be provided through supplementary documentation, blog text if the visual is being embedded, or it can be provided through tool tips and information pages in the dashboard itself.
 
 \textbf{Streamline Content}
 
@@ -1143,7 +1121,7 @@ When adding any new data or visuals it is important to ask whether it adds value
 
 \textbf{Automate }
 
-Automation can be simple or complex, it can be achieved by setting a refresh date in a Power BI dashboard. It can also involve the use of programming languages to make API calls, web scrape data and perform calculations. Automation typically results in less manual updating and a reduced chance of error and can make the management of the product less resource intensive.
+Automation can be simple or complex, it can be achieved by setting a refresh date in a Power BI dashboard. It can also involve the use of programming languages to make API calls, web scrape data and perform calculations. Automation typically results in less manual updating and a reduced chance of error and can make the management of the product less resource intensive. It's important to note that automation does not necessarily mean less work, the scripts used to automate processes will need to be updated as languages are developed and updated over time.
 
 \textbf{Consider Design Principles}
 

@@ -48,7 +48,6 @@ percentage-change
 example-10
 percentage-point-change
 example-11
-rates
 data-visualisation
 data-visualisation-1
 visual-cues
