@@ -116,7 +116,7 @@
 
 \title{Digital Skills}
 \author{}
-\date{\vspace{-2.5em}2022-06-16}
+\date{\vspace{-2.5em}2022-06-23}
 
 \begin{document}
 \maketitle
@@ -1129,9 +1129,9 @@ Ensure your product is accessible by checking the colour contrast ratios of text
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-Power BI is part of the Microsoft Power Platform which includes other packages such as Power Automate. Power BI is split into several components: Power BI Desktop, Service, Gateway, Report Server, Premium, Visuals Marketplace and Mobile Apps. The primary focus of Power BI is business intelligence but Power BI can be used for more than standard reporting of data with line charts and bar charts. It can also be used in conjunction with Python and R to create complex custom visuals or it can be used to create and train \href{https://docs.microsoft.com/en-us/power-bi/connect-data/service-tutorial-build-machine-learning-model}{machine learning models}. Power BI can even be used to \href{https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example}{web scrape data}.
+Power BI is part of the Microsoft Power Platform which includes other packages such as Power Automate. Power BI is split into several components: Power BI Desktop, Service (an online SaaS - Software as a Service), Gateway, Report Server, Premium, Visuals Marketplace and Mobile Apps. The primary focus of Power BI is business intelligence but Power BI can be used for more than standard reporting of data with line charts and bar charts. It can also be used in conjunction with Python and R to create complex custom visuals or it can be used to create and train \href{https://docs.microsoft.com/en-us/power-bi/connect-data/service-tutorial-build-machine-learning-model}{machine learning models}. Power BI can even be used to \href{https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example}{web scrape data}.
 
-With Power BI Desktop, you can connect to different data sources, shape that data through queries, build data models and create visualizations and reports for different audiences. Power BI Service, often referred to as PowerBI.com is a software as service online platform. Reports can be published to the Power BI Service where you can share your reports with other users or a wider audience.
+With Power BI Desktop, you can connect to different data sources, transform those data sources through queries, build data models and create visualizations and reports or dashboards for different audiences. Reports and dashboards can be published to the Power BI Service where you can share your reports with other users or a wider audience.
 
 This document is intended to provide a broad overview of the features of Power BI Desktop reports to provide the reader with the necessary tools to start learning and exploring Power BI for themselves. It covers the basics such as importing data, transforming data, visualizing data, using slicer visuals, navigation and basic UI design.
 
@@ -1153,15 +1153,15 @@ The image above shows some of the most important features in Power BI Desktop.
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{Get data}: This is used for selecting, connecting to and configuring data sources that will be used. A single data source can be used or multiple.
+  \textbf{Get data}: This is used for selecting, connecting to and configuring the data sources that will be used in a report or dashboard. A single data source can be used or multiple can be used. When a data source is selected Power BI will provide you with an option to either load the data or transform it. It's worth noting that data source will be stored in Power BI's internal memory, so the more data sources you connect to and the larger those sources are the slower your report/dashboard will run.
 \item
   \textbf{Transform data}: This is used to launch the Power Query Editor. The Power Query Editor is where data can be transformed. Transformation usually refers to dealing with missing values or cleaning the data before analysis. The Power Query Editor is a useful tool when working with data sets which need to be cleaned. Working with Power Query Editor is similar to working with Excel and often it is useful to switch between the two as some transformations will be easier in one than the other.
 \item
-  \textbf{Report View}: The report view icon opens the report view canvas which is used for selecting and designing data visualizations. This is the default view open when Power BI is launched.
+  \textbf{Report View or canvas}: The report view icon opens the report view canvas which is used for selecting and designing data visualizations. This is the default view open when Power BI is launched.
 \item
-  \textbf{Data View}: The data view provides a view of the data in your model. This view looks similar to an Excel spreadsheet but it is read only.
+  \textbf{Data View}: The data view allows you to view all the data available in your report. This view looks similar to an Excel spreadsheet but it is read only. It is useful to quickly check data types, validate data and make small changes to your data source - such as changing a data type or the format of a variable.
 \item
-  \textbf{Relationship View}: This is used when your data model has multiple tables and relationships between them. We rarely work with a singular data source in one sheet of a .csv file. More often than not we will have multiple tables from multiple sources. In the relationship view we can build ``relationships'' between those tables.
+  \textbf{Model View or Relationship View}: The relationship or model view allows you to set relationships between data sources. Relationships occur where two or more data sources are linked together by related data (a shared variable like `year' for instance).
 \end{enumerate}
 
 \hypertarget{excel-as-a-data-source}{%
@@ -1268,15 +1268,15 @@ Up until now you have spent some time importing data and shaping it. Now we can 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{The Report View}: This is the button that will place us in the Report canvas and allow us to create visuals.
+  \textbf{The Report View}: This is the button that will open up the Report canvas and allow us to create visuals using the visuals area. Below the report view button are two more buttons. These provide access to the \textbf{data view} and the \textbf{model view}.
 \item
   \textbf{Visuals Area}: This is where we can choose which visual we would like to use. Each of the icons represents a type of visualization. Clicking these icons will generate a visual that we can start to work with. Once custom visuals are added they will appear here as well.
 \item
-  \textbf{Field Area}: This area will change depending on the visual but it is where we place the fields (Total, Year\ldots{} etc.) that we will use within the selected visual.
+  \textbf{Field Area}: This area will change depending on the visual but it is where we place the variables (Total, Year\ldots{} etc.) that we will use within the selected visual.
 \item
-  \textbf{Field Pane}: This pane contains the fields we have to choose from to add to our visual.
+  \textbf{Field Pane}: This pane contains the fields we have to choose from to add to our visual. Initially this is populated by the variables contained in data sources but it is possible to add new variables or measures through the Power Query Editor.
 \item
-  \textbf{Format Area}: This is where we can decide on the formatting of our visuals, we can change font sizes, text styles, titles, colors\ldots etc.
+  \textbf{Format Area}: This is where we can decide on the formatting of our visuals. You can customise colours or make changes to axes add borders and change font sizes\ldots{} etc.
 \item
   \textbf{Filters Area}: This is where we can apply filters of various scopes. We can apply page-level filters which will affect all the visuals on the selected page. We can apply Report-level filters which will affect every visual in the entire Power BI Report and we can apply Visual-level filters which will be applied only to specific visualizations.
 \end{enumerate}
@@ -1313,7 +1313,7 @@ This is closer to what we had hoped to show but it's still summing over the loca
 \hypertarget{the-slicer-visual}{%
 \subsection{The Slicer Visual}\label{the-slicer-visual}}
 
-The Slicer visual is used when we want our users to be able to filter by something that isn't used inside our visuals. The slicer visual only allows one field to be assigned to it but depending on what data type that field is we will have different presentation options. If we pass text data into the field we get a list of check boxes which can be ticked or unticked. If we pass numeric data into the field we will get a slider which can be moved from one numeric value to the next (useful for dates).
+The Slicer visual is used when we want our users to be able to filter by something that isn't used inside our visuals. The slicer visual only allows one field to be assigned to it. If we pass text data into the field we get a list of check boxes which can be ticked or unticked. If we pass numeric data into the field we will get a slider which can be moved from one numeric value to the next (useful for dates).
 
 Before we create a new Slicer visual it is important to make sure we have deselected the line-chart visual otherwise clicking on a new visual icon will convert this visual into the selected visual type. We don't want to convert our visual, we want an entirely new visual. Click on the canvas behind the line-chart visual then in the visualizations pane locate the Slicer visual and click on it. A new visual object will appear. Drag LGD2014 from the Fields Pane into the Field box in the Field Area. A checkbox list of local government districts should populate in the visual object on the canvas. It should look something like this:
 

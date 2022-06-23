@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-06-16" />
+<meta name="date" content="2022-06-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -286,8 +286,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 8</span> Power BI<a href="power-bi.html#power-bi" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="introduction" class="section level2 hasAnchor" number="8.1">
 <h2><span class="header-section-number">8.1</span> Introduction<a href="power-bi.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Power BI is part of the Microsoft Power Platform which includes other packages such as Power Automate. Power BI is split into several components: Power BI Desktop, Service, Gateway, Report Server, Premium, Visuals Marketplace and Mobile Apps. The primary focus of Power BI is business intelligence but Power BI can be used for more than standard reporting of data with line charts and bar charts. It can also be used in conjunction with Python and R to create complex custom visuals or it can be used to create and train <a href="https://docs.microsoft.com/en-us/power-bi/connect-data/service-tutorial-build-machine-learning-model">machine learning models</a>. Power BI can even be used to <a href="https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example">web scrape data</a>.</p>
-<p>With Power BI Desktop, you can connect to different data sources, shape that data through queries, build data models and create visualizations and reports for different audiences. Power BI Service, often referred to as PowerBI.com is a software as service online platform. Reports can be published to the Power BI Service where you can share your reports with other users or a wider audience.</p>
+<p>Power BI is part of the Microsoft Power Platform which includes other packages such as Power Automate. Power BI is split into several components: Power BI Desktop, Service (an online SaaS - Software as a Service), Gateway, Report Server, Premium, Visuals Marketplace and Mobile Apps. The primary focus of Power BI is business intelligence but Power BI can be used for more than standard reporting of data with line charts and bar charts. It can also be used in conjunction with Python and R to create complex custom visuals or it can be used to create and train <a href="https://docs.microsoft.com/en-us/power-bi/connect-data/service-tutorial-build-machine-learning-model">machine learning models</a>. Power BI can even be used to <a href="https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example">web scrape data</a>.</p>
+<p>With Power BI Desktop, you can connect to different data sources, transform those data sources through queries, build data models and create visualizations and reports or dashboards for different audiences. Reports and dashboards can be published to the Power BI Service where you can share your reports with other users or a wider audience.</p>
 <p>This document is intended to provide a broad overview of the features of Power BI Desktop reports to provide the reader with the necessary tools to start learning and exploring Power BI for themselves. It covers the basics such as importing data, transforming data, visualizing data, using slicer visuals, navigation and basic UI design.</p>
 <div id="getting-started" class="section level3 hasAnchor" number="8.1.1">
 <h3><span class="header-section-number">8.1.1</span> Getting Started<a href="power-bi.html#getting-started" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -299,11 +299,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>The image above shows some of the most important features in Power BI Desktop.</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Get data</strong>: This is used for selecting, connecting to and configuring data sources that will be used. A single data source can be used or multiple.</p></li>
+<li><p><strong>Get data</strong>: This is used for selecting, connecting to and configuring the data sources that will be used in a report or dashboard. A single data source can be used or multiple can be used. When a data source is selected Power BI will provide you with an option to either load the data or transform it. It’s worth noting that data source will be stored in Power BI’s internal memory, so the more data sources you connect to and the larger those sources are the slower your report/dashboard will run.</p></li>
 <li><p><strong>Transform data</strong>: This is used to launch the Power Query Editor. The Power Query Editor is where data can be transformed. Transformation usually refers to dealing with missing values or cleaning the data before analysis. The Power Query Editor is a useful tool when working with data sets which need to be cleaned. Working with Power Query Editor is similar to working with Excel and often it is useful to switch between the two as some transformations will be easier in one than the other.</p></li>
-<li><p><strong>Report View</strong>: The report view icon opens the report view canvas which is used for selecting and designing data visualizations. This is the default view open when Power BI is launched.</p></li>
-<li><p><strong>Data View</strong>: The data view provides a view of the data in your model. This view looks similar to an Excel spreadsheet but it is read only.</p></li>
-<li><p><strong>Relationship View</strong>: This is used when your data model has multiple tables and relationships between them. We rarely work with a singular data source in one sheet of a .csv file. More often than not we will have multiple tables from multiple sources. In the relationship view we can build “relationships” between those tables.</p></li>
+<li><p><strong>Report View or canvas</strong>: The report view icon opens the report view canvas which is used for selecting and designing data visualizations. This is the default view open when Power BI is launched.</p></li>
+<li><p><strong>Data View</strong>: The data view allows you to view all the data available in your report. This view looks similar to an Excel spreadsheet but it is read only. It is useful to quickly check data types, validate data and make small changes to your data source - such as changing a data type or the format of a variable.</p></li>
+<li><p><strong>Model View or Relationship View</strong>: The relationship or model view allows you to set relationships between data sources. Relationships occur where two or more data sources are linked together by related data (a shared variable like ‘year’ for instance).</p></li>
 </ol>
 </div>
 <div id="excel-as-a-data-source" class="section level3 hasAnchor" number="8.1.2">
@@ -384,11 +384,11 @@ There are a number of features in the Power Query Editor to take note of:</p>
 <p class="caption">Navigating the user interface.</p>
 </div>
 <ol style="list-style-type: decimal">
-<li><p><strong>The Report View</strong>: This is the button that will place us in the Report canvas and allow us to create visuals.</p></li>
+<li><p><strong>The Report View</strong>: This is the button that will open up the Report canvas and allow us to create visuals using the visuals area. Below the report view button are two more buttons. These provide access to the <strong>data view</strong> and the <strong>model view</strong>.</p></li>
 <li><p><strong>Visuals Area</strong>: This is where we can choose which visual we would like to use. Each of the icons represents a type of visualization. Clicking these icons will generate a visual that we can start to work with. Once custom visuals are added they will appear here as well.</p></li>
-<li><p><strong>Field Area</strong>: This area will change depending on the visual but it is where we place the fields (Total, Year… etc.) that we will use within the selected visual.</p></li>
-<li><p><strong>Field Pane</strong>: This pane contains the fields we have to choose from to add to our visual.</p></li>
-<li><p><strong>Format Area</strong>: This is where we can decide on the formatting of our visuals, we can change font sizes, text styles, titles, colors…etc.</p></li>
+<li><p><strong>Field Area</strong>: This area will change depending on the visual but it is where we place the variables (Total, Year… etc.) that we will use within the selected visual.</p></li>
+<li><p><strong>Field Pane</strong>: This pane contains the fields we have to choose from to add to our visual. Initially this is populated by the variables contained in data sources but it is possible to add new variables or measures through the Power Query Editor.</p></li>
+<li><p><strong>Format Area</strong>: This is where we can decide on the formatting of our visuals. You can customise colours or make changes to axes add borders and change font sizes… etc.</p></li>
 <li><p><strong>Filters Area</strong>: This is where we can apply filters of various scopes. We can apply page-level filters which will affect all the visuals on the selected page. We can apply Report-level filters which will affect every visual in the entire Power BI Report and we can apply Visual-level filters which will be applied only to specific visualizations.</p></li>
 </ol>
 <div id="creating-a-line-chart" class="section level3 hasAnchor" number="8.3.1">
@@ -411,7 +411,7 @@ There are a number of features in the Power Query Editor to take note of:</p>
 </div>
 <div id="the-slicer-visual" class="section level3 hasAnchor" number="8.3.2">
 <h3><span class="header-section-number">8.3.2</span> The Slicer Visual<a href="power-bi.html#the-slicer-visual" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The Slicer visual is used when we want our users to be able to filter by something that isn’t used inside our visuals. The slicer visual only allows one field to be assigned to it but depending on what data type that field is we will have different presentation options. If we pass text data into the field we get a list of check boxes which can be ticked or unticked. If we pass numeric data into the field we will get a slider which can be moved from one numeric value to the next (useful for dates).</p>
+<p>The Slicer visual is used when we want our users to be able to filter by something that isn’t used inside our visuals. The slicer visual only allows one field to be assigned to it. If we pass text data into the field we get a list of check boxes which can be ticked or unticked. If we pass numeric data into the field we will get a slider which can be moved from one numeric value to the next (useful for dates).</p>
 <p>Before we create a new Slicer visual it is important to make sure we have deselected the line-chart visual otherwise clicking on a new visual icon will convert this visual into the selected visual type. We don’t want to convert our visual, we want an entirely new visual. Click on the canvas behind the line-chart visual then in the visualizations pane locate the Slicer visual and click on it. A new visual object will appear. Drag LGD2014 from the Fields Pane into the Field box in the Field Area. A checkbox list of local government districts should populate in the visual object on the canvas. It should look something like this:</p>
 <div class="figure">
 <img src="bi8.jpg" alt="" />
