@@ -116,7 +116,7 @@
 
 \title{Digital Skills}
 \author{}
-\date{\vspace{-2.5em}2022-06-23}
+\date{\vspace{-2.5em}2022-06-26}
 
 \begin{document}
 \maketitle
@@ -1406,11 +1406,53 @@ With any luck you should be able to replicate the kind of user interface you see
 \caption{Buttons used to create links between pages.}
 \end{figure}
 
-\hypertarget{relationships}{%
-\section{Relationships}\label{relationships}}
-
 \hypertarget{indexing}{%
 \section{Indexing}\label{indexing}}
+
+This example will show you how to create a bar chart visual of sales by month. This sounds simple but often when trying to visualise data categorised by month the bars for each month are sorted by alphabetical order rather than the order in which the months occur.
+
+Start a new project and click \textbf{Enter Data}.
+
+Enter the months of the year in the available column and change the column title to ``Month''.
+
+Press the \textbf{+} Icon at the top right to create a new column, title it ``Sales'' and enter some dummy sales data.
+
+\begin{figure}
+\centering
+\includegraphics{bi14.png}
+\caption{Entering data}
+\end{figure}
+
+Load the data.
+
+Create a bar chart visualisation with ``Month'' in the X-axis field and ``Sales'' in the Y-axis field.
+
+Once the visualisation has been created click the \textbf{\ldots{}} icon for more options and sort the axis by month. The x-axis will be sorted by month but it will be sorted alphabetically.
+
+To rectify this we need to create an \textbf{index}.
+
+Click on \textbf{Transform Data} and navigate to ``Monthly Sales''. In \textbf{Applied Steps} pane on the right hand side there will be a step called \textbf{Source} with a cog icon to the right of it. Click on the cog. This will open up the editor you used to input the data. Create a new column by clicking the \textbf{+} icon. Call this new column ``Index'' and write the number 1 in the first empty row. Write the number 2 in the next row and the number 3 in the next. Continue until each Month has a corresponding numerical index.
+
+\begin{figure}
+\centering
+\includegraphics{bi15.jpg}
+\caption{Creating an index}
+\end{figure}
+
+When finished, click \textbf{OK} then \textbf{Close \& Apply}.
+
+Go to the data view, click on the ``Month'' column and find the \textbf{Sort by column} option in the \textbf{column tools} ribbon and select ``Index''.
+
+\begin{figure}
+\centering
+\includegraphics{bi16.jpg}
+\caption{Sorting by column}
+\end{figure}
+
+Return to the visualisation and the months should now be sorted in the correct order.
+
+\hypertarget{relationships}{%
+\section{Relationships}\label{relationships}}
 
 \hypertarget{publishing}{%
 \section{Publishing}\label{publishing}}
@@ -1433,24 +1475,18 @@ In programs, information can be stored in variables. Variables are labels to hel
 
 \begin{itemize}
 \item
-  \textbf{Integers} - positive and negative integers up to a high limit, for instance, \(-2, -1, 0, 1, 2\). A variable can be declared as an integer using the int() function.
+  \textbf{Integers} - positive and negative integers up to a high limit, for instance, \(-2, -1, 0, 1, 2\). A variable can be declared as an integer - or converted to one - using the int() function.
 \item
-  \textbf{Floating point numbers} - Positive and negative whole numbers with a decimal point. For instance \(0.1, 2.5, 50.294, -75.943\). A variable can be declared as a floating point number using the float() function.
+  \textbf{Floating point numbers} - Positive and negative whole numbers with a decimal point. For instance \(0.1, 2.5, 50.294, -75.943\). A variable can be declared as a floating point number - or converted to one - using the float() function.
 \item
-  \textbf{Strings} - strings are arrays of bytes representing unicode characters. A variable can be declared as a string using quotation marks or the str() function.
+  \textbf{Strings} - strings are arrays of bytes representing unicode characters. A variable can be declared as a string using quotation marks or the str() function which can also be used to convert a variable to a string type.
 \item
-  \textbf{Boolean} - booleans represent one of two values, either True or False. In programming you frequently need to know if an expression is true or false and booleans are typically useful for this. A variable can be declared boolean using the bool() function
+  \textbf{Boolean} - booleans represent one of two values, either True or False. In programming you frequently need to know if an expression is true or false and booleans are typically useful for this. A variable can be declared boolean - or converted to one - using the bool() function
 \item
   \textbf{Complex numbers} - Numbers that satisfy \(i^2=-1\), written as \(a+bi\) where \(a\) and \(b\) are real numbers. These are rarely, if ever, encountered in research however they can be useful when optimising advanced scripts.
 \end{itemize}
 
 We declare variables by giving them a name and setting them equal to some value. Variables can be printed to screen using the print() function and the type() function can be used to probe a variable and discover what type of variable it is.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{library}\NormalTok{(reticulate)}
-\end{Highlighting}
-\end{Shaded}
 
 Variables are declared by writing a variable name and using the equals sign to indicate the value to be associated with that name. Alternatively, functions like int() or float() can be used although they are not typically needed as Python is able to interpret the type without being explicitly told using these functions.
 
@@ -1459,7 +1495,7 @@ Variables are declared by writing a variable name and using the equals sign to i
 \CommentTok{\# Below are some examples of variable declaration.}
 
 \NormalTok{intVar}\OperatorTok{=}\DecValTok{1}
-\NormalTok{floatVar}\OperatorTok{=}\BuiltInTok{float}\NormalTok{(}\FloatTok{2.13}\NormalTok{)}
+\NormalTok{floatVar}\OperatorTok{=}\FloatTok{2.13}
 \NormalTok{stringVar}\OperatorTok{=}\StringTok{"This is a string"}
 \NormalTok{boolVar}\OperatorTok{=}\VariableTok{True}
 \NormalTok{compVar}\OperatorTok{=}\BuiltInTok{complex}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{2}\NormalTok{)}
@@ -1486,6 +1522,21 @@ Using the type() function with the variable name as an argument will return the 
 
 \begin{verbatim}
 ## <class 'int'>
+\end{verbatim}
+
+Boolean values refer to logic and can be useful for testing. For instance, given two variables we can use operators to test whether one is greater than, less than or equal to the other. The result of this test will be a boolean.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{i }\OperatorTok{=} \DecValTok{20}
+\NormalTok{j }\OperatorTok{=} \DecValTok{30}
+
+\BuiltInTok{print}\NormalTok{(i }\OperatorTok{\textless{}}\NormalTok{ j)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## True
 \end{verbatim}
 
 \hypertarget{examples}{%
@@ -1556,13 +1607,65 @@ Using the type() function with the variable name as an argument will return the 
 \CommentTok{\# The following line of code can be used to find the average:}
 
 \NormalTok{average }\OperatorTok{=}\NormalTok{ (firstVar }\OperatorTok{+}\NormalTok{ secondVar }\OperatorTok{+}\NormalTok{ thirdVar }\OperatorTok{+}\NormalTok{ fourthVar }\OperatorTok{+}\NormalTok{ fifthVar)}\OperatorTok{/}\DecValTok{5}
+
+\BuiltInTok{print}\NormalTok{(average)}
 \end{Highlighting}
 \end{Shaded}
+
+\begin{verbatim}
+## 6.8
+\end{verbatim}
 
 Note that in Python we can add, subtract, multiple and divide in equations with the symbols \(+, -, *, /.\) and brackets can be used to ensure the result of the calculations inside the brackets are calculated with highest priority.
 
 \hypertarget{functions}{%
 \subsection{Functions}\label{functions}}
+
+A function is a group of related statements forming reusable code that is used to perform some specific task. The task can be anything: a simple calculation or a complex iterative process or even a series steps in an algorithm. Functions make writing code easier since often we might want to repeat the same piece of code several times, instead of rewriting or copying and pasting that same chunk of code we can write a function once and call it each time it is needed. Python has some functions `built in' but we can create our own custom functions too.
+
+\hypertarget{in-built-functions}{%
+\subsubsection{In-built Functions}\label{in-built-functions}}
+
+We have already encountered several in-built functions: int(), float(), bool(), str(), complex(), type() and print().
+
+Some other useful in-built functions are:
+
+len() - the len() function can be used to tell us how long a particular variable or object is.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{a }\OperatorTok{=} \StringTok{"Hello World!"}
+
+\NormalTok{b }\OperatorTok{=} \BuiltInTok{len}\NormalTok{(a)}
+
+\BuiltInTok{print}\NormalTok{(b)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 12
+\end{verbatim}
+
+help() - the help() function can return useful help on functions, variables and objects.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+\BuiltInTok{help}\NormalTok{(}\BuiltInTok{len}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Help on built-in function len in module builtins:
+## 
+## len(obj, /)
+##     Return the number of items in a container.
+\end{verbatim}
+
+input() - the input() function can be used to accept user inputs when assigning values to variables.
+
+\hypertarget{custom-functions}{%
+\subsubsection{Custom Functions}\label{custom-functions}}
 
 \hypertarget{data-structures}{%
 \subsection{Data Structures}\label{data-structures}}

@@ -76,8 +76,8 @@ adding-a-new-page
 navigation
 arrows
 buttons
-relationships
 indexing
+relationships
 publishing
 additional-resources
 python
@@ -85,6 +85,8 @@ introduction-1
 variables
 examples
 functions
+in-built-functions
+custom-functions
 data-structures
 exceptions-try-and-except
 loops-and-iterating
