@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-06-26" />
+<meta name="date" content="2022-07-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -310,12 +310,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-10"><a href="python.html#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="python.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(intVar, floatVar, stringVar, boolVar, compVar)</span></code></pre></div>
 <pre><code>## 1 2.13 This is a string True (3+2j)</code></pre>
-<p>Using the type() function with the variable name as an argument will return the type of the variable. In this example the type() function is applied to the intVar variable. and the print() function is used to print the result to the screen. These functions could be applied one at a time but it’s also possible to place a function within a function. The innermost function is performed first.</p>
+<p>Using the <strong>type()</strong> function with the variable name as an argument will return the type of the variable. In this example the type() function is applied to the intVar variable. and the <strong>print()</strong> function is used to print the result to the screen. These functions could be applied one at a time but it’s also possible to place a function within a function. The innermost function is performed first.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="python.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Functions can be called inside other functions.</span></span>
 <span id="cb3-2"><a href="python.html#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="python.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(intVar))</span></code></pre></div>
 <pre><code>## &lt;class &#39;int&#39;&gt;</code></pre>
-<p>Boolean values refer to logic and can be useful for testing. For instance, given two variables we can use operators to test whether one is greater than, less than or equal to the other. The result of this test will be a boolean.</p>
+<p>Boolean values refer to logic and can be useful for testing. For instance, given two variables we can use <strong>operators</strong> to test whether one is greater than, less than or equal to the other. The result of this test will be a boolean.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="python.html#cb5-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">20</span></span>
 <span id="cb5-2"><a href="python.html#cb5-2" aria-hidden="true" tabindex="-1"></a>j <span class="op">=</span> <span class="dv">30</span></span>
 <span id="cb5-3"><a href="python.html#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -363,26 +363,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="functions" class="section level3 hasAnchor" number="9.1.2">
 <h3><span class="header-section-number">9.1.2</span> Functions<a href="python.html#functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A function is a group of related statements forming reusable code that is used to perform some specific task. The task can be anything: a simple calculation or a complex iterative process or even a series steps in an algorithm. Functions make writing code easier since often we might want to repeat the same piece of code several times, instead of rewriting or copying and pasting that same chunk of code we can write a function once and call it each time it is needed. Python has some functions ‘built in’ but we can create our own custom functions too.</p>
+<p>A <strong>function</strong> is a group of related statements forming reusable code that is used to perform some specific task. The task can be anything: a simple calculation or a complex iterative process or even a series steps in an algorithm.</p>
+<p>Functions make writing code easier since often we might want to repeat the same piece of code several times, instead of rewriting or copying and pasting that same chunk of code we can write a function once and call it each time it is needed.</p>
+<p>Python has some ‘in-built’ functions but we can create our own custom functions too.</p>
 <div id="in-built-functions" class="section level4 hasAnchor" number="9.1.2.1">
 <h4><span class="header-section-number">9.1.2.1</span> In-built Functions<a href="python.html#in-built-functions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We have already encountered several in-built functions: int(), float(), bool(), str(), complex(), type() and print().</p>
 <p>Some other useful in-built functions are:</p>
-<p>len() - the len() function can be used to tell us how long a particular variable or object is.</p>
+<p>len() - the <strong>len()</strong> function can be used to tell us how long a particular variable or object is.</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="python.html#cb13-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="st">&quot;Hello World!&quot;</span></span>
 <span id="cb13-2"><a href="python.html#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="python.html#cb13-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="bu">len</span>(a)</span>
 <span id="cb13-4"><a href="python.html#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-5"><a href="python.html#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(b)</span></code></pre></div>
 <pre><code>## 12</code></pre>
-<p>help() - the help() function can return useful help on functions, variables and objects.</p>
+<p>help() - the <strong>help()</strong> function can return useful help on functions, variables and objects.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="python.html#cb15-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-2"><a href="python.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">help</span>(<span class="bu">len</span>)</span></code></pre></div>
 <pre><code>## Help on built-in function len in module builtins:
 ## 
 ## len(obj, /)
 ##     Return the number of items in a container.</code></pre>
-<p>input() - the input() function can be used to accept user inputs when assigning values to variables.</p>
+<p>input() - the <strong>input()</strong> function can be used to accept user inputs when assigning values to variables.</p>
 </div>
 <div id="custom-functions" class="section level4 hasAnchor" number="9.1.2.2">
 <h4><span class="header-section-number">9.1.2.2</span> Custom Functions<a href="python.html#custom-functions" class="anchor-section" aria-label="Anchor link to header"></a></h4>

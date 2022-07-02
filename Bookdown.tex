@@ -116,7 +116,7 @@
 
 \title{Digital Skills}
 \author{}
-\date{\vspace{-2.5em}2022-06-26}
+\date{\vspace{-2.5em}2022-07-02}
 
 \begin{document}
 \maketitle
@@ -1129,7 +1129,7 @@ Ensure your product is accessible by checking the colour contrast ratios of text
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-Power BI is part of the Microsoft Power Platform which includes other packages such as Power Automate. Power BI is split into several components: Power BI Desktop, Service (an online SaaS - Software as a Service), Gateway, Report Server, Premium, Visuals Marketplace and Mobile Apps. The primary focus of Power BI is business intelligence but Power BI can be used for more than standard reporting of data with line charts and bar charts. It can also be used in conjunction with Python and R to create complex custom visuals or it can be used to create and train \href{https://docs.microsoft.com/en-us/power-bi/connect-data/service-tutorial-build-machine-learning-model}{machine learning models}. Power BI can even be used to \href{https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example}{web scrape data}.
+\textbf{Power BI} is part of the \textbf{Microsoft Power Platform} which includes other packages such as Power Automate. Power BI is split into several components: Power BI Desktop, Service (an online SaaS - Software as a Service), Gateway, Report Server, Premium, Visuals Marketplace and Mobile Apps. The primary focus of Power BI is business intelligence but Power BI can be used for more than standard reporting of data with line charts and bar charts. It can also be used in conjunction with Python and R to create complex custom visuals or it can be used to create and train \href{https://docs.microsoft.com/en-us/power-bi/connect-data/service-tutorial-build-machine-learning-model}{machine learning models}. Power BI can even be used to \href{https://docs.microsoft.com/en-us/power-bi/connect-data/desktop-connect-to-web-by-example}{web scrape data}.
 
 With Power BI Desktop, you can connect to different data sources, transform those data sources through queries, build data models and create visualizations and reports or dashboards for different audiences. Reports and dashboards can be published to the Power BI Service where you can share your reports with other users or a wider audience.
 
@@ -1138,9 +1138,9 @@ This document is intended to provide a broad overview of the features of Power B
 \hypertarget{getting-started}{%
 \subsection{Getting Started}\label{getting-started}}
 
-To download Power BI Desktop, go to the Power BI Desktop download page and select Download Free. You can also download Power BI Desktop from the Power BI service. Select the Download icon in the top menu bar, and then select Power BI Desktop.
+To download Power BI Desktop, go to the Power BI Desktop download page and select \textbf{Download Free}. You can also download Power BI Desktop from the Power BI service. Select the \textbf{Download} icon in the top menu bar, and then select Power BI Desktop.
 
-Once you launch Power BI Desktop you will be welcomed by the Start screen. Here, you can get data sources for your reports, watch video tutorials, check updates and visit the Power BI forums. For now, select the close icon to close the Welcome screen to see the main interface (Figure 1 below).
+Once you launch Power BI Desktop you will be welcomed by the \textbf{Start screen}. Here, you can get data sources for your reports, watch video tutorials, check updates and visit the Power BI forums. For now, select the \textbf{close} icon to close the Welcome screen to see the main interface (Figure 1 below).
 
 \begin{figure}
 \centering
@@ -1169,14 +1169,14 @@ The image above shows some of the most important features in Power BI Desktop.
 
 We're going to use a dummy dataset health\_data.xlsx included in the \href{https://github.com/aamcmurray/BookTest/blob/main/health_data.xlsx}{repository used to host this guide}. Download and save the dataset in a folder you can easily locate.
 
-To use Excel data sets as a source, open the Power BI Desktop. Under the Home ribbon find Get Data. Selecting the down arrow next to the Get Data button will show the most common connectors used but clicking the button itself will provide a full list of all available connectors. The list is extensive and Power BI can connect to a wide array of data sources including .csv files, .xlsx and .txt files. Power BI also supports SQL database connections. Whether you click the Get Data button or the arrow you will see Excel at the top of the resulting list. Click Excel Workbook and then click Connect. Navigate to your data source.
+To use Excel data sets as a source, open the Power BI Desktop. Under the \textbf{Home ribbon} find \textbf{Get Data}. Selecting the down arrow next to the Get Data button will show the most common connectors used but clicking the button itself will provide a full list of all available connectors. The list is extensive and Power BI can connect to a wide array of data sources including .csv files, .xlsx and .txt files. Power BI also supports SQL database connections. Whether you click the Get Data button or the arrow you will see Excel at the top of the resulting list. Click \textbf{Excel Workbook} and then click Connect. Navigate to your data source.
 
 Once selected you will see two separate spreadsheets you can choose from.
 
 \includegraphics{bi2.jpg}
-Clicking once on the spreadsheet name will let you preview the data while clicking on the checkbox next to the name will include it as part of the data import. Here we have two sheets, Health Data 1 which contains data relating to drug related deaths and deaths due to drug misuse and Health Data 2 which contains population data. This data needs to be cleaned before we can use it so tick both the boxes and then press the Transform Data button on the bottom of the panel. This launches the Power Query Editor. You can also clean your data in Excel then simply press the Load button but some data sets would be too difficult to transform in Excel.
+Clicking once on the spreadsheet name will let you preview the data while clicking on the \textbf{checkbox} next to the name will include it as part of the data import. Here we have two sheets, Health Data 1 which contains data relating to drug related deaths and deaths due to drug misuse and Health Data 2 which contains population data. This data needs to be cleaned before we can use it so tick both the boxes and then press the \textbf{Transform Data} button on the bottom of the panel. This launches the \textbf{Power Query Editor}. You can also clean your data in Excel then simply press the Load button but some data sets would be too difficult to transform in Excel.
 
-When the Power Query Editor loads you will notice it has its own environment for you to work in.
+When the Power Query Editor loads you will notice it has its own environment.
 
 \includegraphics{bi3.jpg}
 There are a number of features in the Power Query Editor to take note of:
@@ -1195,7 +1195,7 @@ There are a number of features in the Power Query Editor to take note of:
   \textbf{Close and Apply}: Choosing this option will save your transformations, close the Power Query Editor and load the transformed data into the data model.
 \end{enumerate}
 
-The Power Query Editor allows you to shape data with step-by-step instructions for adjusting the data. Shaping the data this way does not affect the original data source, only this particular view of the data. Shaping can mean transforming the data, such as renaming columns or tables, removing rows, replacing missing data entries or changing data types. Power Query Editor captures these steps sequentially under Applied Steps in the Query Settings pane. If you make a mistake or transform the data in a way you aren't happy with you can simply cancel the transformation by clicking the X that appears beside it in Applied Steps.
+The Power Query Editor allows you to transform the data with step-by-step instructions for adjusting the data. Transforming the data this way \textbf{does not affect the original data source}, only this particular view of the data. Data transformation includes a range of processes including: renaming columns or tables, removing rows, replacing missing data entries or changing data types. Power Query Editor records the steps taken to transform the data sequentially under \textbf{Applied Steps} in the \textbf{Query Settings} pane. If you make a mistake or transform the data in a way you aren't happy with you can simply cancel the transformation by clicking the \textbf{X} that appears beside it in \textbf{Applied Steps}.
 
 \hypertarget{data-transformation-basics}{%
 \section{Data Transformation Basics}\label{data-transformation-basics}}
@@ -1238,11 +1238,11 @@ Northern Ireland & Deaths due to drug misuse & 2008 & 53 \\
 \bottomrule
 \end{longtable}
 
-Note how the `year' data and `total' data now have their own columns.
+Note how the \textbf{`year'} data and \textbf{`total'} data now have their own columns.
 
 Power Query Editor can help us get there. If we were to \href{https://support.microsoft.com/en-us/office/unpivot-columns-power-query-0f7bad4b-9ea1-49c1-9d95-f588221c7098}{unpivot} the columns and separate the year into its own column we would arrive at a data set that looks like the table above.
 
-The first step then is to click on the column titled ``Drug related deaths 2008'' then scroll to the right and shift click on the final column. This will select all but the first column. Right click on any of the selected columns and select Unpivot Columns from the menu. This separates the columns into attribute-value pairs. Next we need to separate out the year data. Right click on the newly generated Attribute column and select Split Column then select By Delimiter.
+The first step then is to click on the column titled \textbf{``Drug related deaths 2008''} then scroll to the right and \textbf{shift click} on the final column. This will select all but the first column. Right click on any of the selected columns and select \textbf{Unpivot Columns} from the menu. This separates the columns into attribute-value pairs. Next we need to separate out the year data. \textbf{Right click} on the newly generated \textbf{Attribute column} and select \textbf{Split Column} then select \textbf{By Delimiter}.
 
 \begin{figure}
 \centering
@@ -1250,14 +1250,14 @@ The first step then is to click on the column titled ``Drug related deaths 2008'
 \caption{Splitting by Delimiters.}
 \end{figure}
 
-We want to split this column into two new columns using a delimiter. The best one to choose here is the Space delimiter. We want to split at the right-most delimiter as there is a space right before each year but none after the year. Select these settings and click OK. Change the titles of the columns by double clicking the column header. Finalize your changes by clicking on the Home ribbon and Close \& Apply. As soon as you click Close \& Apply in the Power Query Editor you will find yourself back in the Power BI Desktop Report View.
+We want to split this column into two new columns using a delimiter. The best one to choose here is the Space delimiter. We want to split at the \textbf{right-most} delimiter as there is a space right before each year but none after the year. Select these settings and click OK. Change the titles of the columns by \textbf{double clicking} the \textbf{column header}. Finalize your changes by clicking on the \textbf{Home ribbon} and \textbf{Close \& Apply}. As soon as you click Close \& Apply in the Power Query Editor the Power Query Editor will close and the Power BI Desktop Report View will be visible.
 
 These are two of the most common data transformations that data sets will need to have applied to them.
 
 \hypertarget{visualising-data}{%
 \section{Visualising Data}\label{visualising-data}}
 
-Up until now you have spent some time importing data and shaping it. Now we can begin to visualize the data. Power BI is commonly associated with the ability to create impactful, interactive data visualizations. Before we start making visuals it's worth detailing some of the panes and views available to us:
+Power BI is commonly associated with the ability to create impactful, interactive data visualizations. Before we start making visuals it's worth detailing some of the panes and views available to us:
 
 \begin{figure}
 \centering
@@ -1284,11 +1284,11 @@ Up until now you have spent some time importing data and shaping it. Now we can 
 \hypertarget{creating-a-line-chart}{%
 \subsection{Creating a Line-Chart}\label{creating-a-line-chart}}
 
-We're going to create a line-chart visual that shows both drug related deaths and deaths due to drug misuse. We want to show the totals for each over time and we want to be able to filter by local government district.
+We're going to create a \textbf{line-chart visual} that shows both drug related deaths and deaths due to drug misuse. We want to show the totals for each over time and we want to be able to filter by local government district.
 
-The first step in creating any visual is to go to the Visualizations pane on the right-hand side of the UI. Here you can see a range of different visualization icons representing their respective chart. Along the top row are bar charts, in the second row are line charts, area charts and a ribbon chart, below these are pie charts, maps, cards, and even tools to create custom Python and R visuals (Plotly, Matplotlib and Seaborn are three commonly used Python plotting libraries). Find the Icon for the Line Chart and click it. A new visual object will appear on the canvas with a prompt to select or drag fields to populate this visual.
+The first step in creating any visual is to go to the \textbf{Visualizations pane} on the right-hand side of the UI. Here you can see a range of different visualization icons representing their respective chart. Along the top row are bar charts, in the second row are line charts, area charts and a ribbon chart, below these are pie charts, maps, cards, and even tools to create custom Python and R visuals (Plotly, Matplotlib and Seaborn are three commonly used Python plotting libraries). Find the Icon for the \textbf{Line Chart} and click it. A new visual object will appear on the canvas with a prompt to select or drag fields to populate this visual.
 
-Drag the ``Year'' field from the fields pane into the Axis box in the field area. Drag the ``Total'' field into the Values box.
+Drag the \textbf{``Year'' field} from the \textbf{fields pane} into the \textbf{Axis box} in the field area. Drag the \textbf{``Total'' field} into the \textbf{Values box}.
 
 You should get a line-chart that looks like this:
 
@@ -1298,9 +1298,9 @@ You should get a line-chart that looks like this:
 \caption{The first line chart.}
 \end{figure}
 
-There's something not quite right about this visual. We plotted Total by Year but what is it a total of? Our data contained totals for each Local Government District and for two different data sets. Currently, the data for each year is being summed. We're looking at a line chart showing the sum of all Local Government District drug related deaths and deaths due to drug misuse. We can tell this is the case at a glance by looking to the Fields Pane where the Total has a summation sign (\(\sum\)) to the left of it.
+There is something not quite right about this visual. We plotted Total by Year but what is it a total of? Our data contained totals for each Local Government District and for two different data sets. Currently, the data for each year is being summed. We are looking at a line chart showing the sum of all Local Government District drug related deaths and deaths due to drug misuse. We can tell this is the case at a glance by looking to the \textbf{Fields Pane} where the \textbf{Total} has a summation sign (\(\sum\)) to the left of it.
 
-Drag the Dataset field into the Legend box to separate out the data sets. You should see a line-chart like this:
+Drag the \textbf{Dataset field} into the \textbf{Legend box} to separate out the data sets. You should see a line-chart like this:
 
 \begin{figure}
 \centering
@@ -1308,14 +1308,14 @@ Drag the Dataset field into the Legend box to separate out the data sets. You sh
 \caption{Line chart.}
 \end{figure}
 
-This is closer to what we had hoped to show but it's still summing over the local government districts. This is where the Slicer visualization becomes useful. Although, we don't need to use slicers, we could also use the filters pane to simply remove the districts we don't want to be summed. This can be useful when datasets contain rows of data that we aren't interested in.
+This is closer to what we had hoped to show but it's still summing over the local government districts. This is where the \textbf{Slicer visualization} becomes useful. Although, we don't need to use slicers, we could also use the filters pane to simply remove the districts we don't want to be summed. This can be useful when datasets contain rows of data that we aren't interested in.
 
 \hypertarget{the-slicer-visual}{%
 \subsection{The Slicer Visual}\label{the-slicer-visual}}
 
-The Slicer visual is used when we want our users to be able to filter by something that isn't used inside our visuals. The slicer visual only allows one field to be assigned to it. If we pass text data into the field we get a list of check boxes which can be ticked or unticked. If we pass numeric data into the field we will get a slider which can be moved from one numeric value to the next (useful for dates).
+The \textbf{Slicer visual} is used when we want our users to be able to filter by something that isn't used inside our visuals. The slicer visual only allows one field to be assigned to it. Passing text data into the field will generate a list of check boxes which can be ticked or unticked. Passing numeric data into the field will generate a slider which can be moved from one numeric value to the next (useful for dates).
 
-Before we create a new Slicer visual it is important to make sure we have deselected the line-chart visual otherwise clicking on a new visual icon will convert this visual into the selected visual type. We don't want to convert our visual, we want an entirely new visual. Click on the canvas behind the line-chart visual then in the visualizations pane locate the Slicer visual and click on it. A new visual object will appear. Drag LGD2014 from the Fields Pane into the Field box in the Field Area. A checkbox list of local government districts should populate in the visual object on the canvas. It should look something like this:
+Before we create a new Slicer visual it is important to make sure we have deselected the line-chart visual otherwise clicking on a new visual icon will convert this visual into the selected visual type. We don't want to convert our visual, we want an entirely new visual. \textbf{Click} on \textbf{the canvas} behind the line-chart visual then in the \textbf{visualizations pane} locate the \textbf{Slicer visual} and click on it. A new visual object will appear. Drag \textbf{LGD2014} from the \textbf{Fields Pane} into the \textbf{Field box} in the Field Area. A checkbox list of local government districts should populate in the visual object on the canvas. It should look like this:
 
 \begin{figure}
 \centering
@@ -1328,7 +1328,7 @@ Before we create a new Slicer visual it is important to make sure we have desele
 
 We now have a line-chart that shows both deaths due to drug misuse and drug related deaths but if we control click multiple local government districts it sums them together. We can change this behaviour by formatting the slicer visual.
 
-Click the slicer visual then click on the Format area selector (the icon that looks like a paint roller). We will be presented with a list of different attributes that we can change. We can change the title, the background, the border and we can add shadows. The important attribute we want to change however is Selection controls. Click the drop-down arrow beside Selection controls and toggle single select on. The result should be something that looks like this:
+Click the \textbf{slicer visual} then click on the \textbf{Format area selector} (the icon that looks like a paint roller). We will be presented with a list of different attributes that we can change. We can change the title, the background, the border and we can add shadows. The important attribute we want to change however is \textbf{Selection controls}. Click the \textbf{drop-down arrow} beside \textbf{Selection controls} and toggle \textbf{single select} on. The result should be something that looks like this:
 
 \begin{figure}
 \centering
@@ -1351,17 +1351,17 @@ The new visual should allow us to check multiple boxes and add to the stacked ba
 \hypertarget{adding-a-new-page}{%
 \section{Adding a New Page}\label{adding-a-new-page}}
 
-We can add a new page to our report by clicking the plus sign (+) next to the Page 1 tab at the bottom of the canvas. It makes sense however to duplicate our existing page since we can re-use some of our existing work. Right click on the Page 1 tab and select Duplicate Page.
+We can add a new page to our report by clicking the plus sign \textbf{+} next to the \textbf{Page 1 tab} at the bottom of the canvas. It makes sense however to duplicate our existing page since we can re-use some of our existing work. \textbf{Right click} on the \textbf{Page 1 tab} and select \textbf{Duplicate Page}.
 
-Select the line-chart visual and change the legend in the Fields Area from Dataset to LGD2014 by clicking on the X to the right of Dataset and dragging in LGD2014 from our Fields Pane. Now click on the stacked column chart icon in the Visualizations Pane to convert the visual. Some conversions work better than others, it's always worth checking that the visual is showing the same data before and after conversion. A conversion from a stacked bar chart to a card visual or KPI visual may not be the best choice for instance.
+Select the \textbf{line-chart visual} and change the \textbf{legend} in the \textbf{Fields Area} from \textbf{Dataset} to \textbf{LGD2014} by clicking on the \textbf{X} to the right of \textbf{Dataset} and dragging in \textbf{LGD2014} from the \textbf{Fields Pane}. Now click on the \textbf{stacked column char}t icon in the \textbf{Visualizations Pane} to convert the visual. Some conversions work better than others, it's always worth checking that the visual is showing the same data before and after conversion. A conversion from a stacked bar chart to a card visual or KPI visual may not be the best choice for instance.
 
-We will need to edit our location filter (the slicer) to allow for multiple selections. Click on the slicer visual and go to the Format Area. Under Selection Controls toggle Single Select to Off and ensure that Multi-select with CTRL is toggled to the on position and Show ``Select All'' Option is toggled to the Off position. We can now select multiple local government districts and they should stack on top of one another in the stacked bar chart visual. We will need two new slicer visuals.
+We will need to edit the location filter (the slicer) to allow for multiple selections. Click on the \textbf{slicer visual} and go to the \textbf{Format Area}. Under \textbf{Selection Controls} toggle \textbf{Single Select} to \textbf{off} and ensure that \textbf{Multi-select with CTRL} is toggled to the \textbf{on} position and \textbf{Show ``Select All'' Option} is toggled to the \textbf{off} position. We can now select multiple local government districts and they should stack on top of one another in the stacked bar chart visual. We will need two new slicer visuals.
 
-Click on the canvas to ensure no visuals are selected. Select the Slicer Visual in the visualizations pane. Drag the Year field into the Field box. The slicer should automatically detect numeric data and generate a slider that takes values in the range 2008 to 2019.
+Click on the canvas to ensure no visuals are selected. Select the \textbf{Slicer Visual} in the visualizations pane. Drag the \textbf{Year field} into the \textbf{Field box}. The slicer should automatically detect numeric data and generate a slider that takes values in the range 2008 to 2019.
 
-We need one more slicer. Again ensure no visuals are currently selected and select the Slicer Visual. Drag the Dataset field into the slicer's field. A checkbox will be generated. We would prefer buttons this time so go to the Format Area and select the General option. Scroll down until you see Orientation. Click on the drop down menu and select Horizontal. Under Selection Controls you might want to toggle Single select to on.
+We need one more slicer. Again ensure no visuals are currently selected and select the \textbf{Slicer Visual}. Drag the \textbf{Dataset} field into the slicer's field. A checkbox will be generated. We would prefer buttons this time, so go to the \textbf{Format Area} and select the \textbf{General} option. Scroll down until you see \textbf{Orientation}. Click on the drop down menu and select \textbf{Horizontal}. Under \textbf{Selection Controls} you might want to toggle \textbf{Single select} to \textbf{on}.
 
-Finally, we can add some data labels to our visual. Select the line-chart visual by clicking on it. In the Format Area scroll down until you see Data Labels and toggle them on.
+Finally, we can add some data labels to our visual. Select the line-chart visual by clicking on it. In the Format Area scroll down until you see \textbf{Data Labels} and toggle them \textbf{on}.
 
 \hypertarget{navigation}{%
 \section{Navigation}\label{navigation}}
@@ -1369,9 +1369,9 @@ Finally, we can add some data labels to our visual. Select the line-chart visual
 \hypertarget{arrows}{%
 \subsection{Arrows}\label{arrows}}
 
-Up to this point we have mostly made use of the Home ribbon but there are other important ribbons when designing reports. The Insert ribbon for instance allows us to insert elements into our report that aren't necessarily data visualizations. We can insert text boxes, buttons, shapes and images. These are all useful for providing additional information on visualizations, explaining data or navigation. We're going to create navigation buttons.
+Up to this point we have mostly made use of the Home ribbon but there are other important ribbons when designing reports. The \textbf{Insert ribbon} for instance allows us to insert elements into our report that aren't necessarily data visualizations. We can insert text boxes, buttons, shapes and images. These are all useful for providing additional information on visualizations, explaining data or navigation. We're going to create navigation buttons.
 
-Add two new pages to your report using the plus icon next to the page tabs at the bottom of the canvas. Click onto the first of those pages. Then navigate to the Insert ribbon and click on Buttons then on the right arrow.
+Add two new pages to your report using the plus icon next to the page tabs at the bottom of the canvas. Click onto the first of those pages. Then navigate to the \textbf{Insert ribbon} and click on \textbf{Buttons} then on the \textbf{right arrow}.
 
 \begin{figure}
 \centering
@@ -1379,7 +1379,7 @@ Add two new pages to your report using the plus icon next to the page tabs at th
 \caption{Inserting arrows.}
 \end{figure}
 
-Repeat this process on the second page but this time select the Left arrow. If the Left arrow is selected you will see the visualisations pane disappear and the entire pane will be taken up by the format pane. Scroll down until you find Action. Toggle Action on and select Page navigation in the Type menu and Page 1 (or whatever page you want this arrow to direct to) in the Destination menu.
+Repeat this process on the second page but this time select the \textbf{Left arrow}. If the Left arrow is selected you will see the visualisations pane disappear and the entire pane will be taken up by the format pane. Scroll down until you find \textbf{Action}. Toggle \textbf{Action} to \textbf{on} and select \textbf{Page navigation} in the \textbf{Type menu} and \textbf{Page 1} (or whatever page you want this arrow to direct to) in the \textbf{Destination menu}.
 
 \begin{figure}
 \centering
@@ -1387,18 +1387,19 @@ Repeat this process on the second page but this time select the Left arrow. If t
 \caption{Left Arrow Navigation.}
 \end{figure}
 
-If you CTRL+Click on the Left arrow it should now take you to Page 1. When your Power BI Report is published users won't need to CTRL+Click it will just happen with a click. We can repeat these steps for the Right Arrow on Page 1 to cycle between the pages.
+If you \textbf{CTRL+Click} on the \textbf{Left arrow} it should now take you to \textbf{Page 1}. When your Power BI Report is published users won't need to CTRL+Click it will just happen with a click. We can repeat these steps for the Right Arrow on Page 1 to cycle between the pages.
 
 \hypertarget{buttons}{%
 \subsection{Buttons}\label{buttons}}
 
-Another useful element that we can insert is the Button. The Button can serve just about any purpose. It can be filled with color and used as a banner or a footer; it can be used as a navigation tool thanks to the actions we just used; and it can be used as a display behind a visual.
+Another useful element that we can insert is the \textbf{Button}. The Button can serve just about any purpose. It can be filled with color and used as a banner or a footer; it can be used as a navigation tool thanks to the actions we just used; and it can be used as a display behind a visual.
 
-Create a new page. Find Buttons on the Insert ribbon. Click it and select Blank. An outlined box should appear. You can click the edges of this to resize it. Try to take up the whole width available and just less than 20\% of the height. It doesn't need to be exact, just resize to whatever looks natural as a header for a title. Click on the resized button when you're finished. In the Format Button pane toggle Outline off and Icon off. Toggle Fill on and expand the fill menu and select a new color for your header. Change the transparency settings if you like. Next, find the Text toggle and toggle it on if it isn't already. Open the Text menu by clicking the drop-down arrow. In the text box type a title for your new page. You can change the font color and text size and the font below the text entry box.
+Create a new page. Find \textbf{Buttons} on the \textbf{Insert ribbon}. Click it and select \textbf{Blank}. An outlined box should appear. You can click the edges of this to resize it. Try to take up the whole width available and just less than 20\% of the height. It doesn't need to be exact, just resize to whatever looks natural as a header for a title.
+Click on the resized button when you're finished. In the \textbf{Format Button pane} toggle \textbf{Outline} to \textbf{off} and toggle \textbf{Icon} to \textbf{off}. Toggle \textbf{Fill} to \textbf{on} and expand the fill menu and select a new color for your header. Change the transparency settings if you like. Next, find the \textbf{Text toggle} and toggle it \textbf{on} if it isn't already. Open the \textbf{Text menu} by clicking the drop-down arrow. In the text box type a title for your new page. You can change the font color and text size and the font below the text entry box.
 
 Add another button but this time resize it to whatever size you think appropriate for a navigation button. Repeat the steps above to add colour and text to the button. Then you can use the action menu, like we did when we created the left and right arrows, to give the button navigation properties.
 
-With any luck you should be able to replicate the kind of user interface you see in a single page web app or a mobile app.
+With any luck you should be able to replicate the kind of user interface you see in a \textbf{single page web app} or a \textbf{mobile app}.
 
 \begin{figure}
 \centering
@@ -1510,7 +1511,7 @@ Variables are declared by writing a variable name and using the equals sign to i
 ## 1 2.13 This is a string True (3+2j)
 \end{verbatim}
 
-Using the type() function with the variable name as an argument will return the type of the variable. In this example the type() function is applied to the intVar variable. and the print() function is used to print the result to the screen. These functions could be applied one at a time but it's also possible to place a function within a function. The innermost function is performed first.
+Using the \textbf{type()} function with the variable name as an argument will return the type of the variable. In this example the type() function is applied to the intVar variable. and the \textbf{print()} function is used to print the result to the screen. These functions could be applied one at a time but it's also possible to place a function within a function. The innermost function is performed first.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1524,7 +1525,7 @@ Using the type() function with the variable name as an argument will return the 
 ## <class 'int'>
 \end{verbatim}
 
-Boolean values refer to logic and can be useful for testing. For instance, given two variables we can use operators to test whether one is greater than, less than or equal to the other. The result of this test will be a boolean.
+Boolean values refer to logic and can be useful for testing. For instance, given two variables we can use \textbf{operators} to test whether one is greater than, less than or equal to the other. The result of this test will be a boolean.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1621,7 +1622,11 @@ Note that in Python we can add, subtract, multiple and divide in equations with 
 \hypertarget{functions}{%
 \subsection{Functions}\label{functions}}
 
-A function is a group of related statements forming reusable code that is used to perform some specific task. The task can be anything: a simple calculation or a complex iterative process or even a series steps in an algorithm. Functions make writing code easier since often we might want to repeat the same piece of code several times, instead of rewriting or copying and pasting that same chunk of code we can write a function once and call it each time it is needed. Python has some functions `built in' but we can create our own custom functions too.
+A \textbf{function} is a group of related statements forming reusable code that is used to perform some specific task. The task can be anything: a simple calculation or a complex iterative process or even a series steps in an algorithm.
+
+Functions make writing code easier since often we might want to repeat the same piece of code several times, instead of rewriting or copying and pasting that same chunk of code we can write a function once and call it each time it is needed.
+
+Python has some `in-built' functions but we can create our own custom functions too.
 
 \hypertarget{in-built-functions}{%
 \subsubsection{In-built Functions}\label{in-built-functions}}
@@ -1630,7 +1635,7 @@ We have already encountered several in-built functions: int(), float(), bool(), 
 
 Some other useful in-built functions are:
 
-len() - the len() function can be used to tell us how long a particular variable or object is.
+len() - the \textbf{len()} function can be used to tell us how long a particular variable or object is.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1646,7 +1651,7 @@ len() - the len() function can be used to tell us how long a particular variable
 ## 12
 \end{verbatim}
 
-help() - the help() function can return useful help on functions, variables and objects.
+help() - the \textbf{help()} function can return useful help on functions, variables and objects.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1662,7 +1667,7 @@ help() - the help() function can return useful help on functions, variables and 
 ##     Return the number of items in a container.
 \end{verbatim}
 
-input() - the input() function can be used to accept user inputs when assigning values to variables.
+input() - the \textbf{input()} function can be used to accept user inputs when assigning values to variables.
 
 \hypertarget{custom-functions}{%
 \subsubsection{Custom Functions}\label{custom-functions}}
