@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2022-07-02" />
+<meta name="date" content="2022-07-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -237,11 +237,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.1" data-path="python.html"><a href="python.html#introduction-1"><i class="fa fa-check"></i><b>9.1</b> Introduction</a>
 <ul>
 <li class="chapter" data-level="9.1.1" data-path="python.html"><a href="python.html#variables"><i class="fa fa-check"></i><b>9.1.1</b> Variables</a></li>
-<li class="chapter" data-level="9.1.2" data-path="python.html"><a href="python.html#functions"><i class="fa fa-check"></i><b>9.1.2</b> Functions</a></li>
-<li class="chapter" data-level="9.1.3" data-path="python.html"><a href="python.html#data-structures"><i class="fa fa-check"></i><b>9.1.3</b> Data Structures</a></li>
-<li class="chapter" data-level="9.1.4" data-path="python.html"><a href="python.html#exceptions-try-and-except"><i class="fa fa-check"></i><b>9.1.4</b> Exceptions, Try and Except</a></li>
-<li class="chapter" data-level="9.1.5" data-path="python.html"><a href="python.html#loops-and-iterating"><i class="fa fa-check"></i><b>9.1.5</b> Loops and Iterating</a></li>
-<li class="chapter" data-level="9.1.6" data-path="python.html"><a href="python.html#built-in-functions"><i class="fa fa-check"></i><b>9.1.6</b> Built in Functions</a></li>
+<li class="chapter" data-level="9.1.2" data-path="python.html"><a href="python.html#mathematical-operations"><i class="fa fa-check"></i><b>9.1.2</b> Mathematical Operations</a></li>
+<li class="chapter" data-level="9.1.3" data-path="python.html"><a href="python.html#functions"><i class="fa fa-check"></i><b>9.1.3</b> Functions</a></li>
+<li class="chapter" data-level="9.1.4" data-path="python.html"><a href="python.html#data-structures"><i class="fa fa-check"></i><b>9.1.4</b> Data Structures</a></li>
+<li class="chapter" data-level="9.1.5" data-path="python.html"><a href="python.html#exceptions-try-and-except"><i class="fa fa-check"></i><b>9.1.5</b> Exceptions, Try and Except</a></li>
+<li class="chapter" data-level="9.1.6" data-path="python.html"><a href="python.html#loops-and-iterating"><i class="fa fa-check"></i><b>9.1.6</b> Loops and Iterating</a></li>
+<li class="chapter" data-level="9.1.7" data-path="python.html"><a href="python.html#built-in-functions"><i class="fa fa-check"></i><b>9.1.7</b> Built in Functions</a></li>
 </ul></li>
 <li class="chapter" data-level="9.2" data-path="python.html"><a href="python.html#managing-data"><i class="fa fa-check"></i><b>9.2</b> Managing Data</a>
 <ul>
@@ -343,7 +344,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol start="3" style="list-style-type: decimal">
 <li>Write a program that calculates the average of the following set of numbers:</li>
 </ol>
-<p><span class="math display">\[2,3,4,5,20.\]</span></p>
+<p><span class="math display">\[ 2,3,4,5,20.\]</span></p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="python.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign the values to variables.</span></span>
 <span id="cb11-2"><a href="python.html#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="python.html#cb11-3" aria-hidden="true" tabindex="-1"></a>firstVar <span class="op">=</span> <span class="dv">2</span></span>
@@ -358,16 +359,106 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb11-12"><a href="python.html#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-13"><a href="python.html#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(average)</span></code></pre></div>
 <pre><code>## 6.8</code></pre>
-<p>Note that in Python we can add, subtract, multiple and divide in equations with the symbols <span class="math inline">\(+, -, *, /.\)</span> and brackets can be used to ensure the result of the calculations inside the brackets are calculated with highest priority.</p>
 </div>
 </div>
-<div id="functions" class="section level3 hasAnchor" number="9.1.2">
-<h3><span class="header-section-number">9.1.2</span> Functions<a href="python.html#functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="mathematical-operations" class="section level3 hasAnchor" number="9.1.2">
+<h3><span class="header-section-number">9.1.2</span> Mathematical Operations<a href="python.html#mathematical-operations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Note that in Python we can add, subtract, multiple and divide in equations with the symbols <span class="math inline">\(+, -, *, /.\)</span> and brackets can be used to ensure the result of the calculations inside the brackets are calculated with highest priority. The table below outlines the various mathematical operations that can be performed.</p>
+<table>
+<caption>Basic Mathematical Operations</caption>
+<colgroup>
+<col width="35%" />
+<col width="35%" />
+<col width="29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Operation</th>
+<th align="right">Example</th>
+<th align="right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">+</td>
+<td align="right">a=b+c</td>
+<td align="right">a takes the value of b+c</td>
+</tr>
+<tr class="even">
+<td align="right">+=</td>
+<td align="right">a+=b</td>
+<td align="right">a takes the value of a+b</td>
+</tr>
+<tr class="odd">
+<td align="right">-</td>
+<td align="right">a=b-c</td>
+<td align="right">a takes the value of b-c</td>
+</tr>
+<tr class="even">
+<td align="right">-=</td>
+<td align="right">a-=b</td>
+<td align="right">a takes the value of a+b</td>
+</tr>
+<tr class="odd">
+<td align="right">*</td>
+<td align="right">a=b*c</td>
+<td align="right">a takes the value of b*c</td>
+</tr>
+<tr class="even">
+<td align="right">*=</td>
+<td align="right">a*=b</td>
+<td align="right">a takes the value of a*b</td>
+</tr>
+<tr class="odd">
+<td align="right">/</td>
+<td align="right">a=b/c</td>
+<td align="right">a takes the value of b/c</td>
+</tr>
+<tr class="even">
+<td align="right">/=</td>
+<td align="right">a/=b</td>
+<td align="right">a takes the value of a/b</td>
+</tr>
+<tr class="odd">
+<td align="right">**</td>
+<td align="right">a=b**c</td>
+<td align="right">a takes the value of b to the power c</td>
+</tr>
+<tr class="even">
+<td align="right">**=</td>
+<td align="right">a**=b</td>
+<td align="right">a takes the value of a to the power b</td>
+</tr>
+<tr class="odd">
+<td align="right">//</td>
+<td align="right">a=b//c</td>
+<td align="right">a takes the value of floor division of b by c</td>
+</tr>
+<tr class="even">
+<td align="right">//=</td>
+<td align="right">a//=b</td>
+<td align="right">a takes the value of floor division of a by b</td>
+</tr>
+<tr class="odd">
+<td align="right">%</td>
+<td align="right">a=b%c</td>
+<td align="right">a takes the value of b modulo c</td>
+</tr>
+<tr class="even">
+<td align="right">%=</td>
+<td align="right">a%=b</td>
+<td align="right">a takes the value of a modulo b</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="functions" class="section level3 hasAnchor" number="9.1.3">
+<h3><span class="header-section-number">9.1.3</span> Functions<a href="python.html#functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A <strong>function</strong> is a group of related statements forming reusable code that is used to perform some specific task. The task can be anything: a simple calculation or a complex iterative process or even a series steps in an algorithm.</p>
 <p>Functions make writing code easier since often we might want to repeat the same piece of code several times, instead of rewriting or copying and pasting that same chunk of code we can write a function once and call it each time it is needed.</p>
 <p>Python has some ‘in-built’ functions but we can create our own custom functions too.</p>
-<div id="in-built-functions" class="section level4 hasAnchor" number="9.1.2.1">
-<h4><span class="header-section-number">9.1.2.1</span> In-built Functions<a href="python.html#in-built-functions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="in-built-functions" class="section level4 hasAnchor" number="9.1.3.1">
+<h4><span class="header-section-number">9.1.3.1</span> In-built Functions<a href="python.html#in-built-functions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>We have already encountered several in-built functions: int(), float(), bool(), str(), complex(), type() and print().</p>
 <p>Some other useful in-built functions are:</p>
 <p>len() - the <strong>len()</strong> function can be used to tell us how long a particular variable or object is.</p>
@@ -386,21 +477,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     Return the number of items in a container.</code></pre>
 <p>input() - the <strong>input()</strong> function can be used to accept user inputs when assigning values to variables.</p>
 </div>
-<div id="custom-functions" class="section level4 hasAnchor" number="9.1.2.2">
-<h4><span class="header-section-number">9.1.2.2</span> Custom Functions<a href="python.html#custom-functions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="custom-functions" class="section level4 hasAnchor" number="9.1.3.2">
+<h4><span class="header-section-number">9.1.3.2</span> Custom Functions<a href="python.html#custom-functions" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 </div>
 </div>
-<div id="data-structures" class="section level3 hasAnchor" number="9.1.3">
-<h3><span class="header-section-number">9.1.3</span> Data Structures<a href="python.html#data-structures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="data-structures" class="section level3 hasAnchor" number="9.1.4">
+<h3><span class="header-section-number">9.1.4</span> Data Structures<a href="python.html#data-structures" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="exceptions-try-and-except" class="section level3 hasAnchor" number="9.1.4">
-<h3><span class="header-section-number">9.1.4</span> Exceptions, Try and Except<a href="python.html#exceptions-try-and-except" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="exceptions-try-and-except" class="section level3 hasAnchor" number="9.1.5">
+<h3><span class="header-section-number">9.1.5</span> Exceptions, Try and Except<a href="python.html#exceptions-try-and-except" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="loops-and-iterating" class="section level3 hasAnchor" number="9.1.5">
-<h3><span class="header-section-number">9.1.5</span> Loops and Iterating<a href="python.html#loops-and-iterating" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="loops-and-iterating" class="section level3 hasAnchor" number="9.1.6">
+<h3><span class="header-section-number">9.1.6</span> Loops and Iterating<a href="python.html#loops-and-iterating" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="built-in-functions" class="section level3 hasAnchor" number="9.1.6">
-<h3><span class="header-section-number">9.1.6</span> Built in Functions<a href="python.html#built-in-functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="built-in-functions" class="section level3 hasAnchor" number="9.1.7">
+<h3><span class="header-section-number">9.1.7</span> Built in Functions<a href="python.html#built-in-functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
 </div>
 <div id="managing-data" class="section level2 hasAnchor" number="9.2">
