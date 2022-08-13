@@ -116,7 +116,7 @@
 
 \title{Digital Skills}
 \author{}
-\date{\vspace{-2.5em}2022-07-03}
+\date{\vspace{-2.5em}2022-08-13}
 
 \begin{document}
 \maketitle
@@ -1562,61 +1562,6 @@ Boolean values refer to logic and can be useful for testing. For instance, given
 ## Hello world
 \end{verbatim}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  Assign two integer values to the variables named firstVar and secondVar. Assign any values you like. Print the values to the screen.
-\end{enumerate}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Assign values to variable names with the \textquotesingle{}equals\textquotesingle{} operator \textquotesingle{}=\textquotesingle{}.}
-
-\NormalTok{firstVar }\OperatorTok{=} \DecValTok{20}
-\NormalTok{secondVar }\OperatorTok{=} \DecValTok{40}
-
-\BuiltInTok{print}\NormalTok{(firstVar, secondVar)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## 20 40
-\end{verbatim}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Write a program that calculates the average of the following set of numbers:
-\end{enumerate}
-
-\[ 2,3,4,5,20.\]
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Assign the values to variables.}
-
-\NormalTok{firstVar }\OperatorTok{=} \DecValTok{2}
-\NormalTok{secondVar }\OperatorTok{=} \DecValTok{3}
-\NormalTok{thirdVar }\OperatorTok{=} \DecValTok{4}
-\NormalTok{fourthVar }\OperatorTok{=} \DecValTok{5}
-\NormalTok{fifthVar }\OperatorTok{=} \DecValTok{20}
-
-\CommentTok{\# The following line of code can be used to find the average:}
-
-\NormalTok{average }\OperatorTok{=}\NormalTok{ (firstVar }\OperatorTok{+}\NormalTok{ secondVar }\OperatorTok{+}\NormalTok{ thirdVar }\OperatorTok{+}\NormalTok{ fourthVar }\OperatorTok{+}\NormalTok{ fifthVar)}\OperatorTok{/}\DecValTok{5}
-
-\BuiltInTok{print}\NormalTok{(average)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## 6.8
-\end{verbatim}
-
 \hypertarget{mathematical-operations}{%
 \subsection{Mathematical Operations}\label{mathematical-operations}}
 
@@ -1663,6 +1608,125 @@ Description
 \%= & a\%=b & a takes the value of a modulo b \\
 \bottomrule
 \end{longtable}
+
+\hypertarget{examples-1}{%
+\subsubsection{Examples}\label{examples-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Assign two integer values to the variables named firstVar and secondVar. Assign any values you like. Print the values to the screen.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Assign values to variable names with the \textquotesingle{}equals\textquotesingle{} operator \textquotesingle{}=\textquotesingle{}.}
+
+\NormalTok{firstVar }\OperatorTok{=} \DecValTok{20}
+\NormalTok{secondVar }\OperatorTok{=} \DecValTok{40}
+
+\BuiltInTok{print}\NormalTok{(firstVar, secondVar)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 20 40
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Write a program that calculates the average of the following set of numbers:
+\end{enumerate}
+
+\[ 2,3,4,5,20.\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Assign the values to variables.}
+
+\NormalTok{firstVar }\OperatorTok{=} \DecValTok{2}
+\NormalTok{secondVar }\OperatorTok{=} \DecValTok{3}
+\NormalTok{thirdVar }\OperatorTok{=} \DecValTok{4}
+\NormalTok{fourthVar }\OperatorTok{=} \DecValTok{5}
+\NormalTok{fifthVar }\OperatorTok{=} \DecValTok{20}
+
+\CommentTok{\# The following line of code can be used to find the average:}
+
+\NormalTok{average }\OperatorTok{=}\NormalTok{ (firstVar }\OperatorTok{+}\NormalTok{ secondVar }\OperatorTok{+}\NormalTok{ thirdVar }\OperatorTok{+}\NormalTok{ fourthVar }\OperatorTok{+}\NormalTok{ fifthVar)}\OperatorTok{/}\DecValTok{5}
+
+\BuiltInTok{print}\NormalTok{(average)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 6.8
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Write a program that calculates the sum and the product of the following numbers:
+\end{enumerate}
+
+\[ 2, 4, 6, 8, 10.\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Assign the values to variables.}
+
+\NormalTok{a }\OperatorTok{=} \DecValTok{2}
+\NormalTok{b }\OperatorTok{=} \DecValTok{4}
+\NormalTok{c }\OperatorTok{=} \DecValTok{6}
+\NormalTok{d }\OperatorTok{=} \DecValTok{8}
+\NormalTok{e }\OperatorTok{=} \DecValTok{10}
+
+\CommentTok{\# Create two new variables for the summation and the product and print them to the screen.}
+
+\NormalTok{summation }\OperatorTok{=}\NormalTok{ a }\OperatorTok{+}\NormalTok{ b }\OperatorTok{+}\NormalTok{ c }\OperatorTok{+}\NormalTok{ d }\OperatorTok{+}\NormalTok{ e}
+\NormalTok{product }\OperatorTok{=}\NormalTok{ a }\OperatorTok{*}\NormalTok{ b }\OperatorTok{*}\NormalTok{ c }\OperatorTok{*}\NormalTok{ d }\OperatorTok{*}\NormalTok{ e}
+
+\BuiltInTok{print}\NormalTok{(summation, product)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 30 3840
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Write a program to perform integer division on two variables. For instance, if the two variables have values of 17 and 6 then the output should be \textbf{17 divided by 6 is 2 remainder 5}. Note that floor division of 17 by 6 gives 2 and the remainder of 5 can be obtained with the modulo function. Test this with other numbers and check the program works as it should.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+
+\NormalTok{a}\OperatorTok{=}\DecValTok{17}
+\NormalTok{b}\OperatorTok{=}\DecValTok{6}
+
+\CommentTok{\# Use floor division to get the quotient.}
+\NormalTok{c}\OperatorTok{=}\NormalTok{a}\OperatorTok{//}\NormalTok{b}
+
+\CommentTok{\# Use modulo to get the remainder.}
+\NormalTok{d}\OperatorTok{=}\NormalTok{a}\OperatorTok{\%}\NormalTok{b}
+
+\CommentTok{\# Write a print function that outputs the various values.}
+\BuiltInTok{print}\NormalTok{(a, }\StringTok{"divided by"}\NormalTok{, b, }\StringTok{"is"}\NormalTok{, c, }\StringTok{"remainder"}\NormalTok{, d)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 17 divided by 6 is 2 remainder 5
+\end{verbatim}
 
 \hypertarget{functions}{%
 \subsection{Functions}\label{functions}}
@@ -1713,6 +1777,32 @@ help() - the \textbf{help()} function can return useful help on functions, varia
 \end{verbatim}
 
 input() - the \textbf{input()} function can be used to accept user inputs when assigning values to variables.
+
+There are also a number of scientific mathematical functions available in Python. These functions are contained within a library called \textbf{math}. To use these functions we need to import the library at the beginning of our script by writing \textbf{import math}. In addition, the syntax for each of these functions begins with \textbf{math.}, for instance \textbf{math.sin(x)} returns \textbf{sin(x)} - note that trigonometric functions work in radians, not degrees.
+
+\begin{longtable}[]{@{}rr@{}}
+\caption{\label{tab:table14}Scientific Mathematical Operations}\tabularnewline
+\toprule
+Function & Description \\
+\midrule
+\endfirsthead
+\toprule
+Function & Description \\
+\midrule
+\endhead
+math.sqrt(x) & Returns the square root of x \\
+math.sin(x) & Returns the sine of x \\
+math.cos(x) & Returns the cosine of x \\
+math.tan(x) & Returns the tangent of x \\
+math.degrees(x) & Returns 180x/pi \\
+math.radians(x) & Returns pi times x/180 \\
+math.pi & Returns pi \\
+math.e & Returns Eulers number, e \\
+math.log(x) & Returns the natural log of x, ln(x) \\
+math.exp(x) & Returns e to the power of x \\
+math.log(a,b) & Returns log base b of a \\
+\bottomrule
+\end{longtable}
 
 \hypertarget{custom-functions}{%
 \subsubsection{Custom Functions}\label{custom-functions}}
